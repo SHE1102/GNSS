@@ -1,0 +1,263 @@
+ * {margin:0;padding:0;color:#333;font-family:Microsoft YaHei;}
+ 
+.Header{
+    height:60px;
+    width:100%;
+    background-color:#247BFF;
+    color:#FFFFFF;
+    font-size:40px;
+    
+    display: flex;
+    wrap: no-wrap;
+    
+    overflow:hidden; 
+    position: fixed; 
+    top:0;
+    z-index:99999;
+    
+    padding-left:20px;
+    color:#FFFFFF;
+    background: #247BFF url("../img/cube-net.png") no-repeat;
+}
+
+.SubHeader{
+	height:30px;
+	width:100%;
+	position: fixed; 
+    wrap: no-wrap;
+    top:60px;
+    background-color:white;
+    z-index:99999;
+}
+
+.Foot{
+	height:30px;
+}
+
+.Body{
+	margin-top:100px;
+    display: flex;
+    wrap: no-wrap;
+    height:auto;  
+	width:100%;
+	min-width:1500px;
+	min-height:800px;
+}
+
+ #logo-net{
+     height:60px;
+     width:300px;
+ }
+ 
+ #logo-customer{
+     position: fixed; 
+     right:20px;
+     height:60px;
+     width:200px;
+ }
+ 
+#stonex_logo{
+	 height: 60px;
+	 width: 200px;
+	 margin: 10px 0 0 0;
+	 background:  url("../img/logo-customer.png") no-repeat;
+	 //float:right;
+	 position: fixed; 
+	 right:20px;
+ }
+ 
+#loginstaus1{
+     height:20px;
+     width:150px;
+     line-height:20px;
+     font-size:15px;
+     text-align:right;
+     position: fixed; 
+     top:62px;
+     right:100px;
+     color:#247BFF;
+ }
+ #login1{
+     height:25px;
+     width:70px;
+     background-color:#247BFF;
+     border-radius:5px;
+     border:1px solid #CCC;
+     position: fixed; 
+     top:62px;
+     right:20px;
+     color:#CCC;
+ }
+ 
+ #login1:hover{
+     color:#FFF;
+ }
+ 
+.MenuBar{
+	padding-top:10px;
+	width:300px;
+	min-width:300px;
+	height:100%;
+}
+
+.Content{
+	padding:10px 20px;
+	width:100%;
+	height:100%;
+}
+
+.MenuBar ul{
+	list-style-type: none;
+	background:#FFF;
+}
+.MenuBar>ul>li:nth-child(n+4){
+	display:none;
+}
+
+ul li{
+	cursor:pointer;
+    color:#CCCCCC;
+    font-size: 16px;
+}
+
+.MenuBar>ul>li{
+	border:1px solid #CCCCCC;
+	border-top: 0px;
+}
+
+.MenuBar>ul>li:first-child{
+	border-top:1px solid #CCCCCC;
+}
+
+li>a{
+	display:inline-block;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	color:#333;
+}
+
+.SubMenu a{
+	text-indent:80px;
+}
+
+li>a:hover{
+	 color:#247BFF;
+}
+
+.SubMenu>li{
+	border-top:1px solid #CCCCCC;
+}
+
+.ItemBar{
+	height:40px;
+	line-height:40px;
+	text-indent:50px;
+}
+
+.LinkItemBar a{
+	text-indent:50px;
+ }
+
+span.select{
+	float:right;
+	border:20px solid transparent;
+	border-right-color: #DDD;
+}
+
+
+
+
+
+
+.MenuBarHor{
+	width:100%;
+	min-width:1500px;
+	height:40px;
+	background-color:#247BFF;
+	
+	//overflow:hidden; 
+    position: fixed; 
+    top:60px;
+    z-index:99999;
+    border-top: 1px solid white;
+}
+
+.MenuBarHor li{
+	list-style-type:none;
+	text-align:center;
+	background-color:#247BFF;//#88a3ff;
+}
+
+.MenuBarHor li a{
+	display:block;
+	height:40px;
+	line-height:40px;
+	width:100%;
+	min-width:150px;
+	text-align:center;
+	color:white;
+	//padding:0px 10px;
+}
+
+.MenuBarHor>ul>li{
+	float:left;
+}
+
+.MenuBarHor>ul>li:nth-child(n+4){
+	display:none;
+}
+
+.MenuBarHor>ul>li:hover {
+	background-color:#0c56dd;//#88a3ff;
+}
+.MenuBarHor>ul>li>a{
+	display:block;
+	padding: 0px16px;
+}
+
+.dropdownItemBar>ul {
+	display:none;
+	position: absolute;
+	z-index: 999999;
+}
+
+.dropdownItemBar:hover ul{
+	display:block;
+}
+
+.submenuHor li{
+	background-color:#5999ff;//#0056df;//#88a3ff;
+}
+
+.submenuHor li:hover{
+	background-color:#3582fc;//#247BFF;
+}
+
+#loginstaus{
+     height:20px;
+     width:150px;
+     line-height:20px;
+     font-size:15px;
+     text-align:right;
+     position: fixed; 
+     top:70px;
+     right:100px;
+     color:white;
+ }
+ #login{
+     height:25px;
+     width:70px;
+     background-color:#0056df;//#247BFF;
+     border-radius:5px;
+     border:1px solid #CCC;
+     position: fixed; 
+     top:68px;
+     right:20px;
+     color:#CCC;
+ }
+ 
+  #login:hover{
+     color:#FFF;
+ }

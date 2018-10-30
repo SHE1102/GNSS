@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/gnss?useSSL=true&amp;autoReconnect=true"/>
+                <property name="username" value="geo"/>
+                <property name="password" value="1234"/>
+                <property name="poolPingEnabled" value="true"/>
+                <property name="poolPingQuery" value="select now() from gnss.customer limit 1"/>
+                <property name="poolPingConnectionsNotUsedFor" value="3600000"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com/geo/gnss/mybatis/UserMapper.xml"/>
+    </mappers>
+</configuration>

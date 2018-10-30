@@ -1,0 +1,90 @@
+#ContentDiv{width:100%;height:100%;}
+#ConvertDate{width:150px;height:25px;}
+#StationList{width:200px;height:30px;}
+#Condition{margin-bottom:10px;}
+#TableDiv {
+	width:100%;
+	height:auto;
+	min-width:840px;
+	border:1px solid #CCC;
+	margin-bottom:10px;
+}
+
+#TableBodyDiv{
+    height:600px;
+	overflow-y:auto; 
+	overflow-x:auto;
+}
+
+table {
+	width:100%;
+	height:auto;
+	border-collapse:collapse;
+	background:#EEE;
+	text-align:left;
+}
+
+#TableHeader{
+	border-bottom:1px solid #CCC;
+}
+
+th{
+	width:25%;
+	height:35px;
+	line-height:35px;
+	color:#555;
+	font-size:18px;
+	text-align:left;
+	text-indent:20px;
+	background:#EEE;
+}
+
+tr{
+	height:auto;
+}
+
+#tablebody tr:nth-child(2n) {
+	background:#FFF;
+}
+
+#tablebody tr:hover{
+	background:#DDD;
+}
+
+#tablebody tr:first-child td{
+	border-top:0px;
+}
+
+#tablebody td{
+	width:25%;
+	height:25px;
+	padding:2px 20px;
+	border:1px solid #CCC;
+}
+
+#tablebody tr td:first-child,
+#tablebody tr td:last-child{
+	border-left:0px;
+	border-right:0px;
+}
+
+#Download {
+	width:100px;
+	height:40px;
+	font-size:17px;
+	border-radius:5px;
+	background:#247BFF;
+	color:#FFFFFF;
+	border:1px solid #CCC;
+}
+
+#Download:hover {
+	background:#80CCFF;
+	color:#FFFFFF;
+}
+
+span#SelectDownloadDaily{	
+	float:right;
+	border:20px solid transparent;
+	border-right-color: #DDD;
+}

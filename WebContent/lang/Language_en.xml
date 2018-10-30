@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Head>
+	<ids_alert_success>Alter success</ids_alert_success>
+	<ids_alert_failed>Alter failed</ids_alert_failed>
+	<ids_delete_success>Delete success</ids_delete_success>
+	<ids_delete_failed>Delete failed</ids_delete_failed>
+	<ids_register_success>Register success</ids_register_success>
+	<ids_register_failed>Register failed</ids_register_failed>
+	<ids_alter_success>Modify success</ids_alter_success>
+	<ids_alter_failed>Modify failed</ids_alter_failed>
+	<ids_save_success>Save success</ids_save_success>
+	<ids_save_failed>Save failed</ids_save_failed>
+	<ids_choose_two_file>Please select at least two files</ids_choose_two_file>
+	<ids_choose_base_rover>Please select at least one base station or rover station</ids_choose_base_rover>
+	<ids_upload_success>Upload success</ids_upload_success>
+	<ids_upload_failed>Upload failed</ids_upload_failed>
+	<ids_choose_logo_first>Please choose logo icon</ids_choose_logo_first>
+	<ids_choose_file_first>Please choose file first</ids_choose_file_first>
+	<ids_start_ftp_success>Start FTP success</ids_start_ftp_success>
+	<ids_start_ftp_failed>Start FTP failed</ids_start_ftp_failed>
+	<ids_stop_ftp_success>Close FTP success</ids_stop_ftp_success>
+	<ids_stop_ftp_failed>Close FTP failed</ids_stop_ftp_failed>
+	<ids_choose_satellite>Please choose satellite-system</ids_choose_satellite>
+	<ids_no_data>No files</ids_no_data>
+</Head>

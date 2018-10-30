@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Head>
+	<ids_alert_success>修改成功</ids_alert_success>
+	<ids_alert_failed>修改失败</ids_alert_failed>
+	<ids_delete_success>删除成功</ids_delete_success>
+	<ids_delete_failed>删除失败</ids_delete_failed>
+	<ids_register_success>注册成功</ids_register_success>
+	<ids_register_failed>注册失败</ids_register_failed>
+	<ids_alter_success>修改成功</ids_alter_success>
+	<ids_alter_failed>修改失败</ids_alter_failed>
+	<ids_save_success>保存成功</ids_save_success>
+	<ids_save_failed>保存失败</ids_save_failed>
+	<ids_choose_two_file>请选择至少两个文件</ids_choose_two_file>
+	<ids_choose_base_rover>请选择至少一个基站或者移动站</ids_choose_base_rover>
+	<ids_upload_success>上传成功</ids_upload_success>
+	<ids_upload_failed>上传失败</ids_upload_failed>
+	<ids_choose_logo_first>请先选择logo图片</ids_choose_logo_first>
+	<ids_choose_file_first>请先选择文件</ids_choose_file_first>
+	<ids_start_ftp_success>启动FTP服务器成功</ids_start_ftp_success>
+	<ids_start_ftp_failed>启动FTP服务器失败</ids_start_ftp_failed>
+	<ids_stop_ftp_success>关闭FTP服务器成功</ids_stop_ftp_success>
+	<ids_stop_ftp_failed>关闭FTP服务器失败</ids_stop_ftp_failed>
+	<ids_choose_satellite>请选择卫星系统</ids_choose_satellite>
+	<ids_no_data>没有数据</ids_no_data>
+</Head>

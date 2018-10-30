@@ -1,0 +1,31 @@
+#RegisterDiv{
+	padding-left:100px;
+	width:auto;
+	height:100%;
+}
+	
+#RegisterDiv input[type='text'],
+#RegisterDiv input[type='password']{
+	width:400px;
+	height:40px;
+	margin:10px 0px;
+	border-radius:5px;
+	border:1px solid #CCC;
+	text-indent:15px;
+}
+
+#Register{
+ 	width:400px;
+	height:40px;
+	margin:10px 0px;
+	font-size:17px;
+	background:#247BFF;
+	color:#FFFFFF;
+	border:1px solid #CCC;
+	border-radius:5px;
+}
+	
+#Register:hover {
+	background:#80CCFF;
+	color:#FFFFFF;
+}

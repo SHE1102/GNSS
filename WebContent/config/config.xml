@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<!DOCTYPE xml>
+<HEAD>
+	<RawPath>F:\SNRS_Obs\obs</RawPath>
+	<Host_Email>yanxiao.she@aliyun.com</Host_Email>
+	<Host_EmailPassword>sheyanxiao1102*</Host_EmailPassword>
+	<Host_EmailProtocol>smtp.aliyun.com</Host_EmailProtocol>
+	<MapCenter_Latitude>23</MapCenter_Latitude>
+	<MapCenter_Longitude>113</MapCenter_Longitude>
+	<Map_Zoom>7</Map_Zoom>
+</HEAD>

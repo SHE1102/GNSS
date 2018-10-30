@@ -1,0 +1,174 @@
+#Virtual{width:100%;height:100%;}
+fieldset {
+	margin-bottom:20px;
+	padding: 10px 20px;
+	width:800px;
+	border-radius:6px;
+}
+
+.virtualInput form label {
+	margin:10px 0px;
+	width:90px;
+	height:25px;
+	line-height:25px;
+	display:inline-block;
+}
+
+.virtualInput form input{
+	margin-right:50px;
+	width:200px;
+	height:25px;
+	display:inline-block;
+}
+
+.virtualInput form select{
+	margin-right:50px;
+	width:203px;
+	height:25px;
+	display:inline-block;
+}
+
+#progressDiv {
+    display:none;	
+}
+
+#progressDiv i{
+	padding-left:10px;
+	width:730px;
+	height:30px;
+	line-height:30px;
+	display:block;
+}
+
+#progressDiv progress {
+	margin-bottom:5px;
+    width:740px;
+    height:30px;
+    display:block;	
+    background:#BBBBBB;
+    color:#34c271;
+    border-color:transparent;
+}
+
+progress::-ms-fill{background: #34c271;}
+progress::-moz-progress-bar { background: #34c271; }
+progress::-webkit-progress-bar { background: #e6e6e6; }
+progress::-webkit-progress-value  { background: #0064B4; }
+progress::-Gecko-progress-bar { background: #e6e6e6; }
+progress::-Gecko-progress-value  { background: #0064B4; }
+
+
+#start {
+	width:100px;
+	height:40px;
+	font-size:17px;
+	border-radius:5px;
+	background:#247BFF;
+	color:#FFFFFF;
+	border:1px solid #CCC;
+}
+
+#start:hover {
+	background:#80CCFF;
+	color:#FFFFFF;
+}
+
+#start:disabled {
+	background:#AAAAAA;
+	color:#FFFFFF;
+}
+
+#download {
+	margin-top:1px;
+	display:inline-block;
+	width:100px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	font-size:17px;
+	border-radius:5px;
+	background:#80CCFF;
+	color:#446fee;
+	border:1px solid #CCC;
+}
+
+#download:hover{
+	background:#b9deb4;
+	color:#FFFFFF;
+}
+			
+span#SelectVirtual{	
+	float:right;
+	border:20px solid transparent;
+	border-right-color: #DDD;
+}
+
+
+
+#VirtualDiv{width:100%;}
+#VirtualTable{
+	width:100%;
+	height:auto;
+	border-collapse:collapse;
+	background:#EEE;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+#VirtualTable tr{
+	width:100%;
+	height:30px;
+}
+
+#VirtualTable th{
+	width:100%;
+	height:35px;
+	border:1px solid #CCC;
+	text-indent:5px;
+}
+
+#VirtualTable tr td{
+	width:30%;
+	height:30px;
+	border:1px solid #CCC;
+}
+
+#VirtualTable tr td.Label{
+	width:20%;
+	text-indent:20px;
+}
+
+#VirtualTable input[type='text'],
+#VirtualTable input[type='date'],
+#VirtualTable input[type='time'],
+#VirtualTable select{
+	width:100%;
+	height:100%;
+	border:0px;
+}
+#VirtualTable input[type='text']{
+	text-indent:20px;
+}
+
+#VirtualTable select{
+	text-indent:15px;
+}
+
+#VirtualTable input[type='date'],
+#VirtualTable input[type='time']{
+	width:100%;
+	height:100%;
+	border:0px;
+	text-indent:10px;
+}
+
+td.TdContent{
+	text-indent:10px;
+	background-color:#FFF;
+}
+
+#VirtualTable input[type='checkbox'],
+#VirtualTable input[type='radio']{
+	margin-left:10px;
+}

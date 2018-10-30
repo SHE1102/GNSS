@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geo.gnss.mybatis.UserMapper">
+    <select id="selectUser" parameterType="com.geo.gnss.dao.UserDao" 
+        resultType="com.geo.gnss.dao.UserDao">
+        select * from customer where name = #{name} and password = #{password}
+    </select>
+    <select id="selectAll" resultType="com.geo.gnss.dao.UserDao">
+        select * from customer
+    </select>
+    <select id="selectByName" parameterType="String" resultType="com.geo.gnss.dao.UserDao">
+        select * from customer where name=#{name}
+    </select>
+    <select id="findUserById" parameterType="Integer"
+        resultType="com.geo.gnss.dao.UserDao">
+        select * from customer where id = #{id}
+    </select>
+    <insert id="addCustomer" useGeneratedKeys="true" keyProperty="id" 
+        parameterType="com.geo.gnss.dao.UserDao">
+        insert into customer (name,password,authority,email,enable,firstname,lastname,company,telephone,limitdate) values (#{name},#{password},#{authority},#{email},#{enable},#{firstname},#{lastname},#{company},#{telephone},#{limitdate})
+    </insert>
+    
+    <update id="updateUserByNameByAdminster" parameterType="com.geo.gnss.dao.UserDao" >
+        update customer set enable=#{enable}, limitdate=#{limitdate} where name=#{name}
+    </update>
+    
+     <update id="updateUserByNameBySuperAdminster" parameterType="com.geo.gnss.dao.UserDao" >
+        update customer set authority=#{authority},enable=#{enable}, limitdate=#{limitdate} where name=#{name}
+    </update>
+    
+    <update id="updateUserByNameByAccount" parameterType="com.geo.gnss.dao.UserDao" >
+        update customer set password=#{password}, company=#{company}, email=#{email}, telephone=#{telephone} where name=#{name}
+    </update>
+    
+    <delete id="deleteUserByName" parameterType="String">
+        delete from customer where name = #{name}
+    </delete>
+</mapper>

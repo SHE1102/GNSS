@@ -1,0 +1,4193 @@
+ANTENNA ID
+ANTMANUFACTURER
+FLAG                                                         | NGS Or Not
+ [R]      [h]                                                | (m)
+ [north]  [ east]  [  up ]                                   | L1 Offset (mm)
+ [north]  [ east]  [  up ]                                   | L2 Offset (mm)
+
+3S-02-TSADM     NONE
+3SNAVIGATION
+YES
+    0.0000    0.0000
+       3.2       2.3     254.4
+       3.6       0.7     284.0
+
+3S-02-TSATE     NONE
+3SNAVIGATION
+YES
+    0.0000    0.0000
+      -0.4       0.6     152.9
+      -0.6      -0.1     163.4
+
+AERAT1675_120   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.2      -0.1      79.4
+      -0.2      -1.0      92.9
+
+AERAT1675_120   SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.0      -0.3      80.8
+      -0.1      -1.1      95.6
+
+AERAT1675_180   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.0       0.9      14.4
+      -1.1      -4.1      32.5
+
+AERAT1675_182   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.8       0.6      31.9
+      -2.0      -2.0      25.5
+
+AERAT1675_200   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -0.9       1.4      80.1
+       1.6       0.2      91.4
+
+AERAT1675_200   SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.0       1.8      80.8
+       0.9       0.2      96.2
+
+AERAT1675_29    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.3       0.6      52.2
+      -2.5      -1.2      56.0
+
+AERAT1675_304   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       0.2      -5.2      70.3
+       0.0       0.0       0.0
+
+AERAT1675_32    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -3.0       0.2      32.3
+      -3.1      -1.9      24.8
+
+AERAT1675_382   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       0.0      -0.5      49.5
+      -0.8      -2.8      57.0
+
+AERAT1675_39    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -0.4      -0.2      60.8
+       0.0       0.0       0.0
+
+AERAT1675_504   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.2      -3.7      69.8
+       5.3       2.9       0.6
+
+AERAT1675_80    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       1.6       2.0       9.3
+      -7.7       0.3      35.8
+
+AERAT1675_81    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.3      -0.8      33.0
+      -4.1      -2.3      21.8
+
+AERAT2775_150   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       0.5       0.7      65.2
+      -0.4      -0.1      61.5
+
+AERAT2775_159   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       0.2       1.0      75.2
+       2.1       0.4      90.1
+
+AERAT2775_159   SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+       0.2       0.4      77.8
+       1.3       0.1      93.3
+
+AERAT2775_160   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       2.4      -1.0       4.2
+       5.5      -1.7      22.5
+
+AERAT2775_270   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       1.2       0.9      62.0
+       0.5      -0.4      58.3
+
+AERAT2775_382   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -0.2      -0.8      50.3
+      -2.8      -3.3      56.8
+
+AERAT2775_41    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+       2.4       0.9       9.1
+      -3.9      -0.5      25.5
+
+AERAT2775_42    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -4.7      -1.6      47.5
+      -4.3      -1.2      59.5
+
+AERAT2775_42+CR NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -3.0       0.5      47.5
+      -1.0      -0.2      85.9
+
+AERAT2775_43    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.0       2.9      70.2
+      -0.4      -0.3      86.4
+
+AERAT2775_43    SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.6       2.5      69.8
+      -0.5      -0.5      88.4
+
+AERAT2775_443   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -0.5       1.4      73.3
+       0.7       0.4      86.9
+
+AERAT2775_443   SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -2.1       1.6      72.7
+       1.8       0.1      89.3
+
+AERAT2775_62    NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -5.1      -1.8      37.3
+      -3.7      -1.9      54.2
+
+AERAT3075_460   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.3       2.8      55.3
+      -1.1       0.8      64.2
+
+AERAT1675_300   NONE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -1.2       0.4     126.8
+       0.4      -0.1     140.8
+
+AERAT1675_300   SPKE
+AeroAntenna
+YES
+    0.0000    0.0000
+      -0.6       0.4     128.6
+       0.5      -0.3     144.8
+
+AOA7490582.2    NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+       0.3       1.6      90.7
+      -0.8       0.2     119.8
+
+AOAD/M_B        NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      59.8
+      -0.6      -0.1      88.3
+
+AOAD/M_R        NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      59.8
+      -0.6      -0.1      88.3
+
+AOAD/M_T        NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+AOAD/M_TA_NGS   NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+AOARASCAL       NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+       0.7      -0.4     112.4
+       2.4       1.2     105.9
+
+JPLD/M_R        NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      59.8
+      -0.6      -0.1      88.3
+
+JPLD/M_RA_SOP   NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+      -0.4       0.6      59.8
+      -0.6      -0.1      88.3
+
+NGSD/M+GP60     NONE
+Allen Osborne
+YES
+    0.0000    0.0000
+       0.6       1.2       1.4
+      -1.3      -1.4     -20.8
+
+APSAPS-3        NONE
+ALTUS
+YES
+    0.0000    0.0000
+       0.4       0.3      90.6
+       1.0       1.1      81.2
+
+APSAPS-3L       NONE
+ALTUS
+YES
+    0.0000    0.0000
+       2.9       2.5      93.6
+       4.8       0.0      82.4
+
+APSAPS-NR2      NONE
+ALTUS
+YES
+    0.0000    0.0000
+      -2.3       1.0      73.6
+      -0.1       0.9      60.0
+
+ACC123CGNSSA_XN NONE
+Antcom
+YES
+    0.0000    0.0000
+      -0.4       4.9      70.3
+       0.7       1.9      74.4
+
+ACC2G1215A_XT_1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.2       1.7       4.0
+       2.3       2.9      40.2
+
+ACC3G1215A_XT_1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.2      -0.6       3.2
+       3.8       1.2      38.0
+
+ACC42G1215A_XT1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.8       0.1       7.8
+      -3.1       1.8      41.0
+
+ACC4G1215A_XT_1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.6      -2.4       4.9
+       0.1      -0.9      39.2
+
+ACC53G1215A_XT1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -1.5       0.2      30.1
+      -5.6       0.3      45.2
+
+ACC53GO1215AXT1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -2.4       0.8      29.8
+      -5.2      -1.5      44.8
+
+ACC72CGNSSA     NONE
+Antcom
+YES
+    0.0000    0.0000
+      -0.6       2.8      49.0
+      -1.2       0.1      72.7
+
+ACC72GNSSA_XT_1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       0.3       3.6      61.3
+      -1.6       1.2      85.4
+
+ACCG3ANT_3AT1   NONE
+Antcom
+YES
+    0.0000    0.0000
+       0.5      -0.3      20.4
+       0.0       0.0       0.0
+
+ACCG3ANT_42AT1  NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.3       0.3       7.7
+       0.0       0.0       0.0
+
+ACCG3ANT_52AT1  NONE
+Antcom
+YES
+    0.0000    0.0000
+      -1.2       1.0      36.8
+       0.0       0.0       0.0
+
+ACCG5ANT_123CAN NONE
+Antcom
+YES
+    0.0000    0.0000
+       0.6       3.1      69.6
+       0.3       0.3      67.8
+
+ACCG5ANT_2AT1   NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.0      -1.0       4.4
+      -2.1      -1.7      38.5
+
+ACCG5ANT_3AT1   NONE
+Antcom
+YES
+    0.0000    0.0000
+      -0.1      -0.8       8.4
+       4.1       1.7      37.3
+
+ACCG5ANT_42AT1  NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.4       0.2       6.9
+      -0.6       0.1      38.3
+
+ACC_G5ANT_52AT1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -2.2       0.6      36.3
+      -3.4      -1.5      54.8
+
+ACC_G5ANT_72AT1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -2.6       2.6      60.8
+      -1.5       0.1      86.1
+
+ACCG8ANT-CHOKES NONE
+Antcom
+YES
+    0.0000    0.0000
+      -2.0       1.7     243.9
+      -1.8       0.1     229.1
+
+ACCG8ANT_3A4TB1 NONE
+Antcom
+YES
+    0.0000    0.0000
+       1.5       2.4      17.5
+       3.5       0.4      39.7
+
+ACCG8ANT_3A4_M1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -1.9       2.3      45.3
+       7.4       0.6      40.7
+
+ACCG8ANT_52A4T1 NONE
+Antcom
+YES
+    0.0000    0.0000
+      -3.1       1.6      50.2
+      -0.7       2.0      40.0
+
+ACCG8ANT_52A4TC NONE
+Antcom
+YES
+    0.0000    0.0000
+       2.3       2.4      21.8
+       1.7       1.7      41.2
+
+ASH110454       NONE
+Ashtech
+YES
+    0.0921    0.0356
+       1.2      -2.6      51.3
+       0.0       0.0       0.0
+
+ASH111660       NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -1.1       0.9      57.3
+       0.0       0.0       0.0
+
+ASH111661       NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -1.8       0.1      57.3
+      -1.6      -2.3      64.3
+
+ASH700228A      NONE
+Ashtech
+YES
+    0.1461    0.0636
+      -1.4      -2.7      58.5
+       2.0      -3.6      64.8
+
+ASH700228B      NONE
+Ashtech
+YES
+    0.1461    0.0636
+      -1.4      -2.7      58.5
+       2.0      -3.6      64.8
+
+ASH700228C      NONE
+Ashtech
+YES
+    0.1461    0.0636
+      -1.0      -1.7      68.7
+       4.4      -2.1      70.9
+
+ASH700228D      NONE
+Ashtech
+YES
+    0.1461    0.0636
+      -1.3      -2.1      61.2
+       2.0      -3.4      67.1
+
+ASH700228E      NONE
+Ashtech
+YES
+    0.1461    0.0636
+      -1.3      -2.1      61.2
+       2.0      -3.4      67.1
+
+ASH700699.L1    NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.4       0.6      33.3
+       0.0       0.0       0.0
+
+ASH700700.A     NONE
+Ashtech
+YES
+    0.1240    0.0270
+      -1.7      -1.1      23.8
+      -2.5       1.3      42.5
+
+ASH700700.B     NONE
+Ashtech
+YES
+    0.1240    0.0350
+      -1.9      -1.2      33.3
+      -2.6       1.0      51.8
+
+ASH700700.C     NONE
+Ashtech
+YES
+    0.1240    0.0350
+      -1.9      -1.2      33.3
+      -2.6       1.0      51.8
+
+ASH700718A      NONE
+Ashtech
+YES
+    0.1842    0.0636
+      -0.5      -1.7      69.5
+      -1.3       0.9      50.2
+
+ASH700718B      NONE
+Ashtech
+YES
+    0.1842    0.0636
+      -0.5      -1.7      69.5
+      -1.3       0.9      50.2
+
+ASH700829.2     SNOW
+Ashtech
+YES
+    0.1842    0.0636
+      -1.2      -0.6      69.6
+      -2.2       0.8      52.2
+
+ASH700829.3     SNOW
+Ashtech
+YES
+    0.1842    0.0636
+      -1.2      -0.6      69.6
+      -2.2       0.8      52.2
+
+ASH700829.A     SNOW
+Ashtech
+YES
+    0.1842    0.0636
+      -1.2      -0.6      69.6
+      -2.2       0.8      52.2
+
+ASH700829.A1    SNOW
+Ashtech
+YES
+    0.1842    0.0636
+      -1.2      -0.6      69.6
+      -2.2       0.8      52.2
+
+ASH700936A_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH700936A_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.2       0.2      89.6
+       0.4       0.0     119.3
+
+ASH700936B_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+       0.0       0.2      90.9
+       0.4       0.1     119.9
+
+ASH700936B_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.2       0.2      89.6
+       0.4       0.0     119.3
+
+ASH700936C_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.6       0.3      90.7
+       0.1       0.1     119.9
+
+ASH700936C_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.5      -0.1      90.4
+       0.4      -0.4     120.1
+
+ASH700936D_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.4      91.0
+      -0.1      -0.1     120.4
+
+ASH700936D_M    SCIS
+Ashtech
+YES
+    0.1897    0.0348
+       0.4       1.2      88.1
+      -0.4      -0.3     117.7
+
+ASH700936D_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.2       0.3      90.9
+       0.1       0.1     119.2
+
+ASH700936E      NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.1       0.2      89.3
+      -0.2       0.2     119.3
+
+ASH700936E      SNOW
+Ashtech
+YES
+    0.0000    0.0000
+      -0.2       0.2      89.6
+       0.1      -0.1     118.2
+
+ASH700936E_C    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH700936E_C    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.2       0.2      89.6
+       0.1      -0.1     118.2
+
+ASH700936F_C    NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701008.01B   NONE
+Ashtech
+YES
+    0.1842    0.0636
+       0.3      -0.1      65.1
+      -2.6       1.4      54.0
+
+ASH701023.A     NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -1.8       1.9      33.4
+       0.0       0.0       0.0
+
+ASH701073.1     NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701073.3     NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701933A_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.7       0.3      89.3
+       0.5      -0.2     118.8
+
+ASH701933A_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.6       0.4      89.3
+       0.5      -0.2     116.9
+
+ASH701933B_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.7       0.3      89.3
+       0.5      -0.2     118.8
+
+ASH701933B_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.6       0.4      89.3
+       0.5      -0.2     116.9
+
+ASH701933C_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.7       0.3      89.3
+       0.5      -0.2     118.8
+
+ASH701933C_M    SCIS
+Ashtech
+YES
+    0.0000    0.0000
+      -0.7       0.7      87.3
+      -0.4      -0.9     117.8
+
+ASH701933C_M    SCIT
+Ashtech
+YES
+    0.0000    0.0000
+      -1.0       0.9      88.4
+      -0.9      -0.3     117.7
+
+ASH701933C_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.6       0.4      89.3
+       0.5      -0.2     116.9
+
+ASH701941.1     NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.4      89.8
+      -0.4      -0.4     119.1
+
+ASH701941.2     NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.4      89.8
+      -0.4      -0.4     119.1
+
+ASH701941.A     NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.3       0.4      89.8
+      -0.4      -0.4     119.1
+
+ASH701941.B     NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.3       0.4      89.8
+      -0.4      -0.4     119.1
+
+ASH701941.B     SCIS
+Ashtech
+YES
+    0.0000    0.0000
+       0.2      -0.6      85.1
+       0.9      -0.7     119.7
+
+ASH701945B_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701945B_M    SCIS
+Ashtech
+YES
+    0.1897    0.0348
+       0.1       0.5      89.7
+       0.0      -0.6     119.3
+
+ASH701945B_M    SCIT
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.7      89.3
+      -0.4      -0.2     117.8
+
+ASH701945B_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+       0.4       0.2      89.9
+       0.2      -0.8     119.5
+
+ASH701945C_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.5       0.7      90.8
+       1.4       0.3     119.8
+
+ASH701945C_M    OLGA
+Ashtech
+YES
+    0.0000    0.0000
+      -1.0       0.1      83.9
+       1.2       0.7     116.6
+
+ASH701945C_M    PFAN
+Ashtech
+YES
+    0.0000    0.0000
+      -0.6       0.3      85.6
+       1.6       0.0     118.1
+
+ASH701945C_M    SCIS
+Ashtech
+YES
+    0.1897    0.0348
+       0.1       0.5      89.7
+       0.0      -0.6     119.3
+
+ASH701945C_M    SCIT
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.7      89.3
+      -0.4      -0.2     117.8
+
+ASH701945C_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+       0.4       0.2      89.9
+       0.2      -0.8     119.5
+
+ASH701945D_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701945D_M    SCIS
+Ashtech
+YES
+    0.1897    0.0348
+       0.1       0.5      89.7
+       0.0      -0.6     119.3
+
+ASH701945D_M    SCIT
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.7      89.3
+      -0.4      -0.2     117.8
+
+ASH701945D_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+       0.4       0.2      89.9
+       0.2      -0.8     119.5
+
+ASH701945E_M    NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.1       1.0      90.5
+       0.6       0.0     119.0
+
+ASH701945E_M    SCIS
+Ashtech
+YES
+    0.1897    0.0348
+       0.1       0.5      89.7
+       0.0      -0.6     119.3
+
+ASH701945E_M    SCIT
+Ashtech
+YES
+    0.1897    0.0348
+      -0.3       0.7      89.3
+      -0.4      -0.2     117.8
+
+ASH701945E_M    SNOW
+Ashtech
+YES
+    0.1897    0.0348
+      -0.7       1.0      90.2
+       0.3       0.4     115.9
+
+ASH701945G_M    NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701945G_M    SCIS
+Ashtech
+YES
+    0.0000    0.0000
+       0.1       0.5      89.7
+       0.0      -0.6     119.3
+
+ASH701945G_M    SCIT
+Ashtech
+YES
+    0.0000    0.0000
+      -0.3       0.7      89.3
+      -0.4      -0.2     117.8
+
+ASH701945G_M    SNOW
+Ashtech
+YES
+    0.0000    0.0000
+      -0.3       1.3      91.5
+       0.1      -0.2     120.2
+
+ASH701946.2     NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701946.2     SNOW
+Ashtech
+YES
+    0.0000    0.0000
+      -0.5       1.7      89.9
+       0.3       0.4     119.7
+
+ASH701946.3     NONE
+Ashtech
+YES
+    0.1897    0.0348
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+ASH701946.3     SNOW
+Ashtech
+YES
+    0.0000    0.0000
+      -0.5       1.7      89.9
+       0.3       0.4     119.7
+
+ASH701975.01A   NONE
+Ashtech
+YES
+    0.1015    0.0430
+      -4.5      -1.5      38.3
+      -3.8      -1.8      54.5
+
+ASH701975.01AGP NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -3.7      -1.4      37.8
+      -3.3      -2.1      38.5
+
+ASH701975.01B   NONE
+Ashtech
+YES
+    0.1030    0.0430
+      -4.5      -1.5      38.3
+      -3.8      -1.8      54.5
+
+ASH701975.01BGP NONE
+Ashtech
+YES
+    0.0000    0.0000
+      -3.0      -1.9      45.5
+       0.2      -1.3      36.3
+
+ASH802129       NONE
+Ashtech
+YES
+    0.0980    0.0400
+       0.3      -1.4      84.8
+      -2.8      -3.5      93.2
+
+ASH802147_A     NONE
+Ashtech
+YES
+    0.0980    0.0400
+       1.8       0.9      85.8
+      -1.6      -2.2      92.4
+
+ASH_LOCUS       NONE
+Ashtech
+YES
+    0.0000    0.0000
+       0.9       2.5     139.9
+       0.0       0.0       0.0
+
+CHANV3          NONE
+Champion Instruments
+YES
+    0.0000    0.0000
+      -2.2       2.3      96.8
+      -3.3       0.6     106.1
+
+CHATKO          NONE
+Champion Instruments
+YES
+    0.0000    0.0000
+      -0.9       0.9     108.3
+       0.9      -0.1     115.8
+
+CHATK2          NONE
+Champion Instruments
+YES
+    0.0000    0.0000
+      -0.8       2.9      89.9
+      -3.3       2.1     100.6
+
+CHA Pro
+Champion Instruments
+YES
+    0.1240    0.0000
+      -1.0       3.4      77.8
+      -3.7      -3.5      66.6
+
+CHCA220GR       NONE
+CHCNav
+YES
+    0.0735    0.0370
+      -1.2       2.5      62.3
+       2.9      -0.2      52.3
+
+CHCA300GNSS     NONE
+CHCNav
+YES
+    0.0800    0.0390
+      -0.7       0.8      55.7
+      -1.0       0.5      60.0
+
+CHCC220GR       NONE
+CHCNav
+YES
+    0.1610    0.0475
+       1.2       1.9     118.2
+       1.6       1.5     141.1
+
+CHCC220GR       CHCD
+CHCNav
+YES
+    0.1610    0.0475
+       1.0       1.2     116.1
+       0.9       0.9     142.3
+
+CHCX900B        NONE
+CHCNav
+YES
+    0.1020    0.0400
+      -1.0       2.5      84.1
+      -2.1       1.0      96.1
+
+CHCX900R        NONE
+CHCNav
+YES
+    0.1020    0.0400
+      -0.1       2.0      85.3
+      -0.7       1.2     100.8
+
+CHCX90D-OPUS    NONE
+CHCNav
+YES
+    0.1170    0.0470
+      -0.7       1.1      89.3
+      -3.1       0.7     101.7
+
+CHCX90
+CHCNav
+YES
+    0.1170    0.0470
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX91+S        NONE
+CHCNav
+YES
+    0.0995    0.0400
+       0.2       0.3      80.7
+       0.8       0.4      86.6
+
+CHCX91B         NONE
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       1.4      85.3
+      -1.5       0.1      96.7
+
+CHCX91R         NONE
+CHCNav
+YES
+    0.0995    0.0400
+       0.4       1.8      83.8
+      -0.6       0.2      95.9
+
+CHC A100
+CHCNav
+YES
+    0.0800    0.0060
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX93
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-T4
+CHCNav
+YES
+    0.1170    0.0470
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-T5
+CHCNav
+YES
+    0.0950    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-T6
+CHCNav
+YES
+    0.0950    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-M500
+CHCNav
+YES
+    0.1170    0.0470
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-M500T
+CHCNav
+YES
+    0.0950    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHC-M500V
+CHCNav
+YES
+    0.1170    0.0470
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCA110G
+CHCNav
+YES
+    0.0700    0.0050
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCA500-OLD
+CHCNav
+YES
+    0.1910    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCI60
+CHCNav
+YES
+    0.1280    0.0515
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCI80
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX10
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX20
+CHCNav
+YES
+    0.0875    0.0300
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX900N
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCT5N
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCM500TN
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX91N
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX93N
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCT6N
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX12
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCT8
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCM6
+CHCNav
+YES
+    0.1240    0.0000
+      -1.0       3.4      77.8
+      -3.7      -3.5      66.6
+
+CHC360A
+CHCNav
+YES
+    0.0100    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCA220GREX
+CHCNav
+YES
+    0.1240    0.0000
+      -1.2       2.5      62.3
+       2.9      -0.2      52.3
+
+CHCI70
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX9
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCT7R
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCC220GR2      CHCD
+CHCNav
+YES
+    0.1610    0.0475
+       0.0      -0.5     121.4
+       0.0      -0.3     142.5
+
+CHCI80          NONE
+CHCNav
+YES
+    0.1240    0.0000
+      -0.5      -0.1     131.0
+      -1.2      -1.5     107.8
+
+CHCX900S-OPUS   NONE
+CHCNav
+YES
+    0.1020    0.0400
+      -0.7       2.9      81.3
+       1.5       1.4      97.6
+
+CHCM5
+CHCNav
+YES
+    0.0995    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCM7
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX900U
+CHCNav
+YES
+    0.1020    0.0400
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCGPS1000
+CHCNav
+YES
+    0.0760    0.0300
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCI50
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCX5
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCM3
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCT3
+CHCNav
+YES
+    0.1240    0.0000
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+CHCE91
+CHCNav
+YES
+    0.0792    0.0730
+       0.0       0.0       0.0
+       0.0       0.0       0.0
+
+DGR_QEDGE       NONE
+DataGrid
+YES
+    0.0000    0.0000
+       1.1       0.7      81.4
+      -1.1       2.0      85.2
+
+GUTGPSL1L2A     NONE
+Gutec
+YES
+    0.0000    0.0000
+      -0.3      -0.1      79.9
+      -0.6       3.0      84.1
+
+HXCCGX601A      NONE
+Harxon
+YES
+    0.0000    0.0000
+      -0.1       1.1     208.9
+      -0.4       0.4     217.4
+
+HXCCGX601A      HXCS
+Harxon
+YES
+    0.0000    0.0000
+      -0.3       0.8     214.4
+      -0.4       0.1     221.9
+
+HXCCSX601A      NONE
+Harxon
+YES
+    0.0000    0.0000
+      -0.8       0.3      57.7
+      -0.4       1.8      48.5
+
+HXCGG486A       NONE
+Harxon
+YES
+    0.0000    0.0000
+       0.2      -0.1     118.2
+      -0.2      -0.8     141.1
+
+HXCGG486A       HXCS
+Harxon
+YES
+    0.0000    0.0000
+       0.5       1.3     115.9
+       0.2       0.8     142.1
+
+HXCGS488A       NONE
+Harxon
+YES
+    0.0000    0.0000
+      -2.8       0.2      59.2
+      -1.1      -0.1      58.5
+
+HXCCA7607A      NONE
+Harxon
+YES
+    0.0000    0.0000
+      -1.1       2.2      20.3
+       1.7      -0.6      10.4
+
+HXCCG7601A      NONE
+Harxon
+YES
+    0.0000    0.0000
+       0.0       1.2     122.6
+      -0.6       0.2     141.9
+
+HXCCG7601A      HXCG
+Harxon
+YES
+    0.0000    0.0000
+       1.1       1.5     122.2
+      -0.3       0.1     143.1
+
+HXCCG7602A      NONE
+Harxon
+YES
+    0.0000    0.0000
+      -0.6       1.8     117.9
+      -0.7       0.1     136.1
+
+HXCCG7602A      HXCG
+Harxon
+YES
+    0.0000    0.0000
+      -0.4       1.5     115.3
+      -0.5      -0.1     133.4
+
+HXCGX606A       NONE
+Harxon
+YES
+    0.0000    0.0000
+      -1.0       0.7     122.3
+      -1.0       0.0     143.1
+
+HXCGX606A       HXCS
+Harxon
+YES
+    0.0000    0.0000
+      -0.8       0.5     122.1
+      -1.0       0.1     145.3
+
+HEMA21          NONE
+Hemisphere
+YES
+    0.0000    0.0000
+       0.1      -2.3      42.5
+       0.0       0.0       0.0
+
+HEMA325         NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -1.2       0.7      82.2
+       0.2      -2.7      89.8
+
+HEMA42          NONE
+Hemisphere
+YES
+    0.0000    0.0000
+       0.5       1.3      41.7
+       2.8      -2.3      49.2
+
+HEMA52_WB       NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -1.8       2.9      36.8
+      -1.8      -1.0      53.2
+
+HEMS320         NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -2.7       3.5      84.3
+      -3.6       2.2      93.2
+
+HEMA45          NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -0.7       0.7      45.8
+      -1.6       1.1      40.5
+
+HEMATLASLINK    NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -0.5      -0.5     104.3
+      -0.5       2.0      98.8
+
+HEMS321         NONE
+Hemisphere
+YES
+    0.0000    0.0000
+      -3.0       2.1     131.9
+      -1.8       1.5     138.9
+
+HITV30          NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -0.2       0.7     110.7
+      -0.2      -0.6     113.3
+
+HITA12          NONE
+HI-Target
+YES
+    0.0000    0.0000
+       1.2       0.8      90.3
+      -1.3       0.1      91.8
+
+HITA20          NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -1.0       0.7      76.7
+      -0.5       0.2      64.3
+
+HITAT33501CR    HITS
+HI-Target
+YES
+    0.0000    0.0000
+       0.2      -0.3     118.9
+      -1.1       0.7     144.6
+
+HITAT35101CR    NONE
+HI-Target
+YES
+    0.0000    0.0000
+       0.7       0.6     141.8
+       0.3      -0.3     151.8
+
+HITAT35101CR    HITS
+HI-Target
+YES
+    0.0000    0.0000
+      -0.9       1.1     143.3
+       0.2      -0.3     151.4
+
+HITAT35101H     NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -0.9       1.2      51.0
+      -1.7       0.6      56.2
+
+HITAT53501CR    HITS
+HI-Target
+YES
+    0.0000    0.0000
+      -2.8       1.6     174.9
+      -1.2      -0.1     178.4
+
+HITIRTK2        NONE
+HI-Target
+YES
+    0.0000    0.0000
+       0.0       2.2      88.9
+      -2.9       1.9      90.3
+
+HITIRTK3        NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -1.2       1.6      76.6
+      -1.2       1.3      63.8
+
+HITV100         NONE
+HI-Target
+YES
+    0.0000    0.0000
+       0.0       1.2      76.9
+       0.6       0.9      64.9
+
+HITV60          NONE
+HI-Target
+YES
+    0.0000    0.0000
+       3.0       3.1      96.3
+       1.8       0.7     106.2
+
+HITV90          NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -2.2       1.0      88.1
+      -1.8      -1.4      90.4
+
+HITV90PLUS      NONE
+HI-Target
+YES
+    0.0000    0.0000
+      -0.3       1.3      94.6
+      -1.8       1.3      89.8
+
+HRZK2007224V3.0 NONE
+Horizon
+YES
+    0.0000    0.0000
+      -1.5       3.8      88.3
+      -1.8       2.0      98.3
+
+ITT3750323      NONE
+ITT
+YES
+    0.0000    0.0000
+       0.7       0.9      90.1
+      -0.6      -1.0     119.3
+
+ITT3750323      SCIS
+ITT
+YES
+    0.0000    0.0000
+      -0.6       0.3      89.2
+       0.3       1.1     120.5
+
+JAVGISMORE      NONE
+Javad
+YES
+    0.0560    0.0355
+      -5.3       5.8      66.8
+       0.0       0.0       0.0
+
+JAVGRANT_G3     NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.6       0.7      47.5
+       0.0       0.0       0.0
+
+JAVGRANT_G3+GP  NONE
+Javad
+YES
+    0.0000    0.0000
+      -1.6      -0.7      36.8
+       0.0       0.0       0.0
+
+JAVGRANT_G3+GP  JVGR
+Javad
+YES
+    0.1025    0.0232
+      -0.8      -1.2      37.5
+       0.0       0.0       0.0
+
+JAVGRANT_G3TJ   NONE
+Javad
+YES
+    0.0702    0.0325
+       1.3       3.1      51.0
+      -5.2       1.4      54.2
+
+JAVGRANT_G3TJ+G NONE
+Javad
+YES
+    0.1000    0.0290
+       0.4       2.8      40.3
+      -5.1       4.3      45.3
+
+JAVGRANT_G3TJ+G JVGR
+Javad
+YES
+    0.1025    0.0232
+       0.7       2.8      40.7
+      -4.8       4.0      45.0
+
+JAVGRANT_G5T    NONE
+Javad
+YES
+    0.0824    0.0325
+       1.8       3.0      50.3
+      -4.1       0.6      56.0
+
+JAVGRANT_G5T+GP NONE
+Javad
+YES
+    0.1000    0.0290
+       0.4       2.6      41.0
+      -4.2       3.2      46.3
+
+JAVGRANT_G5T+GP JVGR
+Javad
+YES
+    0.1025    0.0232
+       0.6       2.7      40.3
+      -3.6       3.1      45.7
+
+JAVRINGANT_DM   NONE
+Javad
+YES
+    0.1900    0.0345
+       0.9       1.0      89.3
+      -0.1       0.3     119.6
+
+JAVRINGANT_DM   JVDM
+Javad
+YES
+    0.1900    0.0345
+       0.7       0.9      88.8
+      -0.3       0.0     118.5
+
+JAVRINGANT_DM   SCIS
+Javad
+YES
+    0.1900    0.0345
+       1.9       1.6      88.6
+       1.0      -0.9     117.9
+
+JAVRINGANT_DM   SCIT
+Javad
+YES
+    0.1900    0.0345
+       0.6       1.2      88.3
+      -0.5      -1.0     117.3
+
+JAVRINGANT_G5T  NONE
+Javad
+YES
+    0.1630   -0.0260
+       1.5       2.5      50.5
+      -3.0       5.2      57.5
+
+JAVRINGANT_G5T    JAVC
+Javad
+YES
+    0.1630   -0.0260
+       1.8       3.0      50.3
+      -4.1       0.6      56.0
+
+JAVTRIANT_A     NONE
+Javad
+YES
+    0.0000    0.0000
+      -2.1       1.6      55.3
+      -1.0      -1.9      51.8
+
+JAVTRIUMPH_2    NONE
+Javad
+YES
+    0.0660    0.0100
+      -1.7       3.8      53.0
+       2.8       1.6      48.7
+
+JAVTRIUMPH_2A   NONE
+Javad
+YES
+    0.0660    0.0350
+      -1.7       3.8      77.9
+       2.8       1.6      73.7
+
+JAVTRIUMPH_LS   NONE
+Javad
+YES
+    0.0000    0.0000
+       2.1       1.5     119.7
+       5.4       1.3     132.4
+
+JAVTRIUMPH_VS   NONE
+Javad
+YES
+    0.0000    0.0000
+       1.6      -0.4     102.8
+       3.4       0.3     124.8
+
+JAV_GRANT-G3T   NONE
+Javad
+YES
+    0.0702    0.0325
+       1.2       0.6      50.3
+      -1.4      -3.1      46.8
+
+JAV_GRANT-G3T+G NONE
+Javad
+YES
+    0.1000    0.0290
+       0.7       3.2      40.0
+      -5.3       4.3      44.7
+
+JAV_GRANT-G3T+G JVGR
+Javad
+YES
+    0.1025    0.0232
+       0.7       2.8      40.3
+      -5.1       4.2      44.5
+
+JAV_RINGANT_G3T NONE
+Javad
+YES
+    0.1630   -0.0260
+       2.2       0.3      49.0
+      -3.2       6.8      54.7
+
+JAV_RINGANT_G3T JAVC
+Javad
+YES
+    0.1630   -0.0260
+       2.0       2.4      46.8
+      -4.3       5.9      54.5
+
+JAV_TRIUMPH-1   NONE
+Javad
+YES
+    0.0888    0.0550
+       0.0       0.6      93.3
+      -0.7      -3.4      98.1
+
+JAV_TRIUMPH-1R  NONE
+Javad
+YES
+    0.0888    0.2364
+       1.0       2.4     274.5
+      -2.0       3.1     275.6
+
+JNSCHOKERING_DM NONE
+Javad
+YES
+    0.0000    0.0000
+       0.0       2.4      90.9
+       0.1      -0.4     117.8
+
+JNSCR_C146-22-1 NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.9       0.7      89.8
+      -0.1       0.2     119.1
+
+JNSCR_C146-22-1 SCIS
+Javad
+YES
+    0.0000    0.0000
+      -1.0       0.8      87.7
+       0.0      -0.1     117.9
+
+JNSMARANT_GGD   NONE
+Javad
+YES
+    0.0000    0.0000
+       0.1       1.9      63.3
+      -0.6      -1.8      72.1
+
+JPSLEGANT_E     NONE
+Javad
+YES
+    0.1215    0.0326
+      -0.3       1.3      35.5
+      -1.7       1.6      54.2
+
+JPSMARANT_GGD   NONE
+Javad
+YES
+    0.1215    0.0606
+       0.1       1.9      63.3
+      -0.6      -1.8      72.1
+
+JPSODYSSEY_I    NONE
+Javad
+YES
+    0.0000    0.0000
+      -2.3       1.0      70.3
+      -2.3      -0.4      81.3
+
+JPSREGANT_DD_E  NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.3       0.1     100.8
+       0.2       0.2     116.5
+
+JPSREGANT_DD_E1 NONE
+Javad
+YES
+    0.0000    0.0000
+       0.2       0.6     100.7
+       0.5       0.0     110.7
+
+JPSREGANT_DD_E2 NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.3      -0.1     100.6
+       0.2       0.2     119.4
+
+JPSREGANT_SD_E  NONE
+Javad
+YES
+    0.1855    0.0585
+      -0.3      -0.4      91.3
+      -0.1       0.3     118.9
+
+JPSREGANT_SD_E1 NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.2      -0.7      91.2
+       0.0       0.0     115.4
+
+JPSREGANT_SD_E2 NONE
+Javad
+YES
+    0.0000    0.0000
+      -0.3      -0.2      91.1
+      -0.1       0.5     121.9
+
+JAVRINGANT_G5T  JAVC
+Javad
+YES
+    0.0000    0.0000
+       2.0       0.8      48.3
+      -2.5       5.9      54.5
+
+JAVTRIUMPH_1M   NONE
+Javad
+YES
+    0.0000    0.0000
+       1.5       1.3      91.1
+      -1.9       2.6      91.0
+
+JAVTRIUMPH_1MR  NONE
+Javad
+YES
+    0.0000    0.0000
+       1.6       1.6      89.2
+      -1.3       3.0      90.8
+
+JAVTRIUMPH_LSA  NONE
+Javad
+YES
+    0.0000    0.0000
+       0.7      -0.4     114.4
+       0.9       0.1     130.9
+
+Z3
+JY
+YES
+    0.1240    0.0000
+      -1.0       3.4      77.8
+      -3.7      -3.5      66.6
+
+KOLK9_T         NONE
+KOLIDA
+YES
+    0.0000    0.0000
+      -1.9       2.2      96.6
+      -3.2       0.5     105.4
+
+LEIAR10         NONE
+Leica
+YES
+    0.1200    0.0362
+      -0.7       1.3      88.8
+       0.2       0.5      81.8
+
+LEIAR20         NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.8       0.1     124.2
+      -0.8       0.0     133.7
+
+LEIAR20         LEIM
+Leica
+YES
+    0.0000    0.0000
+      -0.7       0.3     126.7
+      -0.7       0.1     135.2
+
+LEIAR25         NONE
+Leica
+YES
+    0.1901    0.0320
+       1.0       1.4     155.3
+       0.3      -0.2     164.0
+
+LEIAR25         LEIT
+Leica
+YES
+    0.1901    0.0320
+       1.2       1.0     155.1
+       0.4      -0.1     163.1
+
+LEIAR25         SCIS
+Leica
+YES
+    0.1901    0.0320
+       1.4       0.7     164.1
+       0.3      -1.2     161.6
+
+LEIAR25         SCIT
+Leica
+YES
+    0.1901    0.0320
+       0.6       0.0     164.4
+      -0.6      -2.2     161.1
+
+LEIAR25.R3      NONE
+Leica
+YES
+    0.0000    0.0000
+       0.1       0.4     162.2
+      -0.5       0.2     159.5
+
+LEIAR25.R3      LEIT
+Leica
+YES
+    0.0000    0.0000
+       0.1       0.2     161.7
+      -0.6       0.2     158.8
+
+LEIAR25.R3      SCIS
+Leica
+YES
+    0.0000    0.0000
+      -1.2       0.6     167.4
+      -1.2      -1.3     159.6
+
+LEIAR25.R3      SCIT
+Leica
+YES
+    0.0000    0.0000
+      -1.6       0.5     166.9
+      -2.5      -1.4     159.1
+
+LEIAR25.R4      NONE
+Leica
+YES
+    0.0000    0.0000
+       0.9       0.9     159.4
+       0.0       0.1     153.6
+
+LEIAR25.R4      LEIT
+Leica
+YES
+    0.0000    0.0000
+       1.0       0.6     158.3
+       0.1       0.1     154.0
+
+LEIAR25.R4      SCIS
+Leica
+YES
+    0.0000    0.0000
+      -2.6       2.5     167.9
+      -0.3      -0.6     154.3
+
+LEIAR25.R4      SCIT
+Leica
+YES
+    0.0000    0.0000
+      -0.5       1.0     164.1
+      -1.4       0.2     147.3
+
+LEIAS05         NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.5       1.6      63.4
+       0.0       0.0       0.0
+
+LEIAS10         NONE
+Leica
+YES
+    0.0000    0.0000
+       1.4      -1.0      58.3
+      -2.4      -0.2      55.5
+
+LEIAT202+GP     NONE
+Leica
+YES
+    0.0000    0.0000
+       1.5       5.4      31.0
+      -5.8       3.3      34.2
+
+LEIAT202-GP     NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.3       0.0      40.4
+       1.4      -1.9      40.7
+
+LEIAT302+GP     NONE
+Leica
+YES
+    0.0000    0.0000
+       1.5       5.4      31.0
+      -5.8       3.3      34.2
+
+LEIAT302-GP     NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.3       0.0      40.4
+       1.4      -1.9      40.7
+
+LEIAT303        NONE
+Leica
+YES
+    0.0000    0.0000
+       0.8      -0.4      60.8
+       0.2       0.3      84.6
+
+LEIAT303        LEIC
+Leica
+YES
+    0.0000    0.0000
+       0.6      -0.5      61.6
+       0.2      -0.1      86.1
+
+LEIAT502        NONE
+Leica
+YES
+    0.0000    0.0000
+       1.6       0.9      43.7
+       1.2      -1.5      57.8
+
+LEIAT503        NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.9       1.6      60.0
+       0.2       1.7      86.3
+
+LEIAT503        LEIC
+Leica
+YES
+    0.0000    0.0000
+      -0.5       1.3      60.5
+      -0.4       1.6      83.3
+
+LEIAT504        NONE
+Leica
+YES
+    0.0000    0.0000
+       0.3       0.3      91.3
+       0.1      -0.3     117.7
+
+LEIAT504        LEIS
+Leica
+YES
+    0.1897    0.0346
+       0.1       0.6      88.5
+       0.2      -0.2     115.3
+
+LEIAT504        OLGA
+Leica
+YES
+    0.0000    0.0000
+      -0.8      -1.2      82.9
+       0.3      -0.4     112.8
+
+LEIAT504        SCIS
+Leica
+YES
+    0.0000    0.0000
+      -0.3      -0.2      85.6
+       0.1      -0.2     115.3
+
+LEIAT504GG      NONE
+Leica
+YES
+    0.0000    0.0000
+       1.2       0.6      89.6
+      -0.4      -0.1     119.6
+
+LEIAT504GG      LEIS
+Leica
+YES
+    0.0000    0.0000
+       1.2       0.4      87.1
+      -0.3       0.1     117.5
+
+LEIAT504GG      SCIS
+Leica
+YES
+    0.0000    0.0000
+       1.3       1.5      87.3
+       0.1      -0.2     117.6
+
+LEIAT504GG      SCIT
+Leica
+YES
+    0.0000    0.0000
+       2.6       1.7      88.4
+       0.9       0.0     117.4
+
+LEIATX1230      NONE
+Leica
+YES
+    0.0000    0.0000
+       2.1       1.0      92.4
+      -1.1       0.0      97.3
+
+LEIATX1230+GNSS NONE
+Leica
+YES
+    0.0000    0.0000
+       1.3      -1.3      87.2
+      -1.2       0.2      84.7
+
+LEIATX1230GG    NONE
+Leica
+YES
+    0.0000    0.0000
+       2.1       1.0      92.4
+      -1.1       0.0      97.3
+
+LEIAX1202       NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.1       1.4      64.3
+       0.0      -0.3      62.9
+
+LEIAX1202A      NONE
+Leica
+YES
+    0.0000    0.0000
+      -1.1       3.4      65.3
+      -0.9      -1.0      69.3
+
+LEIAX1202GG     NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.5       1.6      63.4
+       0.2      -1.2      62.1
+
+LEIAX1203+GNSS  NONE
+Leica
+YES
+    0.0000    0.0000
+       1.4      -1.0      58.3
+      -2.4      -0.2      55.5
+
+LEIGG02PLUS     NONE
+Leica
+YES
+    0.0000    0.0000
+       1.3      -1.3      87.2
+      -1.2       0.2      84.7
+
+LEIGS08         NONE
+Leica
+YES
+    0.0000    0.0000
+       1.3      -1.3      87.2
+      -1.2       0.2      84.7
+
+LEIGS08PLUS     NONE
+Leica
+YES
+    0.0000    0.0000
+       1.4       1.0      62.4
+      -0.5       0.6      62.7
+
+LEIGS09         NONE
+Leica
+YES
+    0.0000    0.0000
+       1.3      -1.3      87.2
+      -1.2       0.2      84.7
+
+LEIGS12         NONE
+Leica
+YES
+    0.0000    0.0000
+       1.3      -1.3      87.2
+      -1.2       0.2      84.7
+
+LEIGS14         NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.2      -0.2      88.7
+       0.0       1.8      88.7
+
+LEIGS15         NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.5      -0.8     202.1
+       2.1       0.8     200.7
+
+LEIICG60        NONE
+Leica
+YES
+    0.0000    0.0000
+      -0.3      -0.4     129.6
+       1.7       3.4     134.5
+
+LEIMNA950GG     NONE
+Leica
+YES
+    0.0000    0.0000
+       0.2       0.5      91.1
+       0.5       0.8      90.4
+
+LEISR299_INT    NONE
+Leica
+YES
+    0.0000    0.0000
+       1.0       3.6     110.3
+      -1.7       2.3     114.3
+
+LEISR399_INT    NONE
+Leica
+YES
+    0.0000    0.0000
+       1.2       3.2      92.4
+      -2.8       0.1     102.1
+
+LEISR399_INTA   NONE
+Leica
+YES
+    0.0000    0.0000
+       1.0       3.6     110.3
+      -1.7       2.3     114.3
+
+LEIGG03         NONE
+Leica
+YES
+    0.0000    0.0000
+       1.4       1.0      62.4
+      -0.5       0.6      62.7
+
+MAC4647942      NONE
+Macrometer
+YES
+    0.0000    0.0000
+      -8.6       2.8     144.9
+       1.4       4.2      83.7
+
+MAC4647942      MMAC
+Macrometer
+YES
+    0.0000    0.0000
+       2.4      -0.8     121.4
+       2.7       0.4      93.6
+
+MAG105645       NONE
+Magellan Professional
+YES
+    0.0000    0.0000
+       3.2       1.2      47.5
+      -0.3      -0.4      53.2
+
+MAG111406       NONE
+Magellan Professional
+YES
+    0.0000    0.0000
+       1.0      -0.3      60.2
+       0.4      -1.4      60.8
+
+MAG990596       NONE
+Magellan Professional
+YES
+    0.0000    0.0000
+      -1.8      -0.2      83.7
+      -1.7       0.7      78.6
+
+MPL1230         NONE
+Micro Pulse
+YES
+    0.0000    0.0000
+      -0.2       0.6     114.6
+      -0.7      -0.4     139.4
+
+MPL1370W        NONE
+Micro Pulse
+YES
+    0.0000    0.0000
+      -1.1      -1.5      42.0
+       0.0       0.0       0.0
+
+MPLL1/L2_SURV   NONE
+Micro Pulse
+YES
+    0.0000    0.0000
+      -0.4       0.6      61.5
+      -0.6      -0.1      85.6
+
+MPL_WAAS_2224NW NONE
+Micro Pulse
+YES
+    0.0000    0.0000
+      -4.7       0.2     449.1
+      -4.5      -0.6     458.9
+
+MPL_WAAS_2225NW NONE
+Micro Pulse
+YES
+    0.0000    0.0000
+      -3.9       0.8     444.5
+      -1.0      -0.9     457.0
+
+NAVAN2004T      NONE
+NavCom
+YES
+    0.0000    0.0000
+      -1.0      -0.9      40.5
+      -1.9      -3.4      63.3
+
+NAVAN2008T      NONE
+NavCom
+YES
+    0.0000    0.0000
+       0.1       1.4      11.4
+      -1.0       0.2      26.1
+
+NAVANT3001A     NONE
+NavCom
+YES
+    0.0000    0.0000
+      -2.3      -0.8      33.0
+      -4.1      -2.3      21.8
+
+NAVANT3001B     NONE
+NavCom
+YES
+    0.0000    0.0000
+      -2.4       0.8      79.8
+       0.6      -0.4      93.3
+
+NAVRT3010S      NONE
+NavCom
+YES
+    0.0000    0.0000
+       2.5       0.8     113.9
+      -4.1      -1.5     116.6
+
+NAVSF2040G      NONE
+NavCom
+YES
+    0.0000    0.0000
+       2.1       1.9     114.6
+      -4.1      -0.8     116.3
+
+NAVSF3040       NONE
+NavCom
+YES
+    0.0000    0.0000
+      -2.6      -0.5      90.6
+       2.1      -2.1     104.3
+
+NAV_ANT3001BR   SPKE
+NavCom
+YES
+    0.0000    0.0000
+      -2.3       2.1      80.6
+      -0.3       0.0      96.7
+
+NAV_ANT3001R    NONE
+NavCom
+YES
+    0.0000    0.0000
+      -3.0       1.3      48.2
+      -1.7      -2.7      57.7
+
+NAX3G+C         NONE
+NavXperience
+YES
+    0.0000    0.0000
+      -0.7      -0.5      60.5
+       0.5       0.6      57.0
+
+NOV501          NONE
+Novatel
+YES
+    0.0000    0.0000
+       1.6      -0.2      37.7
+       0.0       0.0       0.0
+
+NOV501+CR       NONE
+Novatel
+YES
+    0.0000    0.0000
+       1.7      -0.4      78.8
+       0.0       0.0       0.0
+
+NOV502          NONE
+Novatel
+YES
+    0.0000    0.0000
+      -1.7      -0.5      41.8
+      -2.3       0.3      59.3
+
+NOV502+CR       NONE
+Novatel
+YES
+    0.0000    0.0000
+      -2.8      -0.7      29.3
+      -1.3       0.6      68.1
+
+NOV503+CR       NONE
+Novatel
+YES
+    0.0000    0.0000
+      -1.8       2.9      68.3
+      -0.3      -0.2      84.7
+
+NOV503+CR       SPKE
+Novatel
+YES
+    0.0000    0.0000
+      -2.0       1.4      72.7
+      -1.3      -1.5      87.5
+
+NOV512          NONE
+Novatel
+YES
+    0.0000    0.0000
+       2.4       0.9       9.1
+      -3.9      -0.5      25.5
+
+NOV531          NONE
+Novatel
+YES
+    0.0000    0.0000
+      -1.6       1.6      47.2
+       0.0       0.0       0.0
+
+NOV531+CR       NONE
+Novatel
+YES
+    0.0000    0.0000
+      -2.2       2.1      33.5
+       0.0       0.0       0.0
+
+NOV533          RADM
+Novatel
+YES
+    0.0000    0.0000
+      -0.5       1.3      68.8
+       0.8       0.1      62.3
+
+NOV533+CR       NOVC
+Novatel
+YES
+    0.0000    0.0000
+      -0.7       0.3      71.3
+      -0.6       0.2      62.1
+
+NOV600          NONE
+Novatel
+YES
+    0.0000    0.0000
+       1.0      -1.9      73.5
+       1.1       0.5      77.3
+
+NOV701GGL       NONE
+Novatel
+YES
+    0.0000    0.0000
+      -2.9       2.8      63.8
+       0.0       0.0       0.0
+
+NOV701GG_1.03   NONE
+Novatel
+YES
+    0.0000    0.0000
+      -3.6       2.2      67.6
+       0.0       0.0       0.0
+
+NOV702          NONE
+Novatel
+YES
+    0.0000    0.0000
+       2.0       0.6      65.6
+       0.8      -0.6      64.2
+
+NOV702GG        NONE
+Novatel
+YES
+    0.0000    0.0000
+       0.3       1.4      66.8
+       0.1       0.0      66.1
+
+NOV702GGL_1.01  NONE
+Novatel
+YES
+    0.0000    0.0000
+      -3.1       3.0      64.3
+      -2.0      -1.1      66.1
+
+NOV702GG_1.02   NONE
+Novatel
+YES
+    0.0000    0.0000
+      -3.1       0.5      69.3
+      -1.6      -2.0      70.8
+
+NOV702GG_1.03   NONE
+Novatel
+YES
+    0.0000    0.0000
+      -3.0       1.2      69.1
+      -2.7      -1.9      71.3
+
+NOV702L_1.01    NONE
+Novatel
+YES
+    0.0000    0.0000
+      -1.5       2.4      63.0
+      -3.6       0.2      64.1
+
+NOV702L_1.03    NONE
+Novatel
+YES
+    0.0000    0.0000
+      -1.8       2.0      64.3
+      -4.6      -0.4      65.1
+
+NOV702_2.02     NONE
+Novatel
+YES
+    0.0000    0.0000
+       1.0       1.5      65.6
+      -0.3      -2.3      69.3
+
+NOV702_3.00     NONE
+Novatel
+YES
+    0.0000    0.0000
+      -0.9       3.0      69.1
+      -1.4      -0.6      71.2
+
+NOV703GGG.R2    NONE
+Novatel
+YES
+    0.0000    0.0000
+       0.2       1.2      61.5
+       1.5       0.4      58.7
+
+NOV750.R4       NONE
+Novatel
+YES
+    0.0000    0.0000
+      -0.2       0.3     161.3
+      -0.5      -0.2     158.3
+
+NOV750.R4       NOVS
+Novatel
+YES
+    0.0000    0.0000
+      -0.2       0.2     169.4
+      -0.4      -0.4     156.7
+
+NOV750.R4       SCIS
+Novatel
+YES
+    0.0000    0.0000
+      -5.6       2.0     166.1
+      -1.1      -0.9     158.3
+
+NOV750.R4       SCIT
+Novatel
+YES
+    0.0000    0.0000
+      -2.1       1.2     166.6
+      -2.0      -1.2     158.9
+
+NOV750.R5       NOVS
+Novatel
+YES
+    0.0000    0.0000
+       0.4       0.6     167.3
+       0.5      -0.4     155.3
+
+NOV_WAAS_600    NONE
+Novatel
+YES
+    0.0000    0.0000
+      -0.2      -1.6     374.9
+      -3.9      -3.1     389.9
+
+RNG80971.00     NONE
+Rusnavgeoset
+YES
+    0.0000    0.0000
+      -0.3       1.1      66.8
+       0.7       0.1      57.8
+
+SEN67157514     NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+       1.9      -1.9       7.8
+      -0.8       0.0      19.0
+
+SEN67157514+CR  NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+       0.0       0.7      14.8
+      -1.0      -2.1      26.9
+
+SEN67157549     NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+      -0.8       1.3       5.8
+       0.0       0.0       0.0
+
+SEN67157549+CR  NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+       0.2       0.8      15.1
+       0.0       0.0       0.0
+
+SEN67157596     NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+       0.1       0.5       3.7
+      -2.4       3.9      21.8
+
+SEN67157596+CR  NONE
+Sensor Systems
+YES
+    0.0000    0.0000
+       0.9       1.8      13.9
+      -0.7       1.9      26.5
+
+SEPCHOKE_MC     NONE
+Septentrio
+YES
+    0.0000    0.0000
+       0.3       0.3      77.2
+       0.2      -0.1      91.4
+
+SEPCHOKE_MC     SPKE
+Septentrio
+YES
+    0.0000    0.0000
+       0.6       0.3      79.0
+       0.2      -0.3      94.1
+
+SEPPOLANT_X_MF  NONE
+Septentrio
+YES
+    0.0000    0.0000
+      -0.3       2.1      57.8
+       0.4      -0.4      65.9
+
+SEPPOLANT_X_SF  NONE
+Septentrio
+YES
+    0.0000    0.0000
+       0.1       1.9      57.8
+       0.0       0.0       0.0
+
+SEP_POLANT+     NONE
+Septentrio
+YES
+    0.0000    0.0000
+      -1.2      -0.1      48.0
+      -2.7      -1.4      52.7
+
+SEP_POLANT+_GG  NONE
+Septentrio
+YES
+    0.0000    0.0000
+      -1.6       0.0      48.8
+      -3.3      -1.1      53.2
+
+SEPCHOKE_B3E6   NONE
+Septentrio
+YES
+    0.0000    0.0000
+      -0.3       0.1     125.1
+       0.2      -0.2     138.1
+
+SEPCHOKE_B3E6   SPKE
+Septentrio
+YES
+    0.0000    0.0000
+      -0.4       0.0     127.4
+       0.3      -0.1     141.1
+
+SMICR3B         NONE
+SMI
+YES
+    0.0000    0.0000
+       0.2       1.0      75.2
+       2.1       0.4      90.1
+
+SMICR3B         SPKE
+SMI
+YES
+    0.0000    0.0000
+       0.2       0.4      77.8
+       1.3       0.1      93.3
+
+SOK502          NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -1.7      -0.5      41.8
+      -2.3       0.3      59.3
+
+SOK600          NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.1      -0.7      72.3
+      -1.0       0.1      84.2
+
+SOK702          NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.9       3.0      69.1
+      -1.4      -0.6      71.2
+
+SOKA110         NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -1.6       0.3      90.8
+       0.0       0.0       0.0
+
+SOKA120         NONE
+Sokkia
+YES
+    0.0000    0.0000
+       0.1      -0.9      88.8
+      -1.3       0.6      96.2
+
+SOKGRX1         NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -2.0       0.8      91.9
+      -1.5      -0.5      98.4
+
+SOKGRX1+10      NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.8       0.8     183.9
+      -0.1      -0.1     199.8
+
+SOKGRX2         NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -2.0       2.2      93.1
+       0.4       1.3      97.3
+
+SOKGRX2+10      NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -1.5       1.6     184.6
+      -0.4       1.6     198.3
+
+SOKGSX2         NONE
+Sokkia
+YES
+    0.0000    0.0000
+       1.1       1.5      57.5
+       0.2      -0.2      56.3
+
+SOKGSX2+10      NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.3       0.9     161.6
+       1.1      -0.7     154.6
+
+SOKSTRATUS      NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -3.0       2.2     121.3
+       0.0       0.0       0.0
+
+SOK_GSR2700IS   NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.4      -0.5     107.6
+       0.0       0.4     115.9
+
+SOK_GSR2700ISX  NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -0.1      -0.2     105.4
+      -1.6      -0.6     115.6
+
+SOK_LOCUS       NONE
+Sokkia
+YES
+    0.0000    0.0000
+       0.9       2.5     139.9
+       0.0       0.0       0.0
+
+SOK_RADIAN_IS   NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -1.1       0.8     145.6
+      -0.7      -2.2     154.4
+
+SOKATLAS        NONE
+Sokkia
+YES
+    0.0000    0.0000
+       0.4       2.3     216.4
+      -1.3       0.4     215.3
+
+SOKGCX2         NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -2.4       2.0     151.8
+      -3.7       1.1     152.4
+
+SOKSA350        NONE
+Sokkia
+YES
+    0.0000    0.0000
+       0.0       1.3      47.7
+      -1.4      -0.2      45.8
+
+SOKSA350+GP     NONE
+Sokkia
+YES
+    0.0000    0.0000
+      -1.3       0.9      39.3
+      -1.0      -0.5      41.8
+
+SOKSA500        NONE
+Sokkia
+YES
+    0.0000    0.0000
+       0.2       0.3      43.7
+       0.3       0.3      37.4
+
+STHS82_7224V3.0 NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -2.0       2.6      95.6
+      -1.8       0.7     106.6
+
+STHS86_7224V3.1 NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -2.2       1.3      89.3
+       1.4      -2.6      85.3
+
+STH82VHX-BS601A NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -1.5       2.4      94.3
+      -1.3       2.9     102.4
+
+STHCR3-G3       NONE
+SOUTH
+YES
+    0.0000    0.0000
+       0.1       1.2     121.4
+      -0.8       0.0     141.4
+
+STHCR3-G3       STHC
+SOUTH
+YES
+    0.0000    0.0000
+      -0.3       1.4     122.6
+      -1.0       0.1     143.1
+
+STHG1S82D_T970A NONE
+SOUTH
+YES
+    0.0000    0.0000
+       0.1       1.4     115.8
+       0.5      -0.9     105.3
+
+STHG1S82X_T970A NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -0.7       2.4     115.7
+      -2.2       0.0     104.3
+
+STHS82HX-BS601A NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -0.3       2.3      91.8
+      -0.9       2.1      99.6
+
+STHS86HX-BS611A NONE
+SOUTH
+YES
+    0.0000    0.0000
+      -0.4       1.4      88.8
+      -0.5      -0.3      87.3
+
+SPP39105.90     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -0.2       0.6      53.0
+       0.3      -0.8      59.8
+
+SPP571212238+GP NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+       1.6       0.9      76.8
+       2.5      -1.5      68.8
+
+SPP571908273+CR NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -2.5       5.9      68.1
+       0.5       3.0      88.1
+
+SPP571908273+CR SPKE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -3.3       6.0      66.3
+       0.0       3.5      89.1
+
+SPP67410_42     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.1      -0.9      97.8
+      -0.3      -0.1      99.9
+
+SPP67410_44     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.1      -0.9      97.8
+      -0.3      -0.1      99.9
+
+SPP67410_46     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.1      -0.9      97.8
+      -0.3      -0.1      99.9
+
+SPP68410_10     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.0       1.2     100.8
+       0.2      -0.9      99.2
+
+SPP89823_10     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.6       4.9      60.0
+       3.8       0.7      54.5
+
+SPP91564_00     NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+       1.5       2.8      66.4
+       2.1       2.1      69.9
+
+SPP101861       NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+      -1.3       2.0      50.5
+      -0.6       1.7      57.7
+
+SPP91564_1      NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+       1.5       2.8      66.4
+       2.1       2.1      69.9
+
+SPP91564_2      NONE
+Spectra Precision
+YES
+    0.0000    0.0000
+       2.7       3.5      60.5
+       2.6       2.6      67.6
+
+STXS9SA7224V3.0 NONE
+Stonex
+YES
+    0.0000    0.0000
+      -0.4       1.1      92.0
+       0.7       2.5      98.0
+
+STXG5ANT_72AT1  NONE
+Stonex
+YES
+    0.0000    0.0000
+      -1.0       2.9      45.8
+      -0.8       0.5      74.3
+
+STXS10SX017A    NONE
+Stonex
+YES
+    0.0000    0.0000
+       0.2      -0.9     134.3
+       0.1       1.0     126.9
+
+STXS8BS603A     NONE
+Stonex
+YES
+    0.0000    0.0000
+      -0.6       3.5      92.3
+      -1.0       1.8      99.8
+
+STXS8PX003A     NONE
+Stonex
+YES
+    0.0000    0.0000
+      -0.7       2.7      87.1
+      -0.4       0.1      92.8
+
+STXS9BS604A     NONE
+Stonex
+YES
+    0.0000    0.0000
+      -1.3       3.6      92.1
+      -1.5       2.7      98.1
+
+STXS9PX001A     NONE
+Stonex
+YES
+    0.0000    0.0000
+       0.1       2.5      88.0
+       0.7       2.7      91.5
+
+THA800961+REC   NONE
+Thales
+YES
+    0.0000    0.0000
+      -3.5      -1.1     344.0
+      -2.1      -0.4     351.8
+
+THA800961+RTK   NONE
+Thales
+YES
+    0.0000    0.0000
+      -2.7       4.4     347.9
+      -1.4       3.7     353.5
+
+THA800961RECUHF NONE
+Thales
+YES
+    0.0000    0.0000
+      -3.6       9.4     793.7
+      -0.6       8.3     799.2
+
+THA800961RTKUHF NONE
+Thales
+YES
+    0.0000    0.0000
+      -4.1      10.0     792.2
+      -2.0       8.9     800.0
+
+THANAP002       NONE
+Thales
+YES
+    0.0000    0.0000
+       3.8       0.9      29.4
+      -0.7      -2.0      42.5
+
+TIAPENG2100B    NONE
+TI Asahi
+YES
+    0.0000    0.0000
+       1.8       0.4      98.1
+      -3.5      -0.2     100.2
+
+TIAPENG2100R    NONE
+TI Asahi
+YES
+    0.0000    0.0000
+       1.8       0.4      98.1
+      -3.5      -0.2     100.2
+
+TIAPENG3100R1   NONE
+TI Asahi
+YES
+    0.0000    0.0000
+       0.5      -0.6      97.4
+       1.6      -0.4      94.2
+
+TIAPENG3100R2   NONE
+TI Asahi
+YES
+    0.0000    0.0000
+      -0.1      -0.5      98.1
+       0.2       0.0      96.3
+
+TIASMT888-3GV3  NONE
+TI Asahi
+YES
+    0.0000    0.0000
+      -1.9       2.5      92.3
+       1.6       1.1      97.2
+
+TOP700779A      NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.6       4.0      69.2
+      -1.9       3.0      55.8
+
+TOP72110        NONE
+Topcon
+YES
+    0.0000    0.0000
+       6.9      -3.3     128.9
+       5.9      -4.5     120.2
+
+TPSCR.G3        NONE
+Topcon
+YES
+    0.1900    0.0345
+       0.3      -0.2      88.4
+       0.0       0.3     119.4
+
+TPSCR.G3        SCIS
+Topcon
+YES
+    0.1900    0.0345
+       0.3      -0.2      84.2
+      -0.1       0.4     120.3
+
+TPSCR.G3        SCIT
+Topcon
+YES
+    0.1900    0.0345
+      -0.6      -0.1      86.9
+      -1.4      -1.1     118.9
+
+TPSCR.G3        TPSH
+Topcon
+YES
+    0.1900    0.0345
+       0.4      -0.1      84.4
+       0.3       0.8     119.7
+
+TPSCR.G5        NONE
+Topcon
+YES
+    0.1900    0.0345
+      -0.6       0.1      97.3
+      -0.3      -0.7     119.9
+
+TPSCR.G5        SCIS
+Topcon
+YES
+    0.1900    0.0345
+      -0.4      -0.1      94.3
+       0.0      -0.8     118.9
+
+TPSCR.G5        SCIT
+Topcon
+YES
+    0.1900    0.0345
+      -1.2      -0.4      94.9
+      -1.1      -1.3     118.3
+
+TPSCR.G5        TPSH
+Topcon
+YES
+    0.1900    0.0345
+       0.4      -0.4      91.9
+       0.5      -0.1     119.1
+
+TPSCR3_GGD      NONE
+Topcon
+YES
+    0.1630    0.0030
+      -0.1       0.0      62.8
+       0.2       0.8      98.2
+
+TPSCR3_GGD      CONE
+Topcon
+YES
+    0.1630    0.0030
+      -0.1      -0.3      63.7
+       0.2       0.5      96.8
+
+TPSCR3_GGD      OLGA
+Topcon
+YES
+    0.0000    0.0000
+      -0.2      -0.8      54.3
+      -0.1       0.6      94.5
+
+TPSCR3_GGD      PFAN
+Topcon
+YES
+    0.0000    0.0000
+      -0.5      -0.5      61.7
+       0.0       0.7      94.8
+
+TPSCR4          NONE
+Topcon
+YES
+    0.1900    0.0345
+      -0.4       0.6      91.8
+      -0.6      -0.1     120.3
+
+TPSCR4          CONE
+Topcon
+YES
+    0.1900    0.0345
+       0.2       0.8      91.1
+      -1.3      -0.1     119.2
+
+TPSG3_A1        NONE
+Topcon
+YES
+    0.0000    0.0000
+      -0.5       0.8      33.3
+      -0.8       0.0      41.3
+
+TPSG3_A1        TPSD
+Topcon
+YES
+    0.0000    0.0000
+      -0.2       1.0      33.2
+       0.1       0.5      42.3
+
+TPSGR3          NONE
+Topcon
+YES
+    0.0967    0.1700
+      -1.0       0.2     215.6
+      -1.1       0.0     217.6
+
+TPSGR5          NONE
+Topcon
+YES
+    0.0790    0.1680
+      -1.3       0.4     221.3
+      -1.3      -1.9     218.1
+
+TPSHIPER_GD     NONE
+Topcon
+YES
+    0.0763    0.0305
+      -1.2      -1.1      87.8
+      -1.4      -1.3      93.6
+
+TPSHIPER_GGD    NONE
+Topcon
+YES
+    0.0763    0.0305
+      -1.2      -1.1      87.8
+      -1.4      -1.3      93.6
+
+TPSHIPER_II     NONE
+Topcon
+YES
+    0.0890    0.0552
+      -3.9       0.8      93.3
+      -2.0       0.0      97.1
+
+TPSHIPER_II+10  NONE
+Topcon
+YES
+    0.0890    0.0552
+      -1.5       0.5     184.3
+      -0.5      -0.4     199.9
+
+TPSHIPER_LITE   NONE
+Topcon
+YES
+    0.0778    0.0305
+       1.7       0.7      87.9
+       1.0       0.0      88.1
+
+TPSHIPER_PLUS   NONE
+Topcon
+YES
+    0.0778    0.0305
+       1.2      -0.2      87.8
+       0.1      -0.8      89.4
+
+TPSHIPER_SR     NONE
+Topcon
+YES
+    0.0950    0.0300
+       0.2       1.2      55.7
+       0.0      -0.1      56.8
+
+TPSHIPER_SR+10  NONE
+Topcon
+YES
+    0.0950    0.1300
+      -0.5       1.2     161.6
+       0.1       0.5     154.6
+
+TPSHIPER_V      NONE
+Topcon
+YES
+    0.0890    0.0552
+      -1.5       2.0      93.2
+      -0.2       0.6      97.1
+
+TPSHIPER_V+10   NONE
+Topcon
+YES
+    0.0890    0.0552
+      -0.8       2.0     184.6
+       0.3       2.2     198.4
+
+TPSHIPER_XT     NONE
+Topcon
+YES
+    0.0000    0.0000
+       1.7       0.7      87.9
+       1.0       0.0      88.1
+
+TPSLEGANT       NONE
+Topcon
+YES
+    0.0000    0.0000
+      -0.3       1.0      46.5
+      -0.7       0.0      56.3
+
+TPSLEGANT2      NONE
+Topcon
+YES
+    0.0000    0.0000
+      -0.9       0.6      39.5
+      -1.8       0.0      57.3
+
+TPSLEGANT3_UHF  NONE
+Topcon
+YES
+    0.1233    0.0808
+       0.2      -0.1      95.9
+      -0.3      -0.1     104.9
+
+TPSLEGANT_G     NONE
+Topcon
+YES
+    0.1233    0.0311
+      -0.1       3.1      60.8
+       0.0       0.0       0.0
+
+TPSMAPANT_B     NONE
+Topcon
+YES
+    0.0000    0.0000
+       3.3      -4.7     102.7
+       0.0       0.0       0.0
+
+TPSMG_A2        NONE
+Topcon
+YES
+    0.0500    0.1630
+      -0.4      -0.6      53.3
+       2.6      -2.1      43.8
+
+TPSODYSSEY_I    NONE
+Topcon
+YES
+    0.0000    0.0000
+      -2.3       1.0      70.3
+      -2.3      -0.4      81.3
+
+TPSPG_A1        NONE
+Topcon
+YES
+    0.0690    0.0275
+       1.8       1.3      36.2
+      -0.8       0.3      52.8
+
+TPSPG_A1        TPSD
+Topcon
+YES
+    0.0000    0.0000
+       1.4       1.3      33.3
+      -0.5       0.1      43.0
+
+TPSPG_A1+GP     NONE
+Topcon
+YES
+    0.1000    0.0275
+       0.0      -0.1      34.8
+      -0.3       0.0      40.0
+
+TPSPG_A1_6      NONE
+Topcon
+YES
+    0.0000    0.0000
+       1.2       2.2      43.8
+      -0.3       1.1      44.7
+
+TPSPG_A1_6+GP   NONE
+Topcon
+YES
+    0.1000    0.0275
+      -0.9       1.2      36.0
+      -0.6       0.3      41.5
+
+TPSPG_A2        NONE
+Topcon
+YES
+    0.0000    0.0000
+       3.4       2.2      37.0
+       1.3       0.9      52.0
+
+TPSPG_A5        NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.7       1.3      50.8
+       0.0       0.0       0.0
+
+TPSPG_F1        NONE
+Topcon
+YES
+    0.0897    0.0275
+       0.5       1.7      48.2
+      -1.3       0.3      45.5
+
+TPSPG_F1+GP     NONE
+Topcon
+YES
+    0.1000    0.0275
+      -0.8       1.1      39.5
+      -0.8      -0.1      42.0
+
+TPSPG_S1        NONE
+Topcon
+YES
+    0.0897    0.0275
+       0.3       0.4      45.0
+      -0.6      -1.5      44.8
+
+TPSPG_S1+GP     NONE
+Topcon
+YES
+    0.1000    0.0275
+      -1.8       0.3      36.8
+      -1.6      -1.8      42.7
+
+TPSPN.A5        NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.2       0.0     219.9
+       1.2       0.2     220.8
+
+TPSPN.A5        SCIS
+Topcon
+YES
+    0.1900    0.0305
+      -0.4      -0.1     217.1
+      -0.7      -0.8     225.4
+
+TPSPN.A5        SCIT
+Topcon
+YES
+    0.0000    0.0000
+      -2.1      -0.2     217.8
+      -1.9      -1.0     225.3
+
+TPSPN.A5        TPSH
+Topcon
+YES
+    0.1900    0.0305
+       0.3       0.2     216.6
+       0.2      -0.5     226.1
+
+TPS_CR.3        SCIS
+Topcon
+YES
+    0.0000    0.0000
+       0.1       0.7      61.2
+      -0.7       0.8      95.8
+
+TPS_CR4+RD      SCIS
+Topcon
+YES
+    0.0000    0.0000
+       0.2       0.7      88.8
+      -0.4       0.0     118.6
+
+TPS_MC.A5       NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.8       1.3      37.8
+       0.0       0.0       0.0
+
+TPSCR.G5C       NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.3       0.3      93.6
+       0.3       0.1     117.1
+
+TPSCR.G5C       TPSH
+Topcon
+YES
+    0.0000    0.0000
+       0.5       0.3      91.0
+       0.6       0.7     117.2
+
+TPSG5_A1        NONE
+Topcon
+YES
+    0.0000    0.0000
+       0.2       0.3      43.7
+       0.3       0.3      37.4
+
+TRM14177.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -3.3      -0.4      74.8
+      -0.9      -3.2      67.0
+
+TRM14532.00     NONE
+Trimble
+YES
+    0.2413    0.0597
+      -3.3      -0.4      74.8
+      -0.9      -3.2      67.0
+
+TRM14532.10     NONE
+Trimble
+YES
+    0.0000    0.0000
+       0.5      -1.0      77.8
+       3.5       1.5      86.8
+
+TRM22020.00+GP  NONE
+Trimble
+YES
+    0.2413    0.0556
+      -1.4       1.3      70.6
+       1.4      -1.5      63.0
+
+TRM22020.00-GP  NONE
+Trimble
+YES
+    0.0951    0.0556
+       0.5       3.7      68.4
+      -0.7       1.1      74.1
+
+TRM22020.02     TCWD
+Trimble
+YES
+    0.0000    0.0000
+       0.2       2.6      64.8
+       1.9      -0.2      64.3
+
+TRM23903.00     NONE
+Trimble
+YES
+    0.2413    0.0596
+      -1.5       1.4      73.5
+       1.5      -1.4      66.4
+
+TRM27947.00+GP  NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.8       2.2      57.0
+       2.2      -0.5      67.9
+
+TRM27947.00-GP  NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.3       4.0      73.6
+       1.5      -1.5      87.3
+
+TRM29659.00     NONE
+Trimble
+YES
+    0.1905    0.0350
+       0.2       0.2      91.0
+       0.0       0.0     120.4
+
+TRM29659.00     OLGA
+Trimble
+YES
+    0.0000    0.0000
+      -1.0      -0.7      83.2
+      -0.3      -0.5     114.6
+
+TRM29659.00     SCIS
+Trimble
+YES
+    0.0000    0.0000
+       0.9       0.3      87.5
+      -0.5      -0.2     119.3
+
+TRM29659.00     SCIT
+Trimble
+YES
+    0.0000    0.0000
+       0.8       1.2      86.0
+      -0.6       0.6     118.3
+
+TRM29659.00     SNOW
+Trimble
+YES
+    0.0000    0.0000
+       0.8       0.0      91.4
+      -0.5       0.3     120.4
+
+TRM29659.00     TCWD
+Trimble
+YES
+    0.0000    0.0000
+      -0.2       0.0      95.6
+      -0.4      -0.3     124.1
+
+TRM29659.00     UNAV
+Trimble
+YES
+    0.1905    0.0350
+       1.5       1.4      89.6
+      -0.7      -0.8     119.7
+
+TRM33429.00+GP  NONE
+Trimble
+YES
+    0.2415    0.0556
+      -0.6      -0.1      69.6
+      -0.2       0.1      62.0
+
+TRM33429.00-GP  NONE
+Trimble
+YES
+    0.0951    0.0556
+      -0.8       0.5      62.3
+      -1.5       0.7      71.8
+
+TRM33429.20+GP  NONE
+Trimble
+YES
+    0.2413    0.0596
+      -0.8       0.1      73.3
+      -0.3      -0.1      66.9
+
+TRM33429.20+GP  TCWD
+Trimble
+YES
+    0.2413    0.0626
+      -0.9      -0.4      72.2
+      -0.3      -0.1      76.5
+
+TRM33429.20+GP  UNAV
+Trimble
+YES
+    0.2413    0.0596
+      -0.7       0.0      57.7
+      -2.0      -1.1      69.3
+
+TRM36569.00+GP  NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.7       0.6      45.0
+      -1.4      -1.0      37.0
+
+TRM39105.00     NONE
+Trimble
+YES
+    0.0937    0.0387
+       0.5      -0.3      55.9
+       1.6      -0.6      52.6
+
+TRM41249.00     NONE
+Trimble
+YES
+    0.1698    0.0443
+       0.5       0.3      55.9
+       0.5       0.2      58.0
+
+TRM41249.00     SCIT
+Trimble
+YES
+    0.0000    0.0000
+       1.3       1.4      57.7
+       0.6       0.4      59.5
+
+TRM41249.00     TZGD
+Trimble
+YES
+    0.1698    0.0443
+       0.4       0.6      55.5
+       0.5       0.3      58.0
+
+TRM41249USCG    SCIT
+Trimble
+YES
+    0.0000    0.0000
+      -2.3      -2.8      63.2
+      -2.1      -3.8      61.3
+
+TRM4800         NONE
+Trimble
+YES
+    0.1090    0.1240
+       1.1       0.4     157.8
+       0.7      -0.7     171.3
+
+TRM49700.00     NONE
+Trimble
+YES
+    0.1905    0.0350
+      -0.1       1.7     105.1
+      -1.2       0.2     122.1
+
+TRM53406.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -2.9       1.0      59.5
+       0.0       0.0       0.0
+
+TRM55970.00     NONE
+Trimble
+YES
+    0.0937    0.0387
+      -0.6       0.6      63.2
+       2.0       0.0      56.6
+
+TRM55971.00     NONE
+Trimble
+YES
+    0.1698    0.0444
+      -0.2       1.3      66.7
+       0.6       0.4      57.7
+
+TRM55971.00     SCIT
+Trimble
+YES
+    0.0000    0.0000
+       1.2       2.3      67.8
+       1.0       0.8      60.2
+
+TRM55971.00     TZGD
+Trimble
+YES
+    0.0000    0.0000
+      -0.2       1.1      65.0
+       0.8       0.2      57.4
+
+TRM57970.00     NONE
+Trimble
+YES
+    0.0937    0.0387
+      -0.6       0.6      63.2
+       2.0       0.0      56.6
+
+TRM57971.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.3       1.1      66.8
+       0.7       0.1      57.8
+
+TRM57971.00     SCIT
+Trimble
+YES
+    0.0000    0.0000
+      -0.2       2.1      68.8
+       0.9       0.4      60.5
+
+TRM5800         NONE
+Trimble
+YES
+    0.0910    0.0550
+       1.1       0.8      74.8
+      -2.2       0.1      77.3
+
+TRM59800.00     NONE
+Trimble
+YES
+    0.1905    0.0699
+       1.0       0.4      89.8
+      -0.3       0.0     120.0
+
+TRM59800.00     SCIS
+Trimble
+YES
+    0.1905    0.0350
+       0.7       0.3      86.7
+      -0.2       0.2     119.4
+
+TRM59800.00     SCIT
+Trimble
+YES
+    0.1905    0.0350
+       0.9       1.3      84.8
+      -0.3       1.0     118.1
+
+TRM59800.80     NONE
+Trimble
+YES
+    0.0000    0.0000
+       1.0       0.4      89.8
+      -0.3       0.0     120.0
+
+TRM59800.80     SCIS
+Trimble
+YES
+    0.0000    0.0000
+       0.7       0.3      86.7
+      -0.2       0.2     119.4
+
+TRM59800.80     SCIT
+Trimble
+YES
+    0.0000    0.0000
+       0.9       1.3      84.8
+      -0.3       1.0     118.1
+
+TRM59900.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.4       0.9     113.5
+       0.4       0.4     124.5
+
+TRM59900.00     SCIS
+Trimble
+YES
+    0.0000    0.0000
+      -0.3       0.8     111.2
+       0.5       0.4     124.8
+
+TRM65212.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -1.2       1.5      84.8
+      -2.1       0.4      79.7
+
+TRMA3_L1        NONE
+Trimble
+YES
+    0.0000    0.0000
+      -2.9       1.0      59.5
+       0.0       0.0       0.0
+
+TRMR10          NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.6      -0.9     128.4
+      -6.4      -2.7     119.7
+
+TRMR4-2         NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.4       2.5      85.8
+      -1.1       2.2      83.3
+
+TRMR4-3         NONE
+Trimble
+YES
+    0.0000    0.0000
+      -1.0       0.6      83.7
+      -1.1      -0.3      70.2
+
+TRMR6           NONE
+Trimble
+YES
+    0.0000    0.0000
+       1.1       2.4      86.3
+       0.1      -1.2      80.3
+
+TRMR6-2         NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.6       2.6      82.8
+      -1.8      -0.7      73.2
+
+TRMR6-3         NONE
+Trimble
+YES
+    0.0000    0.0000
+       0.4       2.1      85.6
+      -1.7       1.9      82.8
+
+TRMR6-4         NONE
+Trimble
+YES
+    0.0000    0.0000
+      -1.0       0.8      83.9
+      -1.1       0.1      70.8
+
+TRMR8           NONE
+Trimble
+YES
+    0.0910    0.0550
+       1.1       0.8      74.8
+      -2.2       0.1      77.3
+
+TRMR8-4         NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.8       1.1      84.1
+      -1.3       0.1      70.2
+
+TRMR8_GNSS      NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.2       0.6      83.7
+      -0.3      -0.7      72.1
+
+TRMR8_GNSS3     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.4       0.9      84.7
+      -0.4      -0.9      73.4
+
+TRMSPS985       NONE
+Trimble
+YES
+    0.0000    0.0000
+       0.1       1.4     123.5
+       0.3       1.6     113.4
+
+TRM44830.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.7       2.2      78.3
+      -2.0       1.2      94.4
+
+TRM77970.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -2.3       1.2      65.1
+      -1.5       0.4      62.7
+
+TRM77971.00     NONE
+Trimble
+YES
+    0.0000    0.0000
+      -1.0       2.1      68.3
+      -0.8       1.3      62.5
+
+TRM77971.00     SCIT
+Trimble
+YES
+    0.0000    0.0000
+      -0.2       2.3      68.7
+      -0.1       1.2      61.2
+
+TRMR2           NONE
+Trimble
+YES
+    0.0000    0.0000
+      -0.4       0.1      91.2
+      -1.2       1.1      98.4
+
+TRMR8S          NONE
+Trimble
+YES
+    0.0000    0.0000
+      -1.1       1.2      82.7
+      -0.9      -0.3      71.3
+
