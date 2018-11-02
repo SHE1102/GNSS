@@ -64,6 +64,12 @@
     			     <form id="ConfigForm">
 	    			     <table id="ConfigTable">
 	    			         <tr>
+    			                 <th colspan="3">配置设置</th>
+    			                 <td class="Label">
+	    			                 <input id="SaveConfig"  class="FuncButton" type="button"  value="保存"/>
+	    			             </td>
+    			             </tr>
+	    			         <tr>
 	    			             <th colspan="4">原始数据目录</th>
 	    			         </tr>
 	    			         <tr>
@@ -103,7 +109,7 @@
 	    			             <td colspan="2"></td>
 	    			         </tr>
 	    			     </table>
-	    			     <input id="SaveConfig" type="button" value="保存"/><br>
+	    			     <!-- <input id="SaveConfig" type="button" value="保存"/><br> -->
     			     </form>
     			 </div>
     		</div>

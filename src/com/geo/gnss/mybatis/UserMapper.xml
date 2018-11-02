@@ -13,6 +13,9 @@
     <select id="selectByName" parameterType="String" resultType="com.geo.gnss.dao.UserDao">
         select * from customer where name=#{name}
     </select>
+     <select id="selectAuthorityByName" parameterType="String" resultType="com.geo.gnss.dao.UserAuthority">
+        select * from user_authority where name=#{name}
+    </select>
     <select id="findUserById" parameterType="Integer"
         resultType="com.geo.gnss.dao.UserDao">
         select * from customer where id = #{id}

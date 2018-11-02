@@ -10,6 +10,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import com.geo.gnss.dao.EmailDao;
+import com.geo.gnss.dao.UserAuthority;
 import com.geo.gnss.dao.UserDao;
 import com.geo.gnss.mybatis.MybatisUtils;
 import com.geo.gnss.util.SendEmail;
@@ -206,6 +207,20 @@ public class CustomerManage {
 		
 		boolean res = userList.size() > 0 ? false : true;
 		return res;
+	}
+	
+	public UserAuthority getCustomerModualAuthority(String name){
+		SqlSession sqlSession = MybatisUtils.getSession();
+			
+		List<UserAuthority> userList = sqlSession.selectList("selectAuthorityByName", name);
+		sqlSession.commit();
+		sqlSession.close();
+		
+		if(userList != null && userList.size() > 0){
+			return userList.get(0);
+		}
+		
+		return new UserAuthority();
 	}
 	
 	public String getCustomerDetail(String name){

@@ -28,6 +28,7 @@
   						<!-- <li><a href="solutionStatic.jsp">静态解算</a></li>
   						<li><a href="solutionDynamic.jsp">动态解算</a></li>
   						<li><a href="coordinateConvert.jsp">坐标转换</a></li> -->
+  						<li><a href="additionalFeature.jsp">Additional Function</a></li>
   					</ul>
   				</li>
   				<li class="dropdownItemBar"><a class="I">Administration</a>

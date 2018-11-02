@@ -12,7 +12,7 @@ public class UserDao {
 	private String company;
 	private String telephone;
 	private String limitdate;
-	private UserAuthority userAuthority;
+	//private UserAuthority userAuthority;
 	
 	public UserDao() {
 	}
@@ -100,11 +100,11 @@ public class UserDao {
 		this.limitdate = limitdate;
 	}
 
-	public UserAuthority getUserAuthority() {
-		return userAuthority;
-	}
-	public void setUserAuthority(UserAuthority userAuthority) {
-		this.userAuthority = userAuthority;
-	}
+	//public UserAuthority getUserAuthority() {
+	//	return userAuthority;
+	//}
+	//public void setUserAuthority(UserAuthority userAuthority) {
+	//	this.userAuthority = userAuthority;
+	//}
 
 }

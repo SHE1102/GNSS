@@ -15,7 +15,6 @@ $(function(){
 		}
 	}
 	
-	//name;password;email;authority;enable
 	function addTr(user){
 		var $thArr = new Array(4);
 		
@@ -26,6 +25,28 @@ $(function(){
 		var $enable = $("<select></select>").attr("name","Enable");
 		$enable.append($("<option></option>").val("false").text("disable"));
 		$enable.append($("<option></option>").val("true").text("enable"));
+		
+		var $downloadRinex = $("<select></select>").attr("name","downloadRinex");
+		$downloadRinex.append($("<option></option>").val("false").text("disable"));
+		$downloadRinex.append($("<option></option>").val("true").text("enable"));
+		
+		var $virtualRinex = $("<select></select>").attr("name","virtualRinex");
+		$virtualRinex.append($("<option></option>").val("false").text("disable"));
+		$virtualRinex.append($("<option></option>").val("true").text("enable"));
+		
+		var $solutionStatic = $("<select></select>").attr("name","solutionStatic");
+		$solutionStatic.append($("<option></option>").val("false").text("disable"));
+		$solutionStatic.append($("<option></option>").val("true").text("enable"));
+		
+		var $solutionDynamic = $("<select></select>").attr("name","solutionDynamic");
+		$solutionDynamic.append($("<option></option>").val("false").text("disable"));
+		$solutionDynamic.append($("<option></option>").val("true").text("enable"));
+		
+		var $coordinateConvert = $("<select></select>").attr("name","coordinateConvert");
+		$coordinateConvert.append($("<option></option>").val("false").text("disable"));
+		$coordinateConvert.append($("<option></option>").val("true").text("enable"));
+		
+		
 		var $limitDate = $("<input></input>").attr("type","date").val(user.limitdate).attr("name","LimitDate");
 		
 		$thArr[0].append($name);
@@ -33,12 +54,19 @@ $(function(){
 		$thArr[1].append($enable);
 		$thArr[2].append($limitDate);
 		
+		//$thArr[3].append($downloadRinex);
+		//$thArr[4].append($virtualRinex);
+		//$thArr[5].append($solutionStatic);
+		//$thArr[6].append($solutionDynamic);
+		//$thArr[7].append($coordinateConvert);
+		
 		var $alter = $("<input></input>").attr("type","button").attr("value","Alter").addClass("ControlButton").addClass("AlterButton");//.attr("formaction","CustomerUpdate");
 		var $delete = $("<input></input>").attr("type","button").attr("value","Delete").addClass("ControlButton").addClass("DeleteButton");//.attr("formaction","CustomerDelete");
 		var $detail = $("<input></input>").attr("type","button").attr("value","Detail").addClass("ControlButton").addClass("DetailButton");//.attr("formaction","CustomerDelete");
 		$thArr[3].append($alter).append($delete).append($detail);
 		
 		var $tr = $("<tr></tr>").append($thArr[0]).append($thArr[1]).append($thArr[2]).append($thArr[3]);
+		//.append($thArr[4]).append($thArr[5]).append($thArr[6]).append($thArr[7]).append($thArr[8]);
 		var $table = $("<table></table>").append($tr);
 		var $form = $("<form></form>").append($table).attr("method","post");
 		$("#TableBodyDiv").append($form);
@@ -119,11 +147,9 @@ $(function(){
 			$trArray[8].append($tdArray[8][0]).append($tdArray[8][1]);
 			$trArray[9].append($tdArray[9][0]).append($tdArray[9][1]);
 			
-			
 			for(var i=0; i<10; i++){
 				$table.append($trArray[i]);
 			}
-			//$table.append($trArray[0]).append($trArray[1]).append($trArray[2]).append($trArray[3]).append($trArray[4]);
 			
 			$div = $("<div><div>");
 			$closeBtn = $("<input/>").prop("type","button").prop("id","CloseDetail");

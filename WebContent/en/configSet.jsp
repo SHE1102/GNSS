@@ -62,6 +62,12 @@
     			     <form id="ConfigForm">
 	    			     <table id="ConfigTable">
 	    			         <tr>
+    			                 <th colspan="3">Config setting</th>
+    			                 <td class="Label">
+	    			                 <input id="SaveConfig"  class="FuncButton" type="button"  value="Save"/>
+	    			             </td>
+    			             </tr>
+	    			         <tr>
 	    			             <th colspan="4">Raw data path</th>
 	    			         </tr>
 	    			         <tr>
@@ -101,7 +107,6 @@
 	    			             <td colspan="2"></td>
 	    			         </tr>
 	    			     </table>
-	    			     <input id="SaveConfig" type="button" value="Save"/><br>
     			     </form>
     			 </div>
     		</div>

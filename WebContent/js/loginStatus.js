@@ -12,37 +12,41 @@ $(function(){
 			$("#loginstaus").text($name);
 		}
 		
-		//VER
-		/*if($name.length <= 0){
-			$(".MenuBar>ul>li:lt(4)").show();
-		} else if($authority == 0){
-			$(".MenuBar>ul>li:lt(5)").show();
-		} else if($authority >= 1){
-			$(".MenuBar>ul>li").show();
-		}
-		
-		if($authority == 9){
-			$(".MenuBar>ul>li:eq(5)>ul>li:eq(4)").show();
-		} else {
-			$(".MenuBar>ul>li:eq(5)>ul>li:eq(4)").hide();
-		}*/
-		
 		//HOR
 		if($name.length <= 0){
 			$(".MenuBarHor>ul>li:lt(4)").show();
+			return;
 		} else if($authority == 0){
 			$(".MenuBarHor>ul>li:lt(5)").show();
-		} else if($authority >= 1){
+		} else if($authority >= 1 && $authority < 9){
 			$(".MenuBarHor>ul>li").show();
+			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
+		} else if($authority == 9){
+			$(".MenuBarHor>ul>li").show();
+			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
 		}
 		
-		//$("#customerModule").hide();
+		if(json.downloadRinex == 0){
+			$("#downloadRinexModule").hide();
+		}
+		if(json.downloadVirtual == 0){
+			$("#downloadVirtualModule").hide();
+		}
+		if(json.solutionStatic == 0){
+			$("#solutionStaticModule").hide();
+		}
+		if(json.solutionDynamic == 0){
+			$("#solutionDynamicModule").hide();
+		}
+		if(json.coordinateConvert == 0){
+			$("#coordinateConvertModule").hide();
+		}
 		
-		if($authority == 9){
+		/*if($authority == 9){
 			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
 		} else {
 			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
-		}
+		}*/
 		
 	})
 	

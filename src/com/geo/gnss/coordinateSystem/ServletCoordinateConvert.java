@@ -56,7 +56,7 @@ public class ServletCoordinateConvert extends HttpServlet {
 		sb.append(destinationh.getValue());
 		sb.append("}");
 		
-		System.out.println(sb.toString());
+		//System.out.println(sb.toString());
 		response.getWriter().print(sb.toString());
 	}
 

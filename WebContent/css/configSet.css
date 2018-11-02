@@ -57,8 +57,8 @@ span#SelectSetting{
 
 
 input.FuncButton {
-   width:60px;
-   height:23px;
+   width:80px;
+   height:27px;
    border:0px;
    border-radius:5px;
    border:1px solid #CCC;
@@ -80,7 +80,7 @@ input.FuncButton:hover{
 	color:#FFFFFF;
 }
 
-#SaveConfig{
+#SaveConfig1{
  	width:100px;
 	height:40px;
 	font-size:17px;
@@ -90,7 +90,7 @@ input.FuncButton:hover{
 	border:1px solid #CCC;
 }
 	
-#SaveConfig:hover {
+#SaveConfig1:hover {
 	background:#80CCFF;
 	color:#FFFFFF;
 }

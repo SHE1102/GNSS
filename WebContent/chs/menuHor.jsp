@@ -27,7 +27,8 @@
   						<li id="downloadVirtualModule"><a href="virtualRinex.jsp">虚拟站</a></li>
   						<li id="solutionStaticModule"><a href="solutionStatic.jsp">静态解算</a></li>
   						<li id="solutionDynamicModule"><a href="solutionDynamic.jsp">动态解算</a></li>
-  						<li id="coordinateConvertModule"><a href="coordinateConvert.jsp">坐标转换</a></li>
+  						<!-- <li id="coordinateConvertModule"><a href="coordinateConvert.jsp">附加功能</a></li> -->
+  						<li id="additionalModule"><a href="additionalFeature.jsp">附加功能</a></li>
   					</ul>
   				</li>
   				<li class="dropdownItemBar"><a class="I">管理</a>

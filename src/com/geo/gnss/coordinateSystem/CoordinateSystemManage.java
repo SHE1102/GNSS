@@ -215,7 +215,7 @@ public class CoordinateSystemManage {
 		sb.append("\"SevenPar\":");
 		sb.append("{");
 		sb.append("\"Use\":\"");
-		sb.append(coordinateSystem.sevenPar.isUse());
+		sb.append(coordinateSystem.sevenPar.isUse() ? "Yes" : "No");
 		sb.append("\",\"Mode\":\"");
 		sb.append(coordinateSystem.sevenPar.getMode());
 		sb.append("\",\"Dx\":");
@@ -239,7 +239,7 @@ public class CoordinateSystemManage {
 		sb.append("\"FourPar\":");
 		sb.append("{");
 		sb.append("\"Use\":\"");
-		sb.append(coordinateSystem.fourPar.isUse());
+		sb.append(coordinateSystem.fourPar.isUse()  ? "Yes" : "No");
 		sb.append("\",\"Cx\":");
 		sb.append(coordinateSystem.fourPar.getCx());
 		sb.append(",\"Cy\":");
@@ -259,7 +259,7 @@ public class CoordinateSystemManage {
 		sb.append("\"HeightFittingPar\":");
 		sb.append("{");
 		sb.append("\"Use\":\"");
-		sb.append(coordinateSystem.heightFittingPar.isUse());
+		sb.append(coordinateSystem.heightFittingPar.isUse()  ? "Yes" : "No");
 		sb.append("\",\"A0\":");
 		sb.append(coordinateSystem.heightFittingPar.getA0());
 		sb.append(",\"A1\":");
@@ -283,7 +283,7 @@ public class CoordinateSystemManage {
 		sb.append("\"VerticalPar\":");
 		sb.append("{");
 		sb.append("\"Use\":\"");
-		sb.append(coordinateSystem.verticalPar.isUse());
+		sb.append(coordinateSystem.verticalPar.isUse()  ? "Yes" : "No");
 		sb.append("\",\"NorthSlope\":");
 		sb.append(coordinateSystem.verticalPar.getNorthSlope());
 		sb.append(",\"EastSlope\":");
@@ -299,7 +299,7 @@ public class CoordinateSystemManage {
 		sb.append("\"CorrectPar\":");
 		sb.append("{");
 		sb.append("\"Use\":\"");
-		sb.append(coordinateSystem.correctPar.isUse());
+		sb.append(coordinateSystem.correctPar.isUse()  ? "Yes" : "No");
 		sb.append("\",\"Dx\":");
 		sb.append(coordinateSystem.correctPar.getDx());
 		sb.append(",\"Dy\":");

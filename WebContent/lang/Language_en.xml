@@ -23,4 +23,34 @@
 	<ids_stop_ftp_failed>Close FTP failed</ids_stop_ftp_failed>
 	<ids_choose_satellite>Please choose satellite-system</ids_choose_satellite>
 	<ids_no_data>No files</ids_no_data>
+	<ids_choose_station>Please choose station first</ids_choose_station>
+	<ids_no_report>This station has not yet formed a quality report</ids_no_report>
+	<ids_coor_not_empty>Coordinate can not be empty</ids_coor_not_empty>
+	<ids_ellipsoid>Ellipsoid Parameter</ids_ellipsoid>
+	<ids_ellipsoid_name>Ellipsoid Name</ids_ellipsoid_name>
+	<ids_axis>Semimajor axis</ids_axis>
+	<ids_f>1/f</ids_f>
+	<ids_project>Projections Parameter</ids_project>
+	<ids_project_mode>Projections Mode</ids_project_mode>
+	<ids_central_meridian>Central Meridian</ids_central_meridian>
+	<ids_false_north>False Northing</ids_false_north>
+	<ids_false_east>False Easting</ids_false_east>
+	<ids_scale_factor>Scale Factor</ids_scale_factor>
+	<ids_project_height>Projection Height</ids_project_height>
+	<ids_orign_latitude>Latitude of Orign</ids_orign_latitude>
+	<ids_saven_par>Seven Parameter</ids_saven_par>
+	<ids_is_use>Whether to use</ids_is_use>
+	<ids_mode>Mode</ids_mode>
+	<ids_scale>Scale</ids_scale>
+	<ids_four_par>Four Parameter</ids_four_par>
+	<ids_translate_north>Translate Northing</ids_translate_north>
+	<ids_translate_east>Translate Easting</ids_translate_east>
+	<ids_rotate>Rotation</ids_rotate>
+	<ids_ver_control_par>Vertical Control Parameter</ids_ver_control_par>
+	<ids_vertical_par>Vertical Adjustment Parameter</ids_vertical_par>
+	<ids_north_slope>North Slope</ids_north_slope>
+	<ids_east_slope>East Slope</ids_east_slope>
+	<ids_original_north>Original Northing</ids_original_north>
+	<ids_original_east>Original Easting</ids_original_east>
+	<ids_local_offset>Local Offsets</ids_local_offset>
 </Head>
