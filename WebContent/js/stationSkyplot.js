@@ -34,7 +34,7 @@ $(function(){
 	
 	setInterval(function(){
 		changeStation();
-	}, 30*1000);
+	}, 60*1000);
 	
 	function changeStation(){
 		var $name = $("#StationList option:selected").text();

@@ -44,7 +44,7 @@ public class ServletConvert extends HttpServlet {
 		requestParam.setStartTime(request.getParameter("StartTime"));
 		requestParam.setEndTime(request.getParameter("EndTime"));
 		requestParam.setStationName(request.getParameter("StationName"));
-		requestParam.setZone(Integer.parseInt(request.getParameter("Zone")));
+		//requestParam.setZone(Integer.parseInt(request.getParameter("Zone")));
 		
 		ConvertManage rinexConvertManger = new ConvertManage(rawPath, appPath, request.getSession().getId(), requestParam);
 		boolean res = rinexConvertManger.Convert();
@@ -53,7 +53,6 @@ public class ServletConvert extends HttpServlet {
 		String backString = res ? saveFileName : "false";
 		PrintWriter out = response.getWriter();
 		out.print(backString);
-		//out.print(saveFileName);
 		
 		/*System.out.println("Rinex:"+requestParam.getRinexVersion() + "\r\nMixTure:" + requestParam.isMixTure() +
 				"\r\nInterval:" + requestParam.getTimeInterval() + "\r\nPar1:" + requestParam.isOutPutPar1() +

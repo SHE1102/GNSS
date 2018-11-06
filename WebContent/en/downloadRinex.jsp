@@ -36,11 +36,11 @@
 	    			                 <td class="Label">EndTime</td>
 	    			                 <td><input id="EndTime" type="time" value="00:00"></td>
 	    			             </tr>
-	    			              <tr>
+	    			              <!-- <tr>
 	    			                 <td class="Label">Zone</td>
 	    			                 <td><select id="Zone"  name="Zone"></select></td>
 	    			                 <td colspan="2"  class="Label"></td>
-	    			             </tr>
+	    			             </tr> -->
 	    			             <tr>
 	    			                 <td class="Label">RinexVersion</td>
 	    			                 <td><select id="RinexVersion" name="RinexVersion"></select></td>

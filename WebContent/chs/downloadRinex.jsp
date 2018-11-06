@@ -38,11 +38,11 @@
 	    			                 <td class="Label">终止时间</td>
 	    			                 <td><input id="EndTime" type="time" value="00:00"></td>
 	    			             </tr>
-	    			             <tr>
+	    			             <!-- <tr>
 	    			                 <td class="Label">时区</td>
 	    			                 <td><select id="Zone"  name="Zone"></select></td>
 	    			                 <td colspan="2"  class="Label"></td>
-	    			             </tr>
+	    			             </tr> -->
 	    			             <tr>
 	    			                 <td class="Label">Rinex版本</td>
 	    			                 <td><select id="RinexVersion" name="RinexVersion"></select></td>

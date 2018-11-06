@@ -120,5 +120,13 @@ public class DllInterface {
 		public void xyhToBLH(String filePath,double sourcex, double sourcey, double sourceh,
 				DoubleByReference destinationB, DoubleByReference destinationL, DoubleByReference destinationH);
 	}
+	
+	public interface SplitDLL64 extends Library{
+		public SplitDLL64 instance = (SplitDLL64)Native.loadLibrary("SplitDLL64",SplitDLL64.class);
+		
+		//format:“2018-11-05 15:34:42.01”  length=22
+		public boolean Split(String srcFilePath, String destFilePath, String startTime, String endTime);
+		
+	}
 
 }

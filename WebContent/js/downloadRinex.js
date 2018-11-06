@@ -35,7 +35,7 @@ $(function(){
     
     InitialOption();
     function InitialOption(){
-    	var $zone = new Array();
+    	/*var $zone = new Array();
 		$zone[0] = $("<option value='0'>-12</option>");
 		$zone[1] = $("<option value='1'>-11</option>");
 		$zone[2] = $("<option value='2'>-10</option>");
@@ -65,7 +65,7 @@ $(function(){
 		for(var i=0; i<$zone.length; i++){
 			$("#Zone").append($zone[i]);
 		}
-		$("#Zone").val("12");
+		$("#Zone").val("12");*/
 		
 		var $rinexVersion = new Array();
 		$rinexVersion[0] = $("<option value='0'>Rinex2.10</option>");
@@ -157,7 +157,7 @@ $(function(){
 //			//$("#progressDiv").show();
 //			//$("#downloadFile").attr("href","../RinexDownloadServlet?file=" + data);
 //		})
-		var $Zone = $("#Zone").val();
+		//var $Zone = $("#Zone").val();
 		var $RinexVersion, $Mixture, $TimeInterval, $FrePoint;
 		var $CheckFlag = new Array(); 
 		var $SystemFlag = new Array(),
@@ -218,8 +218,7 @@ $(function(){
 			        StationName:$arr[1],
 			        StartTime:$StartTime,
 			        EndTime:$EndTime,
-			        FileString:$FileString,
-			        Zone:$Zone
+			        FileString:$FileString
 				},
 				function(data,status){
 					if(status == "success"){

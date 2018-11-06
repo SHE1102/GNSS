@@ -19,7 +19,7 @@ public class ConvertParDao {
     private String stationName;
     private String startTime;
     private String endTime;
-    private int zone;
+    //private int zone;
     
 	public int getRinexVersion() {
 		return rinexVersion;
@@ -130,11 +130,11 @@ public class ConvertParDao {
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
-	public int getZone() {
-		return zone;
-	}
-	public void setZone(int zone) {
-		this.zone = zone;
-	}
+	//public int getZone() {
+	//	return zone;
+	//}
+	//public void setZone(int zone) {
+	//	this.zone = zone;
+	//}
      
 }

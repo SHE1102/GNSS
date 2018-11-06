@@ -16,6 +16,7 @@ import com.geo.gnss.dao.ConvertParDao;
 import com.geo.gnss.dao.ProgressDao;
 import com.geo.gnss.jna.DllInterface.MergeDLL64;
 import com.geo.gnss.jna.DllInterface.PostPositionDLL64;
+import com.geo.gnss.jna.DllInterface.SplitDLL64;
 import com.geo.gnss.jna.DllInterface.ToRinexDLL64;
 import com.geo.gnss.progress.ProgressManage;
 import com.sun.jna.ptr.DoubleByReference;
@@ -44,7 +45,8 @@ public class ConvertManage {
 		
 		outDirPath = getOutDirPath();
 		progressPath = getProgressFilePath();
-		saveFilePath = getSaveFilePath();
+		//saveFilePath = getSaveFilePath();
+		saveFilePath = getSaveFilePath(false);
 		
 		Thread thread = new Thread(new Runnable() {
 			
@@ -72,9 +74,16 @@ public class ConvertManage {
 				
 				//System.out.println("组合文件:" + combineString);
 				//System.out.println("合并文件:" + saveFilePath);
-				
-				boolean res = MergeDLL64.instance.MergeRawFile(combineString, saveFilePath);
+				String mergeFilePath = getSaveFilePath(true);
+				//boolean res = MergeDLL64.instance.MergeRawFile(combineString, saveFilePath);
+				boolean res = MergeDLL64.instance.MergeRawFile(combineString, mergeFilePath);
 				System.out.println("Merge finish!Result:" + res);
+				
+				//分割文件
+				String splitStartTime = getSplitTime(convertParDao.getDate(), convertParDao.getStartTime());
+				String splitEndTime = getSplitTime(convertParDao.getDate(), convertParDao.getEndTime());
+				res = SplitDLL64.instance.Split(mergeFilePath, saveFilePath, splitStartTime, splitEndTime);
+				System.out.println("Split finish!Result:" + res);
 				
 				boolean bFlag = false;
 				bFlag = Convert(saveFilePath, outDirPath);
@@ -195,14 +204,14 @@ public class ConvertManage {
 	}
 	
 	private boolean readHead(byte[] bt) {
-		int zone = convertParDao.getZone() - 12;
+		//int zone = convertParDao.getZone() - 12;
 		String ss = "";
 		
 		byte[] destTime = new byte[8];
 		System.arraycopy(bt, 107, destTime, 0, 8);
 		ss = new String(destTime);
 		int startHour = Integer.parseInt(ss.substring(0,ss.indexOf(":")));
-		startHour += zone;
+		//startHour += zone;
 		//System.out.println("StartTime:" + startHour);
 		
 		System.arraycopy(bt, 115, destTime, 0, 8);
@@ -212,7 +221,7 @@ public class ConvertManage {
 		}
 		
 		int endHour = Integer.parseInt(ss.substring(0,ss.indexOf(":")));
-		endHour += zone;
+		//endHour += zone;
 		//System.out.println("EndTime:" + endHour);
 		
 		boolean res = false;
@@ -365,7 +374,7 @@ public class ConvertManage {
 		return xmlPath;
     }
     
-    private String getSaveFilePath() {
+    private String getSaveFilePath(boolean isMerge) {
 		String startTime = convertParDao.getStartTime();
 		String endTime = convertParDao.getEndTime();
 		
@@ -393,6 +402,11 @@ public class ConvertManage {
 		sb.append(startTime.substring(0, startTime.indexOf(":")));
 		sb.append(endTimeInt);
 		sb.append("rinex");
+		
+		if(isMerge){
+			sb.append("_merge");			
+		}
+		
 		sb.append(".dat");
 		
 		return sb.toString();
@@ -520,6 +534,16 @@ public class ConvertManage {
 		}	
 		
 		return true;
+	}
+	
+	private String getSplitTime(String date, String time){
+		StringBuilder sb = new StringBuilder();
+		sb.append(date);
+		sb.append(" ");
+		sb.append(time);
+		sb.append(":00.01");
+		System.out.println(sb.toString());
+		return sb.toString();
 	}
 	
 }

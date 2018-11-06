@@ -299,7 +299,7 @@ public class StationManage {
 			Date currentDate = sDateFormat.parse(currentTime);
 			Date nowDate = getUTCTime();
 			 
-			if(Math.abs(currentDate.getTime() - nowDate.getTime()) <= 30*1000){
+			if(Math.abs(currentDate.getTime() - nowDate.getTime()) <= 60*1000){
 				status = true;
 			}
 		} catch (Exception e) {
