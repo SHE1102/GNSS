@@ -18,7 +18,10 @@ public class ServletCustomerManage extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		
-		String type = request.getParameter("type");
+		//String type = request.getParameter("type");
+		
+		int authority = (int)request.getSession().getAttribute("authority");
+		String type = authority == 1 ? "admin" : "superAdmin";
 		
 		CustomerManage customerManage = new CustomerManage();
 		String json = customerManage.getAllCustomerJson(type);

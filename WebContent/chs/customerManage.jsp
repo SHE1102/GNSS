@@ -22,17 +22,24 @@
     	<%@ include file="menuHor.jsp" %>
     	
     	<div class="Body">
-    		<!-- <%@ include file="menu.jsp" %> -->
-    		
     		<div class="Content"  >
     			 <div id="customer">
     			 	<div id="TableDiv">
 	    			     <table id="TableHeader">
 	    			         <tr>
-	    			             <th>用户名</th>
-	    			             <th>可用状态</th>
-	    			             <th>有效日期</th>
-	    			             <th></th>
+	    			             <th class="item">用户名</th>
+	    			             <th class="item">可用状态</th>
+	    			             <th class="item">有效日期</th>
+	    			             <% if((Integer)session.getAttribute("authority") == 9){
+	    			            	 out.println("<th class='item'>权限</th>");
+	    			             }
+	    			             %>
+	    			             <th class="item">下载rinex</th>
+	    			             <th class="item">虚拟站</th>
+	    			             <th class="item">静态解算</th>
+	    			             <th class="item">动态解算</th>
+	    			             <th class="item">附加功能</th>
+	    			             <th class="func"></th>
 	    			         </tr>
 	    			     </table>
 	    			     <div id="TableBodyDiv">

@@ -27,7 +27,6 @@
   						<li id="downloadVirtualModule"><a href="virtualRinex.jsp">虚拟站</a></li>
   						<li id="solutionStaticModule"><a href="solutionStatic.jsp">静态解算</a></li>
   						<li id="solutionDynamicModule"><a href="solutionDynamic.jsp">动态解算</a></li>
-  						<!-- <li id="coordinateConvertModule"><a href="coordinateConvert.jsp">附加功能</a></li> -->
   						<li id="additionalModule"><a href="additionalFeature.jsp">附加功能</a></li>
   					</ul>
   				</li>
@@ -37,7 +36,7 @@
   						<li><a href="customerManage.jsp">用户管理</a></li>
   						<li><a href="statistic.jsp">访问统计</a></li>
   						<li><a href="monograph.jsp">插入表格</a></li>
-  						<li><a href="customerAdmin.jsp">管理员用户</a></li>
+  						<!-- <li><a href="customerAdmin.jsp">管理员用户</a></li> -->
   					</ul>
   				</li>
   			</ul>

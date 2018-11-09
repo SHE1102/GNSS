@@ -19,16 +19,15 @@
   				<li class=""><a href="register.jsp">Register</a></li>
   				<li class="dropdownItemBar"><a class="I">User Area</a>
   					<ul class="submenuHor">
-  						<li><a href="accountInfo.jsp">Account Info</a></li>
-  						<li><a href="stationMapUser.jsp">Network Status</a></li>
-  						<li><a href="stationListUser.jsp">Station List</a></li>
-  						<li><a href="stationSkyplot.jsp">Skyplot</a></li>
-  						<li><a href="downloadRinex.jsp">Download Rinex</a></li>
-  						<li><a href="virtualRinex.jsp">Virtual Rinex</a></li>
+  						<li id="customerModule"><a href="accountInfo.jsp">Account Info</a></li>
+  						<li id="stationMapModule"><a href="stationMapUser.jsp">Network Status</a></li>
+  						<li id="stationListModule"><a href="stationListUser.jsp">Station List</a></li>
+  						<li id="skyplotModule"><a href="stationSkyplot.jsp">Skyplot</a></li>
+  						<li id="downloadRinexModule"><a href="downloadRinex.jsp">Download Rinex</a></li>
+  						<li id="downloadVirtualModule"><a href="virtualRinex.jsp">Virtual Rinex</a></li>
   						<!-- <li><a href="solutionStatic.jsp">静态解算</a></li>
-  						<li><a href="solutionDynamic.jsp">动态解算</a></li>
-  						<li><a href="coordinateConvert.jsp">坐标转换</a></li> -->
-  						<li><a href="additionalFeature.jsp">Additional Function</a></li>
+  						<li><a href="solutionDynamic.jsp">动态解算</a></li>-->
+  						<li id="additionalModule"><a href="additionalFeature.jsp">Additional Function</a></li>
   					</ul>
   				</li>
   				<li class="dropdownItemBar"><a class="I">Administration</a>
@@ -37,7 +36,7 @@
   						<li><a href="customerManage.jsp">User Management</a></li>
   						<li><a href="#">User Statistics</a></li>
   						<li><a href="monograph.jsp">Monograph</a></li>
-  						<li><a href="customerAdmin.jsp">Interface management</a></li>
+  						<!-- <li><a href="customerAdmin.jsp">Interface management</a></li> -->
   					</ul>
   				</li>
   			</ul>

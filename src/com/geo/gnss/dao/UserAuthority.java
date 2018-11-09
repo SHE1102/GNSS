@@ -2,12 +2,20 @@ package com.geo.gnss.dao;
 
 public class UserAuthority {
 
+	private String name;
 	private boolean downloadRinex = false;
 	private boolean downloadVirtual = false;
 	private boolean solutionStatic = false;
 	private boolean solutionDynamic = false;
-	private boolean coordinateConvert = false;
+	private boolean additionalFeature = false;
 	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public boolean isDownloadRinex() {
 		return downloadRinex;
 	}
@@ -32,11 +40,11 @@ public class UserAuthority {
 	public void setSolutionDynamic(boolean solutionDynamic) {
 		this.solutionDynamic = solutionDynamic;
 	}
-	public boolean isCoordinateConvert() {
-		return coordinateConvert;
+	public boolean isAdditionalFeature() {
+		return additionalFeature;
 	}
-	public void setCoordinateConvert(boolean coordinateConvert) {
-		this.coordinateConvert = coordinateConvert;
+	public void setAdditionalFeature(boolean additionalFeature) {
+		this.additionalFeature = additionalFeature;
 	}
 	
 	

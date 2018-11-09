@@ -25,12 +25,20 @@
         insert into customer (name,password,authority,email,enable,firstname,lastname,company,telephone,limitdate) values (#{name},#{password},#{authority},#{email},#{enable},#{firstname},#{lastname},#{company},#{telephone},#{limitdate})
     </insert>
     
+    <insert id="addUserAuthority" parameterType="com.geo.gnss.dao.UserAuthority">
+        insert into user_authority values (#{name},#{downloadRinex},#{downloadVirtual},#{solutionStatic},#{solutionDynamic},#{additionalFeature})
+    </insert>
+    
     <update id="updateUserByNameByAdminster" parameterType="com.geo.gnss.dao.UserDao" >
         update customer set enable=#{enable}, limitdate=#{limitdate} where name=#{name}
     </update>
     
      <update id="updateUserByNameBySuperAdminster" parameterType="com.geo.gnss.dao.UserDao" >
         update customer set authority=#{authority},enable=#{enable}, limitdate=#{limitdate} where name=#{name}
+    </update>
+    
+     <update id="updateUserAuthorityByName" parameterType="com.geo.gnss.dao.UserAuthority" >
+        update user_authority set downloadRinex=#{downloadRinex},downloadVirtual=#{downloadVirtual}, solutionStatic=#{solutionStatic}, solutionDynamic=#{solutionDynamic}, additionalFeature=#{additionalFeature} where name=#{name}
     </update>
     
     <update id="updateUserByNameByAccount" parameterType="com.geo.gnss.dao.UserDao" >
@@ -40,4 +48,9 @@
     <delete id="deleteUserByName" parameterType="String">
         delete from customer where name = #{name}
     </delete>
+    
+    <delete id="deleteUserAuthorityByName" parameterType="String">
+        delete from user_authority where name = #{name}
+    </delete>
+    
 </mapper>

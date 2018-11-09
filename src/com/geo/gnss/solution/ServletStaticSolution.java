@@ -40,7 +40,7 @@ public class ServletStaticSolution extends HttpServlet {
 		}
 		
 		StaticSolutionThread solutionThread = new StaticSolutionThread(appPath,sessionId,stringArray,emailDao);
-        solutionThread.start();		
+        solutionThread.start();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

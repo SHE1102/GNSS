@@ -5,26 +5,43 @@ $(function(){
 		$langXml = $(xml);
 	})
 	
-	$.getJSON("../CustomerManage",{type:"admin"}, function(json){
+	//$.getJSON("../CustomerManage",{type:"admin"}, function(json){
+	//	updateTable(json);
+	//})
+	$.getJSON("../CustomerManage", function(json){
 		updateTable(json);
 	})
 	
 	function updateTable(json){
 		for(var i=0; i<json.userArray.length; i++){
-			addTr(json.userArray[i]);
+			addTr(json.userArray[i],json.authority);
 		}
 	}
 	
-	function addTr(user){
-		var $thArr = new Array(4);
+	function addTr(user, authority){
 		
-		for(var i=0; i<4; i++){
-			$thArr[i] = $("<td></td>")
+		var $thAuthority = $("<td></td>").addClass("item");
+       
+		
+		var $thArr = new Array(9);
+		for(var i=0; i<9; i++){
+			$thArr[i] = $("<td></td>");
+			
+			if(i<8){
+				$thArr[i].addClass("item");
+			} else {
+				$thArr[i].addClass("func");
+			}
 		}
 		var $name = $("<input></input>").attr("type","text").val(user.name).attr("name","UserName").attr("readonly","readonly");
 		var $enable = $("<select></select>").attr("name","Enable");
 		$enable.append($("<option></option>").val("false").text("disable"));
 		$enable.append($("<option></option>").val("true").text("enable"));
+		
+		var $authority = $("<select></select>").attr("name","Authority");
+		$authority.append($("<option></option>").val("0").text("user"));
+		$authority.append($("<option></option>").val("1").text("admin"));
+		$authority.append($("<option></option>").val("9").text("superAdmin"));
 		
 		var $downloadRinex = $("<select></select>").attr("name","downloadRinex");
 		$downloadRinex.append($("<option></option>").val("false").text("disable"));
@@ -42,9 +59,9 @@ $(function(){
 		$solutionDynamic.append($("<option></option>").val("false").text("disable"));
 		$solutionDynamic.append($("<option></option>").val("true").text("enable"));
 		
-		var $coordinateConvert = $("<select></select>").attr("name","coordinateConvert");
-		$coordinateConvert.append($("<option></option>").val("false").text("disable"));
-		$coordinateConvert.append($("<option></option>").val("true").text("enable"));
+		var $additionalFeature = $("<select></select>").attr("name","additionalFeature");
+		$additionalFeature.append($("<option></option>").val("false").text("disable"));
+		$additionalFeature.append($("<option></option>").val("true").text("enable"));
 		
 		
 		var $limitDate = $("<input></input>").attr("type","date").val(user.limitdate).attr("name","LimitDate");
@@ -54,19 +71,32 @@ $(function(){
 		$thArr[1].append($enable);
 		$thArr[2].append($limitDate);
 		
-		//$thArr[3].append($downloadRinex);
-		//$thArr[4].append($virtualRinex);
-		//$thArr[5].append($solutionStatic);
-		//$thArr[6].append($solutionDynamic);
-		//$thArr[7].append($coordinateConvert);
+		if(authority=="superAdmin"){
+			$authority.val(user.authority);
+			$thAuthority.append($authority);
+		}
+		
+		$downloadRinex.val(user.downloadRinex);
+		$thArr[3].append($downloadRinex);
+		$virtualRinex.val(user.virtualRinex);
+		$thArr[4].append($virtualRinex);
+		$solutionStatic.val(user.solutionStatic);
+		$thArr[5].append($solutionStatic);
+		$solutionDynamic.val(user.solutionDynamic);
+		$thArr[6].append($solutionDynamic);
+		$additionalFeature.val(user.additionalFeature);
+		$thArr[7].append($additionalFeature);
 		
 		var $alter = $("<input></input>").attr("type","button").attr("value","Alter").addClass("ControlButton").addClass("AlterButton");//.attr("formaction","CustomerUpdate");
 		var $delete = $("<input></input>").attr("type","button").attr("value","Delete").addClass("ControlButton").addClass("DeleteButton");//.attr("formaction","CustomerDelete");
 		var $detail = $("<input></input>").attr("type","button").attr("value","Detail").addClass("ControlButton").addClass("DetailButton");//.attr("formaction","CustomerDelete");
-		$thArr[3].append($alter).append($delete).append($detail);
+		$thArr[8].append($alter).append($delete).append($detail);
 		
-		var $tr = $("<tr></tr>").append($thArr[0]).append($thArr[1]).append($thArr[2]).append($thArr[3]);
-		//.append($thArr[4]).append($thArr[5]).append($thArr[6]).append($thArr[7]).append($thArr[8]);
+		var $tr = $("<tr></tr>").append($thArr[0]).append($thArr[1]).append($thArr[2]);
+		if(authority=="superAdmin"){
+			$tr.append($thAuthority);
+		}
+		$tr.append($thArr[3]).append($thArr[4]).append($thArr[5]).append($thArr[6]).append($thArr[7]).append($thArr[8]);
 		var $table = $("<table></table>").append($tr);
 		var $form = $("<form></form>").append($table).attr("method","post");
 		$("#TableBodyDiv").append($form);

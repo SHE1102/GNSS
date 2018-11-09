@@ -54,8 +54,8 @@ public class ServletLoginStatus extends HttpServlet {
 			sb.append(userAuthority.isSolutionStatic() ? "1" : "0");
 			sb.append("\",\"solutionDynamic\":\"");
 			sb.append(userAuthority.isSolutionDynamic() ? "1" : "0");
-			sb.append("\",\"coordinateConvert\":\"");
-			sb.append(userAuthority.isCoordinateConvert() ? "1" : "0");
+			sb.append("\",\"additionalFeature\":\"");
+			sb.append(userAuthority.isAdditionalFeature() ? "1" : "0");
 		}
 		
 		sb.append("\"}");

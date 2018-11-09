@@ -35,6 +35,13 @@ public class CustomerManage {
 		
     	SqlSession sqlSession = MybatisUtils.getSession();
     	int rows = sqlSession.insert("addCustomer",user);
+    	
+    	UserAuthority userAuthority = new UserAuthority();
+    	userAuthority.setName(user.getName());
+    	userAuthority.setDownloadRinex(true);
+    	userAuthority.setDownloadVirtual(true);
+    	sqlSession.insert("addUserAuthority",userAuthority);
+    	
     	sqlSession.commit();
     	sqlSession.close();
     	
@@ -115,6 +122,8 @@ public class CustomerManage {
             	}
         	} 
         	
+        	UserAuthority userAuthority = getCustomerModualAuthority(obj.getName());
+        	
         	if(start != 0){
         		sb.append(",");
         	}
@@ -132,12 +141,25 @@ public class CustomerManage {
         	sb.append(obj.isEnable());
         	sb.append("\",\"limitdate\":\"");
         	sb.append(obj.getLimitdate());
+        	sb.append("\",\"downloadRinex\":\"");
+        	sb.append(userAuthority.isDownloadRinex());
+        	sb.append("\",\"virtualRinex\":\"");
+        	sb.append(userAuthority.isDownloadVirtual());
+        	sb.append("\",\"solutionStatic\":\"");
+        	sb.append(userAuthority.isSolutionStatic());
+        	sb.append("\",\"solutionDynamic\":\"");
+        	sb.append(userAuthority.isSolutionDynamic());
+        	sb.append("\",\"additionalFeature\":\"");
+        	sb.append(userAuthority.isAdditionalFeature());
+        	
         	sb.append("\"}");
         	
         }
-        
-        sb.append("]}");
-        
+       
+        sb.append("]");
+        sb.append(",\"authority\":\"");
+    	sb.append(type);
+        sb.append("\"}");
         return sb.toString();
 	}
 	
@@ -154,7 +176,7 @@ public class CustomerManage {
     	return res;
 	}
 	
-	public boolean updateCustomer(UserDao userDao, EmailDao emailDao, boolean isSuperAdmin){
+	public boolean updateCustomer(UserDao userDao, UserAuthority userAuthority, EmailDao emailDao, boolean isSuperAdmin){
 		SqlSession sqlSession = MybatisUtils.getSession();
 		List<UserDao> userList = sqlSession.selectList("selectByName",userDao.getName());
     	
@@ -164,6 +186,9 @@ public class CustomerManage {
     	}else{
     		rows = sqlSession.update("updateUserByNameByAdminster", userDao);
     	}
+    	
+    	sqlSession.update("updateUserAuthorityByName", userAuthority);
+    	
     	sqlSession.commit();
     	sqlSession.close();
     	
@@ -190,6 +215,8 @@ public class CustomerManage {
     	
     	int rows = 0;
 		rows = sqlSession.delete("deleteUserByName", name);
+		
+		sqlSession.delete("deleteUserAuthorityByName", name);
     	sqlSession.commit();
     	sqlSession.close();
     	

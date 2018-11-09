@@ -18,13 +18,14 @@ $(function(){
 			return;
 		} else if($authority == 0){
 			$(".MenuBarHor>ul>li:lt(5)").show();
-		} else if($authority >= 1 && $authority < 9){
+		} else if($authority >= 1 ){
 			$(".MenuBarHor>ul>li").show();
-			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
-		} else if($authority == 9){
-			$(".MenuBarHor>ul>li").show();
-			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
-		}
+			//$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
+		} 
+		//else if($authority == 9){
+		//	$(".MenuBarHor>ul>li").show();
+		//	$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
+		//}
 		
 		if(json.downloadRinex == 0){
 			$("#downloadRinexModule").hide();
@@ -38,8 +39,8 @@ $(function(){
 		if(json.solutionDynamic == 0){
 			$("#solutionDynamicModule").hide();
 		}
-		if(json.coordinateConvert == 0){
-			$("#coordinateConvertModule").hide();
+		if(json.additionalFeature == 0){
+			$("#additionalModule").hide();
 		}
 		
 		/*if($authority == 9){

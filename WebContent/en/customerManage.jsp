@@ -24,10 +24,19 @@
     			 	<div id="TableDiv">
 	    			     <table id="TableHeader">
 	    			         <tr>
-	    			             <th>UserName</th>
-	    			             <th>Enable</th>
-	    			             <th>LimitDate</th>
-	    			             <th></th>
+	    			             <th class="item">UserName</th>
+	    			             <th class="item">Enable</th>
+	    			             <th class="item">LimitDate</th>
+	    			              <% if((Integer)session.getAttribute("authority") == 9){
+	    			            	 out.println("<th class='item'>Authority</th>");
+	    			             }
+	    			             %>
+	    			             <th class="item">Download rinex</th>
+	    			             <th class="item">Virtual</th>
+	    			             <th class="item">SolutionStatic</th>
+	    			             <th class="item">SolutionDynamic</th>
+	    			             <th class="item">Additional</th>
+	    			             <th class="func"></th>
 	    			         </tr>
 	    			     </table>
 	    			     <div id="TableBodyDiv">
