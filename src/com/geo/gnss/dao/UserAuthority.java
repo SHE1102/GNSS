@@ -5,8 +5,7 @@ public class UserAuthority {
 	private String name;
 	private boolean downloadRinex = false;
 	private boolean downloadVirtual = false;
-	private boolean solutionStatic = false;
-	private boolean solutionDynamic = false;
+	private boolean solution = false;
 	private boolean additionalFeature = false;
 	
 	
@@ -28,17 +27,11 @@ public class UserAuthority {
 	public void setDownloadVirtual(boolean downloadVirtual) {
 		this.downloadVirtual = downloadVirtual;
 	}
-	public boolean isSolutionStatic() {
-		return solutionStatic;
+	public boolean isSolution() {
+		return solution;
 	}
-	public void setSolutionStatic(boolean solutionStatic) {
-		this.solutionStatic = solutionStatic;
-	}
-	public boolean isSolutionDynamic() {
-		return solutionDynamic;
-	}
-	public void setSolutionDynamic(boolean solutionDynamic) {
-		this.solutionDynamic = solutionDynamic;
+	public void setSolution(boolean solution) {
+		this.solution = solution;
 	}
 	public boolean isAdditionalFeature() {
 		return additionalFeature;

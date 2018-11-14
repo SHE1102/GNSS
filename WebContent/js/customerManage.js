@@ -23,11 +23,11 @@ $(function(){
 		var $thAuthority = $("<td></td>").addClass("item");
        
 		
-		var $thArr = new Array(9);
-		for(var i=0; i<9; i++){
+		var $thArr = new Array(8);
+		for(var i=0; i<8; i++){
 			$thArr[i] = $("<td></td>");
 			
-			if(i<8){
+			if(i<7){
 				$thArr[i].addClass("item");
 			} else {
 				$thArr[i].addClass("func");
@@ -51,13 +51,13 @@ $(function(){
 		$virtualRinex.append($("<option></option>").val("false").text("disable"));
 		$virtualRinex.append($("<option></option>").val("true").text("enable"));
 		
-		var $solutionStatic = $("<select></select>").attr("name","solutionStatic");
-		$solutionStatic.append($("<option></option>").val("false").text("disable"));
-		$solutionStatic.append($("<option></option>").val("true").text("enable"));
+		var $solution = $("<select></select>").attr("name","solution");
+		$solution.append($("<option></option>").val("false").text("disable"));
+		$solution.append($("<option></option>").val("true").text("enable"));
 		
-		var $solutionDynamic = $("<select></select>").attr("name","solutionDynamic");
-		$solutionDynamic.append($("<option></option>").val("false").text("disable"));
-		$solutionDynamic.append($("<option></option>").val("true").text("enable"));
+		//var $solutionDynamic = $("<select></select>").attr("name","solutionDynamic");
+		//$solutionDynamic.append($("<option></option>").val("false").text("disable"));
+		//$solutionDynamic.append($("<option></option>").val("true").text("enable"));
 		
 		var $additionalFeature = $("<select></select>").attr("name","additionalFeature");
 		$additionalFeature.append($("<option></option>").val("false").text("disable"));
@@ -80,23 +80,23 @@ $(function(){
 		$thArr[3].append($downloadRinex);
 		$virtualRinex.val(user.virtualRinex);
 		$thArr[4].append($virtualRinex);
-		$solutionStatic.val(user.solutionStatic);
-		$thArr[5].append($solutionStatic);
-		$solutionDynamic.val(user.solutionDynamic);
-		$thArr[6].append($solutionDynamic);
+		$solution.val(user.solution);
+		$thArr[5].append($solution);
+		//$solutionDynamic.val(user.solutionDynamic);
+		//$thArr[6].append($solutionDynamic);
 		$additionalFeature.val(user.additionalFeature);
-		$thArr[7].append($additionalFeature);
+		$thArr[6].append($additionalFeature);
 		
 		var $alter = $("<input></input>").attr("type","button").attr("value","Alter").addClass("ControlButton").addClass("AlterButton");//.attr("formaction","CustomerUpdate");
 		var $delete = $("<input></input>").attr("type","button").attr("value","Delete").addClass("ControlButton").addClass("DeleteButton");//.attr("formaction","CustomerDelete");
 		var $detail = $("<input></input>").attr("type","button").attr("value","Detail").addClass("ControlButton").addClass("DetailButton");//.attr("formaction","CustomerDelete");
-		$thArr[8].append($alter).append($delete).append($detail);
+		$thArr[7].append($alter).append($delete).append($detail);
 		
 		var $tr = $("<tr></tr>").append($thArr[0]).append($thArr[1]).append($thArr[2]);
 		if(authority=="superAdmin"){
 			$tr.append($thAuthority);
 		}
-		$tr.append($thArr[3]).append($thArr[4]).append($thArr[5]).append($thArr[6]).append($thArr[7]).append($thArr[8]);
+		$tr.append($thArr[3]).append($thArr[4]).append($thArr[5]).append($thArr[6]).append($thArr[6]).append($thArr[7]);
 		var $table = $("<table></table>").append($tr);
 		var $form = $("<form></form>").append($table).attr("method","post");
 		$("#TableBodyDiv").append($form);

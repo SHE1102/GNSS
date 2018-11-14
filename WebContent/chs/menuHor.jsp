@@ -25,8 +25,7 @@
   						<li id="skyplotModule"><a href="stationSkyplot.jsp">星图</a></li>
   						<li id="downloadRinexModule"><a href="downloadRinex.jsp">下载Rinex</a></li>
   						<li id="downloadVirtualModule"><a href="virtualRinex.jsp">虚拟站</a></li>
-  						<li id="solutionStaticModule"><a href="solutionStatic.jsp">静态解算</a></li>
-  						<li id="solutionDynamicModule"><a href="solutionDynamic.jsp">动态解算</a></li>
+  						<li id="solutionModule"><a href="solution.jsp">解算</a></li>
   						<li id="additionalModule"><a href="additionalFeature.jsp">附加功能</a></li>
   					</ul>
   				</li>

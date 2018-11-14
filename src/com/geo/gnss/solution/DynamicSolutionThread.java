@@ -3,27 +3,25 @@ package com.geo.gnss.solution;
 import java.io.File;
 import java.io.FileReader;
 import java.io.LineNumberReader;
-import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.List;
 
+import com.geo.gnss.dao.AppConfig;
 import com.geo.gnss.dao.EmailDao;
 import com.geo.gnss.jna.DllInterface.PPKDLL64;
 import com.geo.gnss.jna.DllInterface.ToRinexDLL64;
 import com.geo.gnss.util.SendEmail;
 
 public class DynamicSolutionThread extends Thread {
-	private String appPath = "";
-	private String sessionId = "";
-    private String[] baseFileArray = null;
-    private String[] roverFileArray = null;
-    private EmailDao emailDao;
 	
-	public DynamicSolutionThread(String appPath, String sessionId, String[] baseArray, String[] roverArray,EmailDao emailDao){
-		this.appPath = appPath;
-		this.sessionId = sessionId;
-		baseFileArray = baseArray;
-		roverFileArray = roverArray;
+	private List<String> baseFileList = null;
+	private List<String> roverFileList = null;
+    private EmailDao emailDao;
+    private AppConfig appConfig;
+    private SolutionParameter solutionParameter;
+	
+	public DynamicSolutionThread(AppConfig appConfig, SolutionParameter solutionParameter, EmailDao emailDao){
+		this.appConfig = appConfig;
+		this.solutionParameter = solutionParameter;
 		this.emailDao = emailDao;
 	}
 	
@@ -31,47 +29,26 @@ public class DynamicSolutionThread extends Thread {
 	public void run() {
 		super.run();
 		
-		try {
-			Start();
-		} catch (Exception e) {
-			e.printStackTrace();
+        SolutionManage solutionManage = new SolutionManage(appConfig, solutionParameter);
+		
+		if(solutionManage.parseDynamic()){
+			baseFileList = solutionManage.getBaseFileList();
+			roverFileList = solutionManage.getRoverFileList();
+			
+			if(baseFileList == null || baseFileList.size() == 0 
+					||roverFileList == null || roverFileList.size() == 0){
+				return;
+			}
+			
+			try {
+				startSolution();
+			} catch (Exception e) {
+				//e.printStackTrace();
+			}
 		}
 	}
 
-	private void Start() throws Exception {
-		//copy dat files to temp dir
-		String destPath = appPath + File.separator + "DynamicSolution" + File.separator + sessionId;
-		File destDirFile = new File(destPath);
-		if(!destDirFile.exists()){
-			destDirFile.mkdirs();
-		}else{
-			for(File f : destDirFile.listFiles()){
-				f.delete();
-			}
-		}
-		
-		//copy base file
-        List<String> baseFileList = new ArrayList<String>();
-		for(String srcFilePath : baseFileArray){
-			File srcFile = new File(srcFilePath);
-			String destFilePath = destPath + File.separator + srcFile.getName();
-			File destFile = new File(destFilePath);
-			Files.copy(srcFile.toPath(), destFile.toPath());
-			
-			baseFileList.add(destFilePath);
-		}
-		
-		//copy rover file
-		List<String> roverFileList = new ArrayList<String>();
-		for(String srcFilePath : roverFileArray){
-			File srcFile = new File(srcFilePath);
-			String destFilePath = destPath + File.separator + srcFile.getName();
-			File destFile = new File(destFilePath);
-			Files.copy(srcFile.toPath(), destFile.toPath());
-			
-			roverFileList.add(destFilePath);
-		}
-		
+	private void startSolution() throws Exception {
 		//convert base file
 		for(String convertFilePath : baseFileList){
 			File convertFile = new File(convertFilePath);
@@ -92,9 +69,8 @@ public class DynamicSolutionThread extends Thread {
 		}
 		
 		//send email
-		SendEmail sendEmail = new SendEmail(appPath, sessionId, emailDao, "dynamic");
+		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, "dynamic");
 		sendEmail.send();
-		
 	}
 	
 	private  void Solution(String baseFilePath, String roverFilePath) throws Exception{
@@ -116,11 +92,11 @@ public class DynamicSolutionThread extends Thread {
 		String baseLFilename="", roveLFilename="";
 		String antFilename="", reportFilename = "";
 		
-		gridName = appPath + File.separator + "config" + File.separator + "gpt2_1wA.grd";
+		gridName = appConfig.getAppPath() + File.separator + "config" + File.separator + "gpt2_1wA.grd";
 		gridName = "";
-		antFilename = appPath  + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
-		reportFilename = appPath + File.separator +"DynamicSolution" + File.separator + sessionId + 
-				File.separator  + baseName + "_"+roverName + ".txt";
+		antFilename = appConfig.getAppPath()  + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
+		reportFilename = appConfig.getAppPath() + File.separator +"SolutionDynamic" + File.separator +
+				solutionParameter.getFolderName() + File.separator  + baseName + "_"+roverName + ".txt";
 		
 		for(File temFile : allFileList){
 			String name = temFile.getName();
@@ -177,7 +153,7 @@ public class DynamicSolutionThread extends Thread {
 		}
 		lr.close();
 		
-		System.out.println(baseOFilename);
+		/*System.out.println(baseOFilename);
 		System.out.println(baseNFilename);
 		System.out.println(baseGFilename);
 		System.out.println(baseCFilename);
@@ -189,7 +165,7 @@ public class DynamicSolutionThread extends Thread {
 		System.out.println(roveLFilename);
 		System.out.println(antFilename);
 		System.out.println(gridName);
-		System.out.println(reportFilename);
+		System.out.println(reportFilename);*/
 		
 		System.out.println("Dynamic solution......");
 		boolean result = false;

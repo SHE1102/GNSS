@@ -33,11 +33,8 @@ $(function(){
 		if(json.downloadVirtual == 0){
 			$("#downloadVirtualModule").hide();
 		}
-		if(json.solutionStatic == 0){
-			$("#solutionStaticModule").hide();
-		}
-		if(json.solutionDynamic == 0){
-			$("#solutionDynamicModule").hide();
+		if(json.solution == 0){
+			$("#solutionModule").hide();
 		}
 		if(json.additionalFeature == 0){
 			$("#additionalModule").hide();

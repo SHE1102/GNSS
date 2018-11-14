@@ -65,7 +65,7 @@ public class SendEmail {
 		message.setRecipient(Message.RecipientType.TO, new InternetAddress(emailDao.getUserEmail()));
 		
 		//add email title
-		message.setSubject("数据解算邮件");
+		message.setSubject("Data solution");
 		    
 		//email body
 		MimeMultipart bodyparts = new MimeMultipart();
@@ -87,7 +87,8 @@ public class SendEmail {
 		//add content
 		MimeBodyPart content = new MimeBodyPart();
 		bodyparts.addBodyPart(content);
-		String info = "数据解算成功,请查看附件!";//set email content
+		//String info = "数据解算成功,请查看附件!";//set email content
+		String info = "Data solution is successful, please check the attachment!";//set email content
 		content.setContent(info, "text/html;charset=UTF-8");
 		
 		message.saveChanges();

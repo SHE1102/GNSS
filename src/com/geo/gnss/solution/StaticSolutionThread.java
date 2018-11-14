@@ -1,82 +1,68 @@
 package com.geo.gnss.solution;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.List;
 
+import com.geo.gnss.dao.AppConfig;
 import com.geo.gnss.dao.EmailDao;
 import com.geo.gnss.jna.DllInterface.StaticBaseLineSolution64;
 import com.geo.gnss.jna.DllInterface.ToRinexDLL64;
 import com.geo.gnss.util.SendEmail;
 
 public class StaticSolutionThread extends Thread {
-	private String appPath = "";
-	private String sessionId = "";
-    private String[] datFileArray = null;
+
+    private AppConfig appConfig; 
+    private SolutionParameter solutionParameter;
     private EmailDao emailDao;
+    private List<String> baseFileList = null;
     
-	public StaticSolutionThread(String appPath, String sessionId, String[] array, EmailDao emailDao){
-		this.appPath = appPath;
-		this.sessionId = sessionId;
+	public StaticSolutionThread(AppConfig appConfig, SolutionParameter solutionParameter, EmailDao emailDao){
+		this.appConfig = appConfig;
+		this.solutionParameter = solutionParameter;
 		this.emailDao = emailDao;
-		datFileArray = array;
 	}
 
 	@Override
 	public void run() {
 		super.run();
 		
-		try {
-			Start();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		SolutionManage solutionManage = new SolutionManage(appConfig, solutionParameter);
 		
-		//SolutionDemo();
-	}
-
-	private void Start() throws Exception{
-		//copy dat files to temp dir
-		String destPath = appPath + File.separator + "StaticSolution" + File.separator + sessionId;
-		File destDirFile = new File(destPath);
-		if(!destDirFile.exists()){
-			destDirFile.mkdirs();
-		}else{
-			for(File f : destDirFile.listFiles()){
-				f.delete();
+		if(solutionManage.parseStatic()){
+			baseFileList = solutionManage.getBaseFileList();
+			
+			if(baseFileList == null || baseFileList.size() == 0){
+				return;
+			}
+			
+			try {
+				startSolution();
+			} catch (Exception e) {
+				//e.printStackTrace();
 			}
 		}
-		List<String> fileList = new ArrayList<String>();
-		
-		for(String srcFilePath : datFileArray){
-			File srcFile = new File(srcFilePath);
-			String destFilePath = destPath + File.separator + srcFile.getName();
-			File destFile = new File(destFilePath);
-			Files.copy(srcFile.toPath(), destFile.toPath());
-			
-			fileList.add(destFilePath);
-		}
-		
+	}
+	
+	private void startSolution() throws Exception{
 		//convert all file to rinex
-		for(String convertFilePath : fileList){
+		for(String convertFilePath : baseFileList){
 			File convertFile = new File(convertFilePath);
 			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(convertFile.getAbsolutePath(), convertFile.getParent(), 17241639, null);
 		}
-		
-		int nCount = fileList.size();
+				
+		int nCount = baseFileList.size();
 		for(int i=0; i<nCount-1; i++){
 			for(int j=i+1; j<nCount; j++){
-				Solution(fileList.get(i), fileList.get(j));
+				solution(baseFileList.get(i), baseFileList.get(j));
 			}
 		}
 		
-		//send email
-		SendEmail sendEmail = new SendEmail(appPath, sessionId, emailDao, "static");
+		//sendemail
+		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, "static");
 		sendEmail.send();
 	}
 	
-	private  void Solution(String baseFilePath, String roverFilePath){
+	private  void solution(String baseFilePath, String roverFilePath){
 		File baseFile = new File(baseFilePath);
 		File roverFile = new File(roverFilePath);
 		
@@ -95,8 +81,8 @@ public class StaticSolutionThread extends Thread {
 		String baseLFilename="", roveLFilename="";
 		String antFilename="", reportFilename = "";
 		
-		antFilename = appPath + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
-		reportFilename = appPath + File.separator +"StaticSolution" + File.separator + sessionId + 
+		antFilename = appConfig.getAppPath() + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
+		reportFilename = appConfig.getAppPath() + File.separator +"SolutionStatic" + File.separator + solutionParameter.getFolderName() + 
 				File.separator  + baseName + "_"+roverName + ".html";
 		
 		for(File temFile : allFileList){
@@ -153,36 +139,4 @@ public class StaticSolutionThread extends Thread {
 		
 		System.out.println("Static solution result:" + result);
 	}
-	
-	/*private void SolutionDemo(){
-		
-		String baseOfilename="", roveOfilename="";
-		String baseNFilename="", roveNFilename="";
-		String baseGFilename="", roveGFilename=""; 
-		String baseCFilename="", roveCFilename="";
-		String baseLFilename="", roveLFilename="";
-		String antFilename="", reportFilename = "";
-		
-		baseOfilename = "C:\\Users\\geo\\Desktop\\data2\\23KM240l.18O";
-		baseNFilename = "C:\\Users\\geo\\Desktop\\data2\\23KM240l.18N";
-		baseGFilename = "C:\\Users\\geo\\Desktop\\data2\\23KM240l.18G";
-		baseCFilename = "C:\\Users\\geo\\Desktop\\data2\\23KM240l.18C";
-		baseLFilename = "C:\\Users\\geo\\Desktop\\data2\\23KM240l.18L";
-		
-		roveOfilename = "C:\\Users\\geo\\Desktop\\data2\\55KM240l.18O";
-		roveNFilename = "C:\\Users\\geo\\Desktop\\data2\\55KM240l.18N";
-		roveGFilename = "C:\\Users\\geo\\Desktop\\data2\\55KM240l.18N";
-		roveCFilename = "C:\\Users\\geo\\Desktop\\data2\\55KM240l.18N";
-		roveLFilename = "C:\\Users\\geo\\Desktop\\data2\\55KM240l.18N";
-		
-		antFilename="C:\\Users\\geo\\Desktop\\data2\\ANTINFO_NGS.txt";
-		reportFilename="C:\\Users\\geo\\Desktop\\data2\\23KM240l_55KM240l.html";
-		
-		StaticBaseLineSolution64.instance.GetStaticResult( baseOfilename,  roveOfilename, 
-				 baseNFilename,  roveNFilename,
-				 baseGFilename,  roveGFilename, 
-				 baseCFilename,  roveCFilename,
-				 baseLFilename,  roveLFilename,
-				 antFilename,  reportFilename);
-	}*/
 }

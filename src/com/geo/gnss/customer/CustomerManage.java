@@ -145,10 +145,8 @@ public class CustomerManage {
         	sb.append(userAuthority.isDownloadRinex());
         	sb.append("\",\"virtualRinex\":\"");
         	sb.append(userAuthority.isDownloadVirtual());
-        	sb.append("\",\"solutionStatic\":\"");
-        	sb.append(userAuthority.isSolutionStatic());
-        	sb.append("\",\"solutionDynamic\":\"");
-        	sb.append(userAuthority.isSolutionDynamic());
+        	sb.append("\",\"solution\":\"");
+        	sb.append(userAuthority.isSolution());
         	sb.append("\",\"additionalFeature\":\"");
         	sb.append(userAuthority.isAdditionalFeature());
         	

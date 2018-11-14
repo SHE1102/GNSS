@@ -50,10 +50,8 @@ public class ServletLoginStatus extends HttpServlet {
 			sb.append(userAuthority.isDownloadRinex() ? "1" : "0");
 			sb.append("\",\"downloadVirtual\":\"");
 			sb.append(userAuthority.isDownloadVirtual() ? "1" : "0");
-			sb.append("\",\"solutionStatic\":\"");
-			sb.append(userAuthority.isSolutionStatic() ? "1" : "0");
-			sb.append("\",\"solutionDynamic\":\"");
-			sb.append(userAuthority.isSolutionDynamic() ? "1" : "0");
+			sb.append("\",\"solution\":\"");
+			sb.append(userAuthority.isSolution() ? "1" : "0");
 			sb.append("\",\"additionalFeature\":\"");
 			sb.append(userAuthority.isAdditionalFeature() ? "1" : "0");
 		}

@@ -48,8 +48,8 @@ public class ServletCustomerUpdate extends HttpServlet {
 		userAuthority.setName(name);
 		userAuthority.setDownloadRinex(Boolean.parseBoolean(request.getParameter("downloadRinex")));
 		userAuthority.setDownloadVirtual(Boolean.parseBoolean(request.getParameter("virtualRinex")));
-		userAuthority.setSolutionStatic(Boolean.parseBoolean(request.getParameter("solutionStatic")));
-		userAuthority.setSolutionDynamic(Boolean.parseBoolean(request.getParameter("solutionDynamic")));
+		userAuthority.setSolution(Boolean.parseBoolean(request.getParameter("solution")));
+		//userAuthority.setSolutionDynamic(Boolean.parseBoolean(request.getParameter("solutionDynamic")));
 		userAuthority.setAdditionalFeature(Boolean.parseBoolean(request.getParameter("additionalFeature")));
 		
 		String hostEmail = (String)getServletContext().getAttribute("hostEmail");

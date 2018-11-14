@@ -36,8 +36,7 @@
 	    			             %>
 	    			             <th class="item">下载rinex</th>
 	    			             <th class="item">虚拟站</th>
-	    			             <th class="item">静态解算</th>
-	    			             <th class="item">动态解算</th>
+	    			             <th class="item">解算</th>
 	    			             <th class="item">附加功能</th>
 	    			             <th class="func"></th>
 	    			         </tr>
