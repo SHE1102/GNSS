@@ -25,7 +25,7 @@
   						<li id="skyplotModule"><a href="stationSkyplot.jsp">Skyplot</a></li>
   						<li id="downloadRinexModule"><a href="downloadRinex.jsp">Download Rinex</a></li>
   						<li id="downloadVirtualModule"><a href="virtualRinex.jsp">Virtual Rinex</a></li>
-  						<!-- <li id="solutionModule"><a href="solution.jsp">Solution</a></li>-->
+  						<li id="solutionModule"><a href="solution.jsp">Solution</a></li>
   						<li id="additionalModule"><a href="additionalFeature.jsp">Additional Function</a></li>
   					</ul>
   				</li>

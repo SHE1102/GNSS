@@ -17,6 +17,7 @@
 	<ids_upload_failed>Upload failed</ids_upload_failed>
 	<ids_choose_logo_first>Please choose logo icon</ids_choose_logo_first>
 	<ids_choose_file_first>Please choose file first</ids_choose_file_first>
+	<ids_upload_file_first>Please upload file first</ids_upload_file_first>
 	<ids_start_ftp_success>Start FTP success</ids_start_ftp_success>
 	<ids_start_ftp_failed>Start FTP failed</ids_start_ftp_failed>
 	<ids_stop_ftp_success>Close FTP success</ids_stop_ftp_success>
@@ -53,4 +54,7 @@
 	<ids_original_north>Original Northing</ids_original_north>
 	<ids_original_east>Original Easting</ids_original_east>
 	<ids_local_offset>Local Offsets</ids_local_offset>
+	<ids_choose_base_gt_2>The number of selected base stations cannot be less than 2</ids_choose_base_gt_2>
+	<ids_must_choose_base_rover>Must choose a base station and rover station</ids_must_choose_base_rover>
+	<ids_back_solution>The background is being solved, please check the mail later to get the solution result.</ids_back_solution>
 </Head>

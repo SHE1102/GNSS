@@ -39,25 +39,24 @@ public class ServletSolution extends HttpServlet {
 		String userEmail = (String)request.getSession().getAttribute("email");
 		EmailDao emailDao = new EmailDao(hostEmail, hostEmailPassword, hostEmailProtocol, userEmail);
 		
+		SolutionParameter solutionParameter = new SolutionParameter();
 		if(method == 0){
-			String folderName = MD5Utils.getFolderName();
-			System.out.println("folderName" + folderName);
-			
-			SolutionParameter solutionParameter = new SolutionParameter();
+			solutionParameter.setSolutionType(type);
 			solutionParameter.setDate(request.getParameter("date"));
 			solutionParameter.setStartTime(request.getParameter("startTime"));
 			solutionParameter.setEndTime(request.getParameter("endTime"));
-			solutionParameter.setFolderName(folderName);
+			solutionParameter.setFolderName(MD5Utils.getFolderName());
 			solutionParameter.setStationString(request.getParameter("stationList"));
 			
-			SolutionServerFile server = new SolutionServerFile(type, appConfig, solutionParameter, emailDao);
+			SolutionServerFile server = new SolutionServerFile(appConfig, solutionParameter, emailDao);
 			server.start();
 		} else {
-			String folderName = request.getParameter("folderName");
-			SolutionUploadFile upload = new SolutionUploadFile(type, folderName, appConfig, emailDao);
+			solutionParameter.setSolutionType(type);
+			solutionParameter.setFolderName(request.getParameter("folderName"));
+			
+			SolutionUploadFile upload = new SolutionUploadFile(appConfig, solutionParameter, emailDao);
 			upload.start();
 		}
-		
 		
 	}
 

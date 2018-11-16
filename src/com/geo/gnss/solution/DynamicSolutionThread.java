@@ -12,9 +12,6 @@ import com.geo.gnss.jna.DllInterface.ToRinexDLL64;
 import com.geo.gnss.util.SendEmail;
 
 public class DynamicSolutionThread extends Thread {
-	
-	private List<String> baseFileList = null;
-	private List<String> roverFileList = null;
     private EmailDao emailDao;
     private AppConfig appConfig;
     private SolutionParameter solutionParameter;
@@ -26,54 +23,44 @@ public class DynamicSolutionThread extends Thread {
 	}
 	
 	@Override
-	public void run() {
+	public void run(){
 		super.run();
 		
         SolutionManage solutionManage = new SolutionManage(appConfig, solutionParameter);
 		
 		if(solutionManage.parseDynamic()){
-			baseFileList = solutionManage.getBaseFileList();
-			roverFileList = solutionManage.getRoverFileList();
-			
-			if(baseFileList == null || baseFileList.size() == 0 
-					||roverFileList == null || roverFileList.size() == 0){
-				return;
-			}
+			List<String> baseFileList = solutionManage.getBaseFileList();
+			List<String> roverFileList = solutionManage.getRoverFileList();
 			
 			try {
-				startSolution();
+				startSolution(baseFileList.get(0), roverFileList.get(0));
 			} catch (Exception e) {
 				//e.printStackTrace();
 			}
 		}
 	}
 
-	private void startSolution() throws Exception {
+	private void startSolution(String baseFilePath, String roverFilePath) throws Exception{
 		//convert base file
-		for(String convertFilePath : baseFileList){
-			File convertFile = new File(convertFilePath);
-			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(convertFile.getAbsolutePath(), convertFile.getParent(), 16782887, null);
+		//如果是上传的O文件就不用转换
+		if(baseFilePath.endsWith("dat")){
+			File baseFile = new File(baseFilePath);
+			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(baseFile.getAbsolutePath(), baseFile.getParent(), 16782887, null);
 		}
-		
+
 		//convert rover file
-		for(String convertFilePath : roverFileList){
-			File convertFile = new File(convertFilePath);
-			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(convertFile.getAbsolutePath(), convertFile.getParent(), 16782887, null);
-		}
+		File roverFile = new File(roverFilePath);
+		ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(roverFile.getAbsolutePath(), roverFile.getParent(), 16782887, null);
 		
 		//solution
-		for(int i=0; i<baseFileList.size(); i++){
-			for(int j=0; j<roverFileList.size(); j++){
-				Solution(baseFileList.get(i), roverFileList.get(j));
-			}
-		}
+		solution(baseFilePath, roverFilePath);
 		
 		//send email
-		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, "dynamic");
+		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, 1);
 		sendEmail.send();
 	}
 	
-	private  void Solution(String baseFilePath, String roverFilePath) throws Exception{
+	private  void solution(String baseFilePath, String roverFilePath) throws Exception{
 		File baseFile = new File(baseFilePath);
 		File roverFile = new File(roverFilePath);
 		
@@ -95,8 +82,7 @@ public class DynamicSolutionThread extends Thread {
 		gridName = appConfig.getAppPath() + File.separator + "config" + File.separator + "gpt2_1wA.grd";
 		gridName = "";
 		antFilename = appConfig.getAppPath()  + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
-		reportFilename = appConfig.getAppPath() + File.separator +"SolutionDynamic" + File.separator +
-				solutionParameter.getFolderName() + File.separator  + baseName + "_"+roverName + ".txt";
+		reportFilename = baseFile.getParent() + File.separator  + baseName + "_"+roverName + ".txt";
 		
 		for(File temFile : allFileList){
 			String name = temFile.getName();
@@ -147,25 +133,11 @@ public class DynamicSolutionThread extends Thread {
 				coorX = Double.parseDouble(coorArray[0]);
 				coorY = Double.parseDouble(coorArray[1]);
 				coorZ = Double.parseDouble(coorArray[2]);
-				System.out.println("Dynamic:x="+coorX + " y="+coorY+" z="+coorZ);
+				//System.out.println("Dynamic:x="+coorX + " y="+coorY+" z="+coorZ);
 				break;
 			}
 		}
 		lr.close();
-		
-		/*System.out.println(baseOFilename);
-		System.out.println(baseNFilename);
-		System.out.println(baseGFilename);
-		System.out.println(baseCFilename);
-		System.out.println(baseLFilename);
-		System.out.println(roveOFilename);
-		System.out.println(roveNFilename);
-		System.out.println(roveGFilename);
-		System.out.println(roveCFilename);
-		System.out.println(roveLFilename);
-		System.out.println(antFilename);
-		System.out.println(gridName);
-		System.out.println(reportFilename);*/
 		
 		System.out.println("Dynamic solution......");
 		boolean result = false;

@@ -20,14 +20,19 @@ import com.geo.gnss.monograph.MonographManage;
 public class StationManage {
 	private String rawPath;
 	private String appPath;
-	//private String stationsPath;
+	private List<Station> stationList = new ArrayList<Station>();
 	
-	List<Station> stationList = new ArrayList<Station>();
-	
-    public StationManage(String rawPath, String appPath){
+    public List<Station> getStationList() {
+		return stationList;
+	}
+    public List<Station> getWorkStationList() {
+    	checkStationsWorkStatus();
+		return stationList;
+	}
+
+	public StationManage(String rawPath, String appPath){
     	this.rawPath = rawPath;
     	this.appPath = appPath;
-    	//stationsPath = rawPath + File.separator + "Stations.xml";
     }
     
     public void read() throws Exception{

@@ -75,9 +75,9 @@ public class Station {
 	public void setTargetDistance(double targetDistance) {
 		this.targetDistance = targetDistance;
 	}
-	public void calTargetDistance(String lat,String lon){
-		double sourceB = Double.parseDouble(lat);
-		double sourceL = Double.parseDouble(lon);
+	public void calDistanceByBLH(double sourceB,double sourceL){
+		//double sourceB = Double.parseDouble(lat);
+		//double sourceL = Double.parseDouble(lon);
 		
 		this.targetDistance = algorithm(destinationL,destinationB,sourceL,sourceB);
 	}
@@ -211,7 +211,6 @@ public class Station {
 	}
 	
 	private void XYZToBLH(double SourceX, double SourceY, double SourceZ){
-		
 		double da = 6378137.0;
 		double df = 298.257223563;
 

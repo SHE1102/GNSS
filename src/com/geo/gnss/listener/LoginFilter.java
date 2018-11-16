@@ -16,12 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebFilter(filterName="loginFilter", urlPatterns={
 		"/chs/accountInfo.jsp","/chs/stationMapUser.jsp","/chs/stationListUser.jsp","/chs/stationSkyplot.jsp",
-		"/chs/downloadRinex.jsp","/chs/virtualRinex.jsp","/chs/solutionStatic.jsp","/chs/solutionDynamic.jsp",
+		"/chs/downloadRinex.jsp","/chs/virtualRinex.jsp","/chs/solution.jsp",
 		"/chs/coordinateConvert.jsp","/chs/configSet.jsp","/chs/customerManage.jsp","/chs/monograph.jsp",
 		"/chs/customerAdmin.jsp","/chs/additionalFeature.jsp",
 		
 		"/en/accountInfo.jsp","/en/stationMapUser.jsp","/en/stationListUser.jsp","/en/stationSkyplot.jsp",
-		"/en/downloadRinex.jsp","/en/virtualRinex.jsp","/en/solutionStatic.jsp","/en/solutionDynamic.jsp",
+		"/en/downloadRinex.jsp","/en/virtualRinex.jsp","/en/solution.jsp",
 		"/en/coordinateConvert.jsp","/en/configSet.jsp","/en/customerManage.jsp","/en/monograph.jsp",
 		"/en/customerAdmin.jsp","/en/additionalFeature.jsp",
 		},

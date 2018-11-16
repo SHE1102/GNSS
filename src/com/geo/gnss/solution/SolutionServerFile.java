@@ -5,27 +5,27 @@ import com.geo.gnss.dao.EmailDao;
 
 public class SolutionServerFile {
 
-	private int solutionType;
 	private AppConfig appConfig;
 	private SolutionParameter solutionParameter;
 	private EmailDao emailDao;
 	
-	public SolutionServerFile(int solutionType, AppConfig appConfig, SolutionParameter solutionParameter, EmailDao emailDao){
-		this.solutionType = solutionType;
+	public SolutionServerFile(AppConfig appConfig, SolutionParameter solutionParameter, EmailDao emailDao){
 		this.appConfig = appConfig;
 		this.solutionParameter = solutionParameter;
 		this.emailDao = emailDao;
 	}
 	
-	public void start(){
+	public boolean start(){
 		
-		if(solutionType == 0){
+		if(solutionParameter.getSolutionType() == 0){
 			StaticSolutionThread thread = new StaticSolutionThread(appConfig, solutionParameter, emailDao);
 			thread.start();
 		} else {
 			DynamicSolutionThread thread = new DynamicSolutionThread(appConfig, solutionParameter, emailDao);
 			thread.start();
 		}
+		
+		return true;
 	}
 	
 }

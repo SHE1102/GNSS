@@ -1,4 +1,9 @@
 $(function(){
+	var $langXml;
+	$.post("../LangResource",function(xml){
+		$langXml = $(xml);
+	})
+	
 	$("input[name='solutionType']").change(function(){
 		var $type = $(this).val();
 		if($("input[name='solutionMethod']:checked").val() == 0){
@@ -11,8 +16,8 @@ $(function(){
 	})
 	
 	$("input[name='solutionMethod']").change(function(){
-		$("#serverSolution").toggle();
-		$("#uploadSolution").toggle();
+		$("tr.serverConfigTr").toggle();
+		$("tr.uploadTr").toggle();
 		
 		var $type = $("input[name='solutionType']:checked").val()
 		
@@ -22,6 +27,8 @@ $(function(){
 			} else if ($type == 1){
 				showList(true);
 			}
+		} else {
+			$("tr.stationTr").remove();
 		}
 	})
 	
@@ -48,16 +55,19 @@ $(function(){
 	})
 		
 	function showList(isRover){
-		$("#SkinTablebody tr").remove();
+		$("tr.stationTr").remove();
 		
+		$trBlank = $("<tr></tr>").append($("<td colspan='3'></td>")).addClass("stationTr");
+		$("#solutionTable").append($trBlank);
 		for(var i=0;i<$stationJson.station.length;i++){
 			
 			var $station = $stationJson.station[i];
 			
-			var $tr = $("<tr></tr>");
+			var $tr = $("<tr></tr>").addClass("stationTr");
 			var $td1 = $("<td></td>").addClass("Label").text($station.id);
 			
 			var $td2 = $("<td></td>");
+			var $td3 = $("<td></td>");
 			
 			var $span1 = $("<span></span>").text("none");
 			var $span2 = $("<span></span>").text("base");
@@ -73,10 +83,9 @@ $(function(){
 				$td2.append($input3).append($span3);
 			}
 			
+			$tr.append($td1).append($td2).append($td3);
 			
-			$tr.append($td1).append($td2);
-			
-			$("#SkinTablebody").append($tr);
+			$("#solutionTable").append($tr);
 		}
 	}
 	
@@ -88,29 +97,35 @@ $(function(){
 		var $date = $("#date").val();
 		var $startTime = $("#startTime").val();
 		var $endTime = $("#endTime").val();
-		var $stationList="";// = "base:33KM:55KM";
+		var $stationList="";
 		
+		var $baseCount =0,$roverCount = 0;
 		$(".solutionRadio:checked").each(function(){
 			if($(this).val() == 1){
-				if($stationList.indexOf("base") == -1){
-					$stationList += "base:";
-				}
+				$baseCount += 1;
 				$stationList += $(this).prop("name");
 				$stationList += ":";
 			} 
 		})
 		
+		$stationList += "?";
 		$(".solutionRadio:checked").each(function(){
 			if($(this).val() == 2){
-				if($stationList.indexOf("rover") == -1){
-					$stationList += "rover:";
-				}
+				$roverCount += 1;
 				$stationList += $(this).prop("name");
 				$stationList += ":";
 			} 
 		})
 
 		if($method == 0){
+			if($type == 0 && $baseCount < 2){
+				alert($langXml.find("ids_choose_base_gt_2").text());
+				return;
+			}else if($type == 1 && ($baseCount != 1|| $roverCount != 1)){
+				alert($langXml.find("ids_must_choose_base_rover").text());
+				return;
+			}
+			
 			$.post("../solution",
 			          {
 				           type:$type,
@@ -121,35 +136,31 @@ $(function(){
 				           stationList:$stationList
 			          }	,
 			          function(data){
-			        	  
 			          }
 			)
 		} else if ($method == 1) {
 			if($uploadFolderName == "" || $uploadFolderName.length == 0){
-				alert("请先上传文件");
+				alert($langXml.find("ids_upload_file_first").text());
 				return;
 			}
 			
 			$.post("../solution",
-			          {
-				           type:$type,
-				           method:$method,
-				           folderName:$uploadFolderName
-			          }	,
-			          function(data){
-			        	  
-			          }
+		          {
+			           type:$type,
+			           method:$method,
+			           folderName:$uploadFolderName
+		          }	,
+		          function(data){
+		          }
 			)
 		}
-		
-		alert("后台正在解算,请查看邮件获取解算结果!");
+		alert($langXml.find("ids_back_solution").text());
 	})
 	
 	$("#uploadSolutionFile").click(function(){
 		var $file = $("#solutionFile").val();
 		if($file == "" && $file.length == 0){
-			//alert($langXml.find("ids_choose_file_first").text());
-			alert("不能为空");
+			alert($langXml.find("ids_choose_file_first").text());
 			return;
 		};
 		
@@ -162,15 +173,10 @@ $(function(){
 			contentType: false 
 			}).done(function(res) { 
 				$uploadFolderName = res;
-				alert(res);
-				alert("成功");
-				//alert($langXml.find("ids_upload_success").text());
-				//$("#DetailCoord").removeProp("disabled");
-				//$("#CoordinateConvert").removeProp("disabled");
+				alert($langXml.find("ids_upload_success").text());
 			})
 			.fail(function(res) {
-				alert("失败");
-				//alert($langXml.find("ids_upload_failed").text());
+				alert($langXml.find("ids_upload_failed").text());
 			});
 	})
 	

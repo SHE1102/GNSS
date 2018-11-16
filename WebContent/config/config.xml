@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <!DOCTYPE xml>
 <HEAD>
-	<RawPath>F:\SNRS_Obs\obs</RawPath>
+	<RawPath>F:\SNRS_Obs\sss</RawPath>
 	<Host_Email>yanxiao.she@aliyun.com</Host_Email>
 	<Host_EmailPassword>sheyanxiao1102*</Host_EmailPassword>
 	<Host_EmailProtocol>smtp.aliyun.com</Host_EmailProtocol>

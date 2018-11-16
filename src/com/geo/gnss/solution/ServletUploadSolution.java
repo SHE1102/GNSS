@@ -36,7 +36,7 @@ public class ServletUploadSolution extends HttpServlet {
 		String fileName = header.substring(header.lastIndexOf("filename")+10, header.length()-1);
 		
 		String appPath = getServletContext().getRealPath("");
-		String fileDir = appPath + File.separator + "SolutionUpload" + File.separator + folderName;
+		String fileDir = appPath + File.separator + "Solution" + File.separator + folderName;
 		File folderFile = new File(fileDir);
 		folderFile.mkdirs();
 		

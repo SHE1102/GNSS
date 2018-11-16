@@ -26,8 +26,8 @@ public class SendEmail {
 	//private String destEmail = "yanxiao.she@geoelectron.com";
 	
 	private String appPath;
-	private String sessionId;
-	private String filter;
+	private String folderName;
+	private int filterType;
 	private EmailDao emailDao;
 	private UserDao userDao;
 	
@@ -36,10 +36,10 @@ public class SendEmail {
         this.emailDao = emailDao;
 	}
 	
-     public SendEmail(String appPath, String sessionId, EmailDao emailDao, String filter){
+     public SendEmail(String appPath, String folderName, EmailDao emailDao, int filterType){
     	 this.appPath = appPath; 
-    	 this.sessionId = sessionId;
-    	 this.filter = filter;
+    	 this.folderName = folderName;
+    	 this.filterType = filterType;
     	 this.emailDao = emailDao;
      }
      
@@ -88,7 +88,12 @@ public class SendEmail {
 		MimeBodyPart content = new MimeBodyPart();
 		bodyparts.addBodyPart(content);
 		//String info = "数据解算成功,请查看附件!";//set email content
-		String info = "Data solution is successful, please check the attachment!";//set email content
+		String info = "";
+		if(fileList == null || fileList.size() == 0){
+			info = "Data solution failed!";//set email content
+		} else {
+			info = "Data solution succeeded, please check the attachment!";//set email content
+		}
 		content.setContent(info, "text/html;charset=UTF-8");
 		
 		message.saveChanges();
@@ -99,14 +104,8 @@ public class SendEmail {
 	protected List<File> getFilterFileList(){
 		List<File> filterList = new ArrayList<File>();
 		
-		String reportPath="", filterExt="";
-		if("static".equals(filter)){
-			reportPath = appPath + File.separator +"StaticSolution" + File.separator + sessionId;
-			filterExt = "HTML";
-		} else if("dynamic".equals(filter)){
-			reportPath = appPath + File.separator +"DynamicSolution" + File.separator + sessionId;
-			filterExt = "TXT";
-		}
+		String reportPath = appPath + File.separator +"Solution" + File.separator + folderName;
+		String filterExt = filterType == 0 ? "HTML" : "TXT";
 		
 		File reportDir = new File(reportPath);
 		File[] fileArray = reportDir.listFiles();
@@ -145,7 +144,7 @@ public class SendEmail {
 		message.setRecipient(Message.RecipientType.TO, new InternetAddress(emailDao.getHostEmail()));
 		
 		//add email title
-		message.setSubject("注册邮件");
+		message.setSubject("Register email");
 		    
 		//email body
 		MimeMultipart bodyparts = new MimeMultipart();
@@ -198,7 +197,7 @@ public class SendEmail {
 		message.setRecipient(Message.RecipientType.TO, new InternetAddress(userDao.getEmail()));
 		
 		//add email title
-		message.setSubject("Back邮件");
+		message.setSubject("Register notification email");
 		
 		//email body
 		MimeMultipart bodyparts = new MimeMultipart();

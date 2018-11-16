@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.geo.gnss.dao.AppConfig;
 import com.geo.gnss.dao.EmailDao;
-import com.geo.gnss.jna.DllInterface.StaticBaseLineSolution64;
+import com.geo.gnss.jna.DllInterface.AdjustmentDLL64;
 import com.geo.gnss.jna.DllInterface.ToRinexDLL64;
 import com.geo.gnss.util.SendEmail;
 
@@ -14,7 +14,6 @@ public class StaticSolutionThread extends Thread {
     private AppConfig appConfig; 
     private SolutionParameter solutionParameter;
     private EmailDao emailDao;
-    private List<String> baseFileList = null;
     
 	public StaticSolutionThread(AppConfig appConfig, SolutionParameter solutionParameter, EmailDao emailDao){
 		this.appConfig = appConfig;
@@ -27,41 +26,47 @@ public class StaticSolutionThread extends Thread {
 		super.run();
 		
 		SolutionManage solutionManage = new SolutionManage(appConfig, solutionParameter);
-		
 		if(solutionManage.parseStatic()){
-			baseFileList = solutionManage.getBaseFileList();
-			
-			if(baseFileList == null || baseFileList.size() == 0){
-				return;
-			}
+			List<String> baseFileList = solutionManage.getBaseFileList();
 			
 			try {
-				startSolution();
+				startSolution(baseFileList);
 			} catch (Exception e) {
 				//e.printStackTrace();
 			}
 		}
 	}
 	
-	private void startSolution() throws Exception{
+	private void startSolution(List<String> baseFileList) throws Exception{
+		String convertPath = appConfig.getAppPath() + File.separator + "Solution" + 
+		           File.separator  + solutionParameter.getFolderName();
+		
 		//convert all file to rinex
 		for(String convertFilePath : baseFileList){
-			File convertFile = new File(convertFilePath);
-			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(convertFile.getAbsolutePath(), convertFile.getParent(), 17241639, null);
+			if(convertFilePath.endsWith("O")){
+				continue;
+			} 
+			
+			ToRinexDLL64.instance.ParseDataToRinexFormat_HTML(convertFilePath, convertPath, 17241639, null);
 		}
 				
-		int nCount = baseFileList.size();
-		for(int i=0; i<nCount-1; i++){
-			for(int j=i+1; j<nCount; j++){
-				solution(baseFileList.get(i), baseFileList.get(j));
-			}
-		}
+		//solution:use convert folder
+		solution(convertPath);
 		
 		//sendemail
-		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, "static");
+		SendEmail sendEmail = new SendEmail(appConfig.getAppPath(), solutionParameter.getFolderName(), emailDao, 0);
 		sendEmail.send();
 	}
 	
+	private void solution(String convertPath){
+		String antFilename = appConfig.getAppPath() + File.separator + "config" + File.separator + "ANTINFO_NGS.txt";
+		System.out.println("Static solution......");
+		boolean result = false;
+		result = AdjustmentDLL64.instance.GetAdjustResult( convertPath,  antFilename);
+		System.out.println("Static solution result:" + result);
+	}
+	
+	/*
 	private  void solution(String baseFilePath, String roverFilePath){
 		File baseFile = new File(baseFilePath);
 		File roverFile = new File(roverFilePath);
@@ -139,4 +144,5 @@ public class StaticSolutionThread extends Thread {
 		
 		System.out.println("Static solution result:" + result);
 	}
+	*/
 }

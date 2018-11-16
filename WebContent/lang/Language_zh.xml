@@ -17,6 +17,7 @@
 	<ids_upload_failed>上传失败</ids_upload_failed>
 	<ids_choose_logo_first>请先选择logo图片</ids_choose_logo_first>
 	<ids_choose_file_first>请先选择文件</ids_choose_file_first>
+	<ids_upload_file_first>请先上传文件</ids_upload_file_first>
 	<ids_start_ftp_success>启动FTP服务器成功</ids_start_ftp_success>
 	<ids_start_ftp_failed>启动FTP服务器失败</ids_start_ftp_failed>
 	<ids_stop_ftp_success>关闭FTP服务器成功</ids_stop_ftp_success>
@@ -53,4 +54,7 @@
 	<ids_original_north>北原点</ids_original_north>
 	<ids_original_east>东原点</ids_original_east>
 	<ids_local_offset>平移参数</ids_local_offset>
+	<ids_choose_base_gt_2>选择的基站数目大于2</ids_choose_base_gt_2>
+	<ids_must_choose_base_rover>必须选择一个基站和移动站</ids_must_choose_base_rover>
+	<ids_back_solution>后台正在解算,请稍后查看邮件获取解算结果</ids_back_solution>
 </Head>

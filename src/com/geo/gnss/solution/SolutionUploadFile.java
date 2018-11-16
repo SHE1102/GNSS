@@ -6,44 +6,22 @@ import com.geo.gnss.dao.AppConfig;
 import com.geo.gnss.dao.EmailDao;
 
 public class SolutionUploadFile {
-	private int solutionType;
-	private String folderName;
 	private AppConfig appConfig;
 	private EmailDao emailDao;
+	private SolutionParameter solutionParameter;
 	
-    public SolutionUploadFile(int solutionType, String folderName, AppConfig appConfig, EmailDao emailDao){
-    	this.solutionType = solutionType;
-    	this.folderName = folderName;
+    public SolutionUploadFile(AppConfig appConfig,SolutionParameter solutionParameter, EmailDao emailDao){
     	this.appConfig = appConfig;
+    	this.solutionParameter = solutionParameter;
     	this.emailDao = emailDao;
     }
     
-    public void start(){
-    	//String uploadPath = appConfig.getAppPath() + File.separator + "SolutionUpload";
-    	
-    	
-    	String solutionTypeString = solutionType == 0 ? "SolutionStatic" : "SolutionDynamic";
-    	String solutionPath = appConfig.getAppPath() + File.separator + solutionTypeString + File.separator + folderName;
-    	File folderFile = new File(solutionPath);
-    	folderFile.mkdirs();
-    	
-    	File uploadFile = new File("");
-    	String absolutePath = uploadFile.getAbsolutePath();
-    	String name = uploadFile.getName();
-    	String ext = name.substring(name.lastIndexOf(".")+1).toUpperCase();
-    	
-    	UploadManage uploadManage = new UploadManage();
-    	
-    	if("DAT".equals(ext)){
-    		uploadManage.parseDatFile(absolutePath);
-    	} else {
-    		uploadManage.parseOFile(absolutePath);
+    public boolean start(){
+    	if(!getSolutionParatemer()){
+    		return false;
     	}
     	
-    	SolutionParameter solutionParameter = uploadManage.getSolutionParameter();
-    	solutionParameter.setFolderName(folderName);
-    	
-    	if(solutionType == 0){
+    	if(solutionParameter.getSolutionType() == 0){
 			StaticSolutionThread thread = new StaticSolutionThread(appConfig, solutionParameter, emailDao);
 			thread.start();
 		} else {
@@ -51,7 +29,44 @@ public class SolutionUploadFile {
 			thread.start();
 		}
     	
+    	return true;
     }
     
+    private boolean getSolutionParatemer(){
+    	//get upload file
+    	String folderPath = appConfig.getAppPath() + File.separator + "Solution" + File.separator + solutionParameter.getFolderName();
+    	File folderFile = new File(folderPath);
+    	
+    	if(!folderFile.exists()){
+    		return false;
+    	}
+    	
+    	File[] files = folderFile.listFiles();
+    	if(files == null || files.length != 1){
+    		return false;
+    	}
+    	
+    	//judge upload file ext
+    	File uploadFile = files[0];
+    	String uploadFilePath = uploadFile.getAbsolutePath();
+    	String uploadFilename = uploadFile.getName();
+    	String ext = uploadFilename.substring(uploadFilename.lastIndexOf(".")+1).toUpperCase();
+    	if(!ext.endsWith("O") && !"DAT".equals(ext)){
+    		return false;
+    	}
+    	
+    	UploadManage uploadManage = new UploadManage(solutionParameter, appConfig);
+    	
+    	if("DAT".equals(ext)){
+    		uploadManage.parseDatFile(uploadFilePath);
+    	} else {
+    		uploadManage.parseOFile(uploadFilePath);
+    	}
+    	
+    	solutionParameter = uploadManage.getSolutionParameter();
+    	solutionParameter.setUploadFilePath(uploadFilePath);
+    	
+    	return true;
+    }
     
 }

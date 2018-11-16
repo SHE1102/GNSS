@@ -91,6 +91,12 @@ public class DllInterface {
 				String antFilename, String reportFilename);
 	}
 	
+	public interface AdjustmentDLL64 extends Library{
+		public AdjustmentDLL64 instance = (AdjustmentDLL64)Native.loadLibrary("AdjustmentDLL64",AdjustmentDLL64.class);
+		
+		boolean GetAdjustResult(String fileRouterName, String antFilename);
+	}
+	
 	public interface PPKDLL64 extends Library{
 		public PPKDLL64 instance = (PPKDLL64)Native.loadLibrary("PPKDLL64",PPKDLL64.class);
 		
