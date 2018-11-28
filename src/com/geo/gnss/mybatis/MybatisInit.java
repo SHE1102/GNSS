@@ -53,33 +53,4 @@ public class MybatisInit {
 		session.commit();
 		session.close();
 	}
-	
-	public void run2() throws IOException{
-		InputStream inputStream = Resources.getResourceAsStream(resource);
-		SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(inputStream,"mysql");
-		SqlSession session = sessionFactory.openSession();
-		session.update("geo.createTableCustomer");
-		session.update("geo.createTableAuthority");
-		
-		UserDao userDao = new UserDao();
-		userDao.setName("geo");
-		userDao.setPassword("1234");
-		userDao.setAuthority(9);
-		userDao.setEnable(true);
-		userDao.setLimitdate("2080-1-1");
-		
-		UserAuthority userAuthority = new UserAuthority();
-		userAuthority.setName("geo");
-		userAuthority.setDownloadRinex(true);
-		userAuthority.setDownloadVirtual(true);
-		userAuthority.setSolution(true);
-		userAuthority.setAdditionalFeature(true);
-		
-		session.update("geo.insertRootUser", userDao);
-		session.update("geo.insertRootAuthority", userAuthority);
-		
-		session.commit();
-		session.close();
-		
-	}
 }
