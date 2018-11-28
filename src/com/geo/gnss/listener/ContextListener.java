@@ -1,5 +1,7 @@
 package com.geo.gnss.listener;
 
+import java.io.IOException;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -10,6 +12,7 @@ import org.apache.ftpserver.FtpServer;
 import com.geo.gnss.dao.ConfigDao;
 import com.geo.gnss.ftpServer.MyFtpUtils;
 import com.geo.gnss.manage.ConfigManage;
+import com.geo.gnss.mybatis.MybatisInit;
 import com.geo.gnss.thread.TimerClearFileThread;
 
 @WebListener
@@ -33,6 +36,12 @@ public class ContextListener implements ServletContextListener {
 		
         startClearThread(context.getRealPath(""));
         
+        MybatisInit mybatisInit = new MybatisInit();
+        try {
+			mybatisInit.initDatabase();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		//createFtpServer();
 	
 	}

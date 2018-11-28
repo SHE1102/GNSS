@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM 
+"http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd" >
+<log4j:configuration>
+ 
+        <!-- 配置控制台输出的apperder -->
+        <appender name="console" class="org.apache.log4j.ConsoleAppender">
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d{MM-dd HH:mm:ss.SSS}][%-3p][%t] %c{1}:%L : %m%n" />
+                </layout>
+        </appender>
+ 
+ 
+ 
+        <!-- 可以根据程序和业务需要，配置多个appender -->
+ 
+ 
+ 
+        <!-- 配置默认日志的appender -->
+        <appender name="defaultLogger" class="org.apache.log4j.RollingFileAppender">
+                <param name="MaxFileSize" value="30MB" />
+                <param name="MaxBackupIndex" value="10" />
+                <param name="File" value="${log_path}/api_openidl/api_openidl.log" />
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d{MM-dd HH:mm:ss.SSS}][%-3p][%t] %c{1}:%L : %m%n" />
+                </layout>
+        </appender>
+        
+        <!-- 配置业务自己需要的appender -->
+        <appender name="WgwQueryDealListLogger" class="org.apache.log4j.RollingFileAppender">
+                <param name="MaxFileSize" value="20MB" />
+                <param name="MaxBackupIndex" value="9" />
+                <param name="File" value="${log_path}/api_openidl/wgwQueryDealList.log" />
+                <param name="Threshold" value="debug" />
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern" value="[%d{MM-dd HH:mm:ss.SSS}][%-3p][%t] %c{1}:%L : %m%n" />
+                </layout>
+        </appender>
+ 
+ 
+       
+        
+        
+        <!-- 根据业务包package，可以指定多个logger，logger和appender可以是多对多的关系 -->
+        
+        
+        <!-- 指定业务package输出的日志 -->
+        <logger name="com.ecc.openapi.openidl.weigou.service.WgwQueryDealListService" additivity="true">
+                <level value="INFO" />
+                <appender-ref ref="WgwQueryDealListLogger" />
+        </logger>
+ 
+        <!-- 指定业务package输出的日志 -->
+        <logger name="com.ecc.openapi.openidl.weigou.util" additivity="true">
+                <level value="INFO" />
+                <appender-ref ref="WgwQueryDealListLogger" />
+        </logger>
+        
+         <!-- 指定默认输出日志，根日志输出 -->
+        <root>
+                <level value="WARN" />
+                <appender-ref ref="defaultLogger" />
+        </root>
+ 
+</log4j:configuration> 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="geo">
+    <!-- 创建数据库 -->
+    <update id="createDatabase">
+        create database if not exists gnss default character set = 'utf8'
+    </update>
+    
+    <!-- 创建表 -->
+    <update id="createTableCustomer" >
+        create table if not exists customer (
+			id int auto_increment,
+			name varchar (20),
+			password varchar (20),
+			authority int ,
+			email varchar (50),
+			enable tinyint (1),
+			firstname varchar (20),
+			lastname varchar (20),
+			company varchar (20),
+			telephone varchar (20),
+			limitdate date,
+			primary key(id),
+			unique key name(name)
+		) 
+    </update>
+    
+    <update id="createTableAuthority">
+        create table if not exists user_authority(
+            name varchar(20),
+            downloadRinex tinyint(1),
+            downloadVirtual tinyint(1),
+            solution tinyint(1),
+            additionalFeature tinyint(1),
+            primary key(name)
+        )
+    </update>
+    
+    <insert id="insertRootUser" parameterType="com.geo.gnss.dao.UserDao">
+        insert ignore into customer values (null, #{name},#{password},#{authority},#{email},#{enable},#{firstname},#{lastname},#{company},#{telephone},#{limitdate})
+    </insert>
+    
+    <insert id="insertRootAuthority" parameterType="com.geo.gnss.dao.UserAuthority">
+        insert ignore into user_authority values (#{name},#{downloadRinex},#{downloadVirtual},#{solution},#{additionalFeature})
+    </insert>
+    
+    
+</mapper>

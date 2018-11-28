@@ -33,8 +33,7 @@
 	    			             %>
 	    			             <th class="item">Download rinex</th>
 	    			             <th class="item">Virtual</th>
-	    			             <th class="item">SolutionStatic</th>
-	    			             <th class="item">SolutionDynamic</th>
+	    			             <th class="item">Solution</th>
 	    			             <th class="item">Additional</th>
 	    			             <th class="func"></th>
 	    			         </tr>

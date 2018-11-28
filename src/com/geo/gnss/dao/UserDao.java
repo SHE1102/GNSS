@@ -2,16 +2,16 @@ package com.geo.gnss.dao;
 
 public class UserDao {
 	private int id;
-	private String name;
-	private String password;
+	private String name="";
+	private String password="";
 	private int authority;
-	private String email;
+	private String email="";
 	private boolean enable;
-	private String firstname;
-	private String lastname;
-	private String company;
-	private String telephone;
-	private String limitdate;
+	private String firstname="";
+	private String lastname="";
+	private String company="";
+	private String telephone="";
+	private String limitdate="";
 	//private UserAuthority userAuthority;
 	
 	public UserDao() {

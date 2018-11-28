@@ -17,7 +17,7 @@ public class MybatisUtils {
 		try {
 			InputStream inputStream;
 			inputStream = Resources.getResourceAsStream(source);
-			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+			sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream,"mysql");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

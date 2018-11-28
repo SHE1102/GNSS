@@ -1,4 +1,12 @@
-/com/
-/AdjustmentDLL_x64.dll
 /AdjustmentDLL64.dll
+/CoordConvertLib64.dll
+/MergeDLL64.dll
+/PPKDLL64.dll
+/PostPositionDLL64.dll
 /SplitDLL64.dll
+/StaticBaseLineSolution64.dll
+/ToRinexDLL64.dll
+/VirtualRinexMakerDLL64.dll
+/com/
+/log4j.xml
+/log4j2.xml

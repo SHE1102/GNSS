@@ -3,14 +3,24 @@
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <environments default="mysql">
+    <properties resource="com/geo/gnss/mybatis/db.properties"/>
+    <environments default="defaultMysql">
+        <environment id="defaultMysql">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${root.driver}"/>
+                <property name="url" value="${root.url}"/>
+                <property name="username" value="${root.username}"/>
+                <property name="password" value="${root.password}"/>
+            </dataSource>
+        </environment>
         <environment id="mysql">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/gnss?useSSL=true&amp;autoReconnect=true"/>
-                <property name="username" value="geo"/>
-                <property name="password" value="1234"/>
+                <property name="driver" value="${root.driver}"/>
+                <property name="url" value="${customer.url}"/>
+                <property name="username" value="${customer.username}"/>
+                <property name="password" value="${customer.password}"/>
                 <property name="poolPingEnabled" value="true"/>
                 <property name="poolPingQuery" value="select now() from gnss.customer limit 1"/>
                 <property name="poolPingConnectionsNotUsedFor" value="3600000"/>
@@ -18,6 +28,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         </environment>
     </environments>
     <mappers>
+        <mapper resource="com/geo/gnss/mybatis/initMapper.xml"/>
         <mapper resource="com/geo/gnss/mybatis/UserMapper.xml"/>
     </mappers>
 </configuration>

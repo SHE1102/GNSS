@@ -73,9 +73,9 @@
 	    			             </td>
     			             </tr>
     			              <tr>
-	    			             <td class="Label">日期</td>
+	    			             <td class="Label">Date</td>
 	    			             <td><input id="ConvertDate"  type="date"></td>
-	    			             <td class="Label">站点</td>
+	    			             <td class="Label">Station</td>
 	    			             <td><select id="StationList" ></select></td>
 	    			         </tr>
     			         </table>
