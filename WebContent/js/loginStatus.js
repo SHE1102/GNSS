@@ -14,18 +14,13 @@ $(function(){
 		
 		//HOR
 		if($name.length <= 0){
-			$(".MenuBarHor>ul>li:lt(4)").show();
+			$(".MenuBarHor>ul>li:lt(3)").show();
 			return;
 		} else if($authority == 0){
-			$(".MenuBarHor>ul>li:lt(5)").show();
+			$(".MenuBarHor>ul>li:lt(4)").show();
 		} else if($authority >= 1 ){
 			$(".MenuBarHor>ul>li").show();
-			//$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
 		} 
-		//else if($authority == 9){
-		//	$(".MenuBarHor>ul>li").show();
-		//	$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
-		//}
 		
 		if(json.downloadRinex == 0){
 			$("#downloadRinexModule").hide();
@@ -39,13 +34,6 @@ $(function(){
 		if(json.additionalFeature == 0){
 			$("#additionalModule").hide();
 		}
-		
-		/*if($authority == 9){
-			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").show();
-		} else {
-			$(".MenuBarHor>ul>li:eq(5)>ul>li:eq(4)").hide();
-		}*/
-		
 	})
 	
 })

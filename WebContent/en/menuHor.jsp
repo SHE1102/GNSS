@@ -3,12 +3,14 @@
     	
   		<div class="MenuBarHor">
   			<ul>
+  			    <!-- 
   				<li class="dropdownItemBar"><a href="#" class="">Info</a>
   					<ul class="submenuHor">
   						<li ><a href="network.jsp">Network</a></li>
   						<li><a href="contacts.jsp">Contacts</a></li>
   					</ul>
   				</li>
+  				 -->
   				<li class="dropdownItemBar"><a class="I">Stations</a>
   					<ul class="submenuHor"> 
   						<li><a href="stationMap.jsp">Network Map</a></li>

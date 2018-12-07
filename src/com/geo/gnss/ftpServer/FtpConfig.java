@@ -28,7 +28,7 @@ public class FtpConfig {
 		sb.append("\"port\":");
 		sb.append(ftpDao.getPort());
 		sb.append(",\"homeDirectory\":\"");
-		sb.append(ftpDao.getHomeDirectory());
+		sb.append(ftpDao.getHomeDirectory().replace("\\", "\\\\"));
 		sb.append("\",\"userName\":\"");
 		sb.append(ftpDao.getUserName());
 		sb.append("\",\"password\":\"");

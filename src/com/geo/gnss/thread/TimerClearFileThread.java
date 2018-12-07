@@ -33,6 +33,7 @@ public class TimerClearFileThread extends Thread {
 			clearConvertDir();
 			clearVirtualDir();
 			clearProgressDir();
+			clearSolutionDir();
 			
 		}
 		
@@ -53,6 +54,11 @@ public class TimerClearFileThread extends Thread {
 		String progressDir = this.appPath + File.separator + "Progress";
 		clearDir(progressDir);
 		System.out.println("Clear progress dir and file success.");
+	}
+	protected void clearSolutionDir() {
+		String solutionDir = this.appPath + File.separator + "Solution";
+		clearDir(solutionDir);
+		System.out.println("Clear solution dir and file success.");
 	}
 	
 	protected void  clearDir(String clearDir) {

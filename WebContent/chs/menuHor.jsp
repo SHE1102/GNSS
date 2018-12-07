@@ -3,12 +3,14 @@
     	
   		<div class="MenuBarHor">
   			<ul>
+  			    <!-- 
   				<li class="dropdownItemBar"><a href="#" class="">信息</a>
   					<ul class="submenuHor">
   						<li ><a href="network.jsp">网络</a></li>
   						<li><a href="contacts.jsp">通讯录</a></li>
   					</ul>
   				</li>
+  				 -->
   				<li class="dropdownItemBar"><a class="I">站点</a>
   					<ul class="submenuHor"> 
   						<li><a href="stationMap.jsp">地图</a></li>

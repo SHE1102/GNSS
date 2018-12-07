@@ -40,7 +40,8 @@ public class ServletMonograph extends HttpServlet {
 		}
 		
 		if(pdfFile.isEmpty()){
-			response.getWriter().print("No File");
+			//response.getWriter().print("No File");
+			response.sendError(HttpServletResponse.SC_NOT_FOUND,"No File Found");
 			return;
 		}
     	

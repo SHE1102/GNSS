@@ -20,7 +20,7 @@
      <appender name="defaultLogger" class="org.apache.log4j.RollingFileAppender">
          <param name="MaxFileSize" value="1kb"/>
          <param name="MaxBackupIndex" value="10" /><!-- 文件最多存在数量 超过将覆盖 -->
-         <param name="File" value="d:/log4j.log"/>
+         <param name="File" value="c:/log4j.log"/>
          <layout class="org.apache.log4j.PatternLayout">
              <param name="ConversionPattern" value="[%d{MM-dd HH:mm:ss.SSS}][%-3p][%t] %c{1}:%L : %m%n"/>
          </layout>
@@ -36,7 +36,7 @@
            ’.’yyyy-MM-dd-HH-mm: 每分钟
      -->
      <appender name="myLogger" class="org.apache.log4j.DailyRollingFileAppender">
-         <param name="File" value="d:/log4j1.log"/>
+         <param name="File" value="C:/log4j1.log"/>
          <param name="Threshold" value="debug" />
          <param name="DatePattern" value="'.'yyyy-MM-dd-HH-mm"/>
          <layout class="org.apache.log4j.PatternLayout">
@@ -52,7 +52,7 @@
      
      
      <root>
-         <level value="info"/>
+         <level value="error"/>
          <appender-ref ref="console"/>
      </root> 
      
