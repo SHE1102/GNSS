@@ -76,7 +76,6 @@ $(function(){
 	}
 	
 	$("#start").click(function(){
-		
 		$("#start").attr("disabled","true");
 		$("#download").hide();
 		
@@ -126,15 +125,12 @@ $(function(){
 		 var process = eval("(" + json + ")");
 		 
 		 if(process.stepName == "null" || process.stepName == ""){
-				return;
+			return;
 		 }
 		 //更新进度信息
-		 //process.stepName;
-		 //process.pos/process.total;
 		 $("#state").text(process.stepName);
 		 $("#progressBar").val(process.pos);
 		 $("#progressBar").text(process.pos + "%");
-		 //setTimeout(function(){$("#progressBar").val(40);},2000);
 		 
 		 if(process.success == 0) {
 			 clearInterval(interval);

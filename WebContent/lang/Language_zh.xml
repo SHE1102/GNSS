@@ -57,4 +57,11 @@
 	<ids_choose_base_gt_2>选择的基站数目大于2</ids_choose_base_gt_2>
 	<ids_must_choose_base_rover>必须选择一个基站和移动站</ids_must_choose_base_rover>
 	<ids_back_solution>后台正在解算,请稍后查看邮件获取解算结果</ids_back_solution>
+		<ids_register_customer>注册用户</ids_register_customer>
+	<ids_register_count>注册数量</ids_register_count>
+	<ids_download_statistic>下载数量统计</ids_download_statistic>
+	<ids_count>计数</ids_count>
+	<ids_rover_statistic>移动站信息统计</ids_rover_statistic>
+	<ids_rover_count>移动站数量</ids_rover_count>
+	<ids_rover_onlinetime>在线时间</ids_rover_onlinetime>
 </Head>

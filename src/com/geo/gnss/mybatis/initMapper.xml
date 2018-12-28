@@ -24,7 +24,7 @@
 			limitdate date,
 			primary key(id),
 			unique key name(name)
-		) 
+		)
     </update>
     
     <update id="createTableAuthority">

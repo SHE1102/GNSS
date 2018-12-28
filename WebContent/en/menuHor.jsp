@@ -35,7 +35,7 @@
   					<ul class="submenuHor">
   						<li><a href="configSet.jsp">Setting</a></li>
   						<li><a href="customerManage.jsp">User Management</a></li>
-  						<li><a href="#">User Statistics</a></li>
+  						<li><a href="statistic.jsp">User Statistics</a></li>
   						<li><a href="monograph.jsp">Monograph</a></li>
   					</ul>
   				</li>

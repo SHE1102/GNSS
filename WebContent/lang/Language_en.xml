@@ -57,4 +57,11 @@
 	<ids_choose_base_gt_2>The number of selected base stations cannot be less than 2</ids_choose_base_gt_2>
 	<ids_must_choose_base_rover>Must choose a base station and rover station</ids_must_choose_base_rover>
 	<ids_back_solution>The background is being solved, please check the mail later to get the solution result.</ids_back_solution>
+	<ids_register_customer>Register customer</ids_register_customer>
+	<ids_register_count>register count</ids_register_count>
+	<ids_download_statistic>Download statistic</ids_download_statistic>
+	<ids_count>count</ids_count>
+	<ids_rover_statistic>Rover statistic</ids_rover_statistic>
+	<ids_rover_count>rover count</ids_rover_count>
+	<ids_rover_onlinetime>onlineTime</ids_rover_onlinetime>
 </Head>

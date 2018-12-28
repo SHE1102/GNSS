@@ -39,7 +39,7 @@
 		    			                 <td>
 			    			                 <select  id="coordinateFormat" name="CoordinateFormat">
 			    			                     <option value="0">dd.dddddd</option>
-									              <option value="1">dd.mmssssss</option>
+									             <option value="1">dd.mmssssss</option>
 			    			                 </select>
 		    			                 </td>
 		    			             </tr>
