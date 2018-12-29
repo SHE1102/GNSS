@@ -11,11 +11,10 @@ import java.util.zip.ZipOutputStream;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.geo.gnss.util.DownloadLog;
 
 /**
  * Servlet implementation class VirtualDownloadServlet
@@ -30,8 +29,33 @@ public class ServletVirtualDownload extends HttpServlet {
 		
 		String appPath = getServletContext().getRealPath("");
 		String user = (String)request.getSession().getAttribute("name");
-		DownloadLog log = new DownloadLog(appPath);
-		log.write(user, "Download virtual");
+		//DownloadLog log = new DownloadLog(appPath);
+		//log.write(user, "Download virtual");
+		Cookie[] cookies = request.getCookies();
+		DownloadInforDao downloadInforDao = new DownloadInforDao();
+		downloadInforDao.setUser(user);
+		if(cookies != null){
+			for(Cookie cookie : cookies){
+				String name = cookie.getName();
+				String value = cookie.getValue();
+				
+				if("convertType".equals(name)){
+					downloadInforDao.setType(Integer.parseInt(value));
+				} else if ("dataDate".equals(name)){
+					downloadInforDao.setDataDate(value);
+				} else if ("startTime".equals(name)){
+					downloadInforDao.setStartTime(value);
+				} else if ("endTime".equals(name)){
+					downloadInforDao.setEndTime(value);
+				} else if ("rinexVersion".equals(name)){
+					downloadInforDao.setRinexVersion(value);
+				}
+			}
+		}
+		
+		DownloadService downloadService = new DownloadService();
+		downloadService.saveDownloadlog(downloadInforDao);
+		downloadService.updateVirtualCount();
 		
 		String rarName = request.getParameter("fileName");
 		

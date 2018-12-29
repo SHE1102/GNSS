@@ -68,7 +68,7 @@
         insert into record values(#{date}, 0, 0, 1) on  DUPLICATE key update downloadVirtual=downloadVirtual+1
     </insert>
     
-     <insert id="insertRecordTest" parameterType="com.geo.gnss.dao.RecordCountDao">
+    <insert id="insertRecordTest" parameterType="com.geo.gnss.dao.RecordCountDao">
         insert into record values(#{date}, #{registerCount}, #{rinexCount}, #{virtualCount})
     </insert>
     

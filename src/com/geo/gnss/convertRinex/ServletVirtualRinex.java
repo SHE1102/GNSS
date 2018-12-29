@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -69,6 +70,18 @@ public class ServletVirtualRinex extends HttpServlet {
 				}
 				//System.out.println("System:" + ss);
 			}
+		}
+		
+		Cookie[] cookies = new Cookie[5];
+		cookies[0] = new Cookie("convertType", "1");
+		cookies[1] = new Cookie("dataDate", request.getParameter("Date"));
+		cookies[2] = new Cookie("startTime", request.getParameter("StartTime"));
+		cookies[3] = new Cookie("endTime", request.getParameter("EndTime"));
+		cookies[4] = new Cookie("rinexVersion", request.getParameter("RinexVersion"));
+		
+		for(Cookie cookie : cookies){
+			cookie.setMaxAge(1*24*60*60);
+			response.addCookie(cookie);
 		}
 		
 		VirtualRinexManage virtualRinexManage = new VirtualRinexManage(rawPath,appPath,sessionId,virtualRinexDao);

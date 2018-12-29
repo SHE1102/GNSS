@@ -41,6 +41,7 @@ public class CustomerManage {
     	userAuthority.setDownloadRinex(true);
     	userAuthority.setDownloadVirtual(true);
     	sqlSession.insert("addUserAuthority",userAuthority);
+    	sqlSession.insert("updateRegisterRecord", new Date());
     	
     	sqlSession.commit();
     	sqlSession.close();
