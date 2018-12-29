@@ -11,7 +11,6 @@ public class DownloadService {
 	public void saveDownloadlog(DownloadInforDao inforDao){
 		SqlSession session = MybatisUtils.getSession();
 		session.insert("insertDownloadLog", inforDao);
-		//session.insert("updateDownloadRinexRecord", new Date());
 		session.commit();
 		session.close();
 	}
