@@ -98,8 +98,8 @@ public class ServletDownloadConvert extends HttpServlet {
             while((read = fis.read(bytes)) != -1){  
                 zos.write(bytes, 0, read);  
             }  
-            zos.flush();  
-            fis.close();  
+            zos.flush();
+            fis.close();
 	    }
 		zos.flush();  
 	    zos.close();  
