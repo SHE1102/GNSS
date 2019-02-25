@@ -261,7 +261,7 @@ $(function(){
 			   var json = {};   
 			   json.chart = chart;   
 			   json.title = title;
-			   json.subtitle = subtitle;      
+			   json.subtitle = subtitle;
 			   json.xAxis = xAxis;
 			   json.yAxis = yAxis;
 			   json.tooltip = tooltip;  

@@ -1,3 +1,9 @@
+/PPKDLL64.dll
+/PostPositionDLL64.dll
+/SplitDLL64.dll
+/StaticBaseLineSolution64.dll
+/ToRinexDLL64.dll
+/VirtualRinexMakerDLL64.dll
 /com/
 /db.properties
 /log4j.xml
