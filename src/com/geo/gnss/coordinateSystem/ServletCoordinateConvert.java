@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.geo.gnss.dao.EmailDao;
 import com.geo.gnss.jna.DllInterface.CoordConvertLib64;
+import com.geo.gnss.util.SendEmail;
 import com.sun.jna.ptr.DoubleByReference;
 
 /**
@@ -46,6 +48,23 @@ public class ServletCoordinateConvert extends HttpServlet {
 					destinationx, destinationy, destinationh);
 		}
 		
+		StringBuilder contentSb = new StringBuilder();
+		contentSb.append("source:<br/>");
+		contentSb.append("B:");
+		contentSb.append(sourceBx);
+		contentSb.append("<br/>L:");
+		contentSb.append(sourceLy);
+		contentSb.append("<br/>H:");
+		contentSb.append(sourceHh);
+		contentSb.append("<br/>destination:<br/>");
+		contentSb.append("B:");
+		contentSb.append(destinationx.getValue());
+		contentSb.append("<br/>L:");
+		contentSb.append(destinationy.getValue());
+		contentSb.append("<br/>H:");
+		contentSb.append(destinationh.getValue());
+		sendEmail(contentSb.toString(),request);
+		
 		StringBuilder sb = new StringBuilder();
 		sb.append("{");
 		sb.append("\"destinationBx\":");
@@ -62,6 +81,22 @@ public class ServletCoordinateConvert extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
+	}
+	
+	protected void sendEmail(String content, HttpServletRequest request){
+		String hostEmail = (String)getServletContext().getAttribute("hostEmail");
+		String hostEmailPassword = (String)getServletContext().getAttribute("hostEmailPassword");
+		String hostEmailProtocol = (String)getServletContext().getAttribute("hostEmailProtocol");
+		String userEmail = (String)request.getSession().getAttribute("email");
+		EmailDao emailDao = new EmailDao(hostEmail, hostEmailPassword, hostEmailProtocol, userEmail);
+		
+		SendEmail sendEmail = new SendEmail(content, emailDao);
+		
+		try {
+			sendEmail.sendCoordinate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

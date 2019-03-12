@@ -24,7 +24,6 @@ public class ServletCoordinateDetail extends HttpServlet {
 		
 		CoordinateSystemManage systemManage = new CoordinateSystemManage(filePath);
 		String json = systemManage.getJson();
-		
 		response.getWriter().print(json);
 		
 	}

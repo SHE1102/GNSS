@@ -169,7 +169,7 @@ public class CoordinateSystemManage {
 			}
 			
 		} catch (DocumentException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		return coordinateSystem;
 	}

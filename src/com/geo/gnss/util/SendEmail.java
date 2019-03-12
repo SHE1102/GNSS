@@ -30,6 +30,7 @@ public class SendEmail {
 	private int filterType;
 	private EmailDao emailDao;
 	private UserDao userDao;
+	private String bodyContent;
 	
 	public SendEmail(UserDao userDao, EmailDao emailDao){
         this.userDao = userDao;
@@ -40,6 +41,11 @@ public class SendEmail {
     	 this.appPath = appPath; 
     	 this.folderName = folderName;
     	 this.filterType = filterType;
+    	 this.emailDao = emailDao;
+     }
+     
+     public SendEmail(String bodyContent, EmailDao emailDao){
+    	 this.bodyContent = bodyContent;
     	 this.emailDao = emailDao;
      }
      
@@ -220,6 +226,45 @@ public class SendEmail {
 		sb.append("</b>");
 		
 		content.setContent(sb.toString(), "text/html;charset=UTF-8");
+		
+		message.saveChanges();
+		
+		return message;
+	}
+	
+	public void sendCoordinate() throws Exception{
+		Properties prop = new Properties();
+		 prop.setProperty("mail.host", emailDao.getHostEmailProtocol());
+		 prop.setProperty("mail.transport.protocol", "smtp");
+		 prop.setProperty("mail.smtp.port", "25");
+		 prop.setProperty("mail.smtp.auth", "true");
+		 Session session = Session.getInstance(prop);
+		 //session.setDebug(true);
+		 Transport ts = session.getTransport();
+		 //ts.connect(host, srcEmail, password);
+		 ts.connect(emailDao.getHostEmailProtocol(), emailDao.getHostEmail(), emailDao.getHostEmailPassword());
+		 Message message = createCoordinateEmail(session);
+		 ts.sendMessage(message, message.getAllRecipients());
+		 ts.close();
+	}
+	
+	private Message createCoordinateEmail(Session session) throws Exception {
+		MimeMessage message = new MimeMessage(session);
+		message.setFrom(new InternetAddress(emailDao.getHostEmail()));
+		message.setRecipient(Message.RecipientType.TO, new InternetAddress(emailDao.getUserEmail()));
+		
+		//add email title
+		message.setSubject("Convert coordinate email");
+		
+		//email body
+		MimeMultipart bodyparts = new MimeMultipart();
+		message.setContent(bodyparts);
+		
+		//add content
+		MimeBodyPart content = new MimeBodyPart();
+		bodyparts.addBodyPart(content);
+		
+		content.setContent(bodyContent, "text/html;charset=UTF-8");
 		
 		message.saveChanges();
 		
